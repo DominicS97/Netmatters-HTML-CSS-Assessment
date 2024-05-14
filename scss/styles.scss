@@ -1,6 +1,4 @@
-@import 'config';
-@import 'helpers';
-@import 'utilities';
-@import 'reset';
-@import 'base';
-@import 'main';
+@import 'base/_index.scss';
+@import 'abstracts/_index.scss';
+@import 'components/_index.scss';
+@import 'layout/_index.scss';
