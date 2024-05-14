@@ -1,0 +1,29 @@
+// footer style
+
+footer {
+    background-color: #323544;
+    margin: 0;
+    p {
+        margin: 0;
+    }
+    h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li, p {
+        font-size: 13px;
+        padding-left: 15px;
+    }
+    aside {
+        background-color: #75788a;
+    }
+}
+
+#copyright {
+    background-color: #212330;
+}

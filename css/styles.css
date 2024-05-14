@@ -1,20 +1,60 @@
-/* line 3, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
-body {
-  background-color: #323544;
+/* line 3, G:/Coding/Projects/2. HTML CSS Assessment/scss/bases/_base.scss */
+html, body {
+  background-color: #a1a5ba;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #fff;
 }
 
-/* line 7, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
+/* line 14, G:/Coding/Projects/2. HTML CSS Assessment/scss/bases/_base.scss */
 h2 {
   font-size: 36px;
   font-family: sans-serif;
   color: #fff;
 }
 
-/* line 13, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
-p {
+/* line 3, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer {
+  background-color: #323544;
+  margin: 0;
+}
+
+/* line 6, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer p {
+  margin: 0;
+}
+
+/* line 9, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer h2 {
   font-size: 16px;
-  font-family: sans-serif;
-  color: #fff;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+/* line 14, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 18, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer li, footer p {
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+/* line 22, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+footer aside {
+  background-color: #75788a;
+}
+
+/* line 27, G:/Coding/Projects/2. HTML CSS Assessment/scss/layout/_footer.scss */
+#copyright {
+  background-color: #212330;
 }
 
 /*# sourceMappingURL=styles.css.map */

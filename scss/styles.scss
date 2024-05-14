@@ -1,4 +1,8 @@
-@import '../scss/base/index',
-'../scss/abstracts/index',
-'../scss/components/index',
-'../scss/layout/index';
+@import '../scss/bases/base';
+@import '../scss/bases/reset';
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/media-query';
+@import '../scss/abstracts/colors';
+@import '../scss/components/buttons';
+@import '../scss/layout/header';
+@import '../scss/layout/footer';
