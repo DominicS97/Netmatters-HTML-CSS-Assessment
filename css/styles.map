@@ -17,9 +17,9 @@
 		"../scss/layout/_footer.scss"
 	],
 	"sourcesContent": [
-		"@import 'base/_index.scss';\n@import 'abstracts/_index.scss';\n@import 'components/_index.scss';\n@import 'layout/_index.scss';",
-		"@import '_base.scss';\r\n@import '_reset.scss';",
-		"",
+		"@import '../scss/base/index',\r\n'../scss/abstracts/index',\r\n'../scss/components/index',\r\n'../scss/layout/index';",
+		"@import 'base', \r\n'reset';",
+		"// Base styles\r\n\r\nbody {\r\n    background-color: #323544;\r\n}\r\n\r\nh2 {\r\n    font-size: 36px;\r\n    font-family: sans-serif;\r\n    color: #fff;\r\n}\r\n\r\np {\r\n    font-size: 16px;\r\n    font-family: sans-serif;\r\n    color: #fff;\r\n}",
 		"",
 		"@import '_variables.scss';\r\n@import '_media-query.scss';\r\n@import '_colors.scss';",
 		"",
@@ -32,5 +32,5 @@
 		""
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AEEA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,OAAO;CAC5B;;;AAED,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,UAAU;EACvB,KAAK,EAAE,IAAI;CACd;;;AAED,AAAA,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,UAAU;EACvB,KAAK,EAAE,IAAI;CACd"
 }

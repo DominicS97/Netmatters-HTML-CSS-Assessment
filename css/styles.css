@@ -1,2 +1,20 @@
+/* line 3, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
+body {
+  background-color: #323544;
+}
+
+/* line 7, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
+h2 {
+  font-size: 36px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* line 13, G:/Coding/Projects/2. HTML CSS Assessment/scss/base/_base.scss */
+p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */
