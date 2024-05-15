@@ -32,7 +32,7 @@ header h1 {
 }
 
 #slider {
-  background: center no-repeat url(/img/slider1.png);
+  background: center no-repeat url(/img/slider1.jpg);
   text-align: center;
   min-height: 500px;
   display: flex;
