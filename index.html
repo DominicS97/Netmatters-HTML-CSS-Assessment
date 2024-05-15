@@ -13,7 +13,7 @@
       </nav>     
     </header>  
 
-    <div> <!-- splash -->
+    <div id="slider"> <!-- slider -->
       <h2>The East of England's Leading Technology Company</h2>
       <h2>Bespoke Software</h2>
       <h2>IT Support</h2>
@@ -23,7 +23,7 @@
       <h2>Cyber Security</h2>
     </div>
 
-    <div> <!-- services grid -->
+    <div id="grid"> <!-- services grid -->
       <h2>Bespoke Software</h2>
       <h2>IT Support</h2>
       <h2>Digital Marketing</h2>
@@ -33,31 +33,53 @@
       <h2>Developer Training</h2>
     </div>
 
-    <div> <!-- bio and review box -->
-      <h2>Welcome To Netmatters</h2>
-      <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</p>
-      <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-      <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-   
-      <h2>What Our Clients Think</h2>
-      <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
+    <div id="bio"> <!-- bio and review box -->
+      <div id="bio-one">
+        <h2>Welcome To Netmatters</h2>
+        <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</p>
+        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+        <button>Why choose us? &#8594;</button><br>
+        <button>Our culture &#8594;</button>
+      </div>
+
+      <div id="bio-two">
+        <h2>What Our Clients Think</h2>
+        <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
+        <p>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
+        <button class="blue">Google reviews &#8594;</button><br>
+        <button class="green">Trustpilot reviews &#8594;</button>
+      </div>
     </div>
 
-    <div> <!-- latest news -->
-      <h2>2nd Line Technician</h2>
-      <h2>April</h2>
-      <h2>IT In Safe Hands</h2>
+    <div id="news"> <!-- latest news -->
+      <h2>Latest News</h2>
+      <div id="news-item">
+         <h3>2nd Line Technician</h3>
+      </div>
+      <div id="news-item">
+        <h3>April</h3>
+      </div>
+      <div id="news-item">
+       <h3>IT In Safe Hands</h3>
+      </div>
+      <div id="view">
+       <a href="#">View All &#8594;</a>
+      </div>
     </div> 
 
-    <div> <!-- newsletter sign-up form -->
+    <div id="form"> <!-- newsletter sign-up form -->
+      <h2>Email Newsletter Sign-Up</h2>
       <form>
-        <label>Your Name</label>
-        <input type="text">
-        <label>Your Email</label>
-        <input type="email">
-        <label>Please tick this box if you wish to receive marketing information from us. Please see our Privacy Policy for more information on how we keep your data safe.</label>
-        <input type="checkbox">
-        <input type="submit">
+        <label>Your Name</label><br>
+        <input type="text"><br>
+        <label>Your Email</label><br>
+        <input type="email"><br>
+        <aside>
+          <input type="checkbox">
+          <label>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</label><br>
+        </aside>
+        <button id="subscribe" type="submit">Subscribe</button>
       </form>
     </div>
 

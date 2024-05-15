@@ -16,3 +16,12 @@ h2 {
     font-family: sans-serif;
     color: #fff;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
