@@ -1,5 +1,4 @@
 html, body {
-  background-color: #a1a5ba;
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -33,7 +32,7 @@ header h1 {
 }
 
 #slider {
-  background-color: black;
+  background: center no-repeat url(/img/slider1.png);
   text-align: center;
   min-height: 500px;
   display: flex;
@@ -45,6 +44,14 @@ header h1 {
 #slider p {
   padding-left: 25%;
   width: 50%;
+}
+
+.slider-item {
+  height: 100%;
+  background-color: rgba(52, 53, 69, 0.5);
+}
+.slider-item h2 {
+  margin-top: 25%;
 }
 
 #grid {

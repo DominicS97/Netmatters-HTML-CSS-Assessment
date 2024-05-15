@@ -1,7 +1,7 @@
 // slider
 
 #slider {
-    background-color: black;
+    background: center no-repeat url(/img/slider1.png);
     text-align: center;
     min-height: 500px;
     display: flex;
@@ -12,6 +12,14 @@
     p {
         padding-left: 25%;
         width: 50%;
+    }
+}
+
+.slider-item {
+    height: 100%;
+    background-color: rgba(52, 53, 69, 50%);
+    h2 {
+        margin-top: 25%;
     }
 }
 
