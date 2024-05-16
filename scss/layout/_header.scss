@@ -1,7 +1,7 @@
 // header style
 
 header {
-    background-color: #fff;
+    background-color: $background-white;
     width: 100%;
     min-height: 18%;
     display: flex;
@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-content: center;
     h1 {
-        color: #343543;
+        color: $text-dark;
     }
     img {
         margin-left: 15px;
@@ -18,7 +18,7 @@ header {
         max-width: 70%;
     }
     a {
-        color: #343545;
+        color: $text-dark;
         font-size: 26px;
         align-self: center;
         text-decoration: none;

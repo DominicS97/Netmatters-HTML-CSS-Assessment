@@ -2,14 +2,14 @@
 // form
 
 #form {
-    background-color: #DDD;
+    background-color: $background-light;
     width: 100%;
     h2 {
-        color: #343543;
+        color: $text-dark;
         padding-left: 15px;
     }
     label {
-        color: #343543;
+        color: $text-dark;
         padding-left: 15px;
     }
     input {
@@ -17,7 +17,7 @@
     }
     a {
         text-decoration-line: underline;
-        color: #343543;
+        color: $text-dark;
     }
     aside {
         display: flex;

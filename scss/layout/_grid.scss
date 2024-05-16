@@ -2,7 +2,7 @@
 
 #grid {
     width: 100%;
-    background-color: #ddd;
+    background-color: $background-light;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -12,10 +12,10 @@
         font-size: 43px;
         align-self: left;
         padding-left: 15px;
-        color: #343545;
+        color: $text-dark;
     }
     a {
-        color: #343545;
+        color: $text-dark;
         font-size: 26px;
         align-self: center;
         text-decoration: none;
@@ -26,12 +26,12 @@
 }
 
 .grid-item {
-    background-color: #fff;
+    background-color: $background-white;
     margin: 15px;
-    border-color: #343545;
+    border-color: $text-dark;
     border-radius: 10%;
     h2 {
-      color: #343545;
+      color: $text-dark;
       text-align: center;
     }
 }

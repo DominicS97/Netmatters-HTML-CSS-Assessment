@@ -1,7 +1,7 @@
 // footer style
 
 footer {
-    background-color: #323544;
+    background-color: $background-dark;
     margin: 0;
     width: 100%;
     p {
@@ -21,10 +21,10 @@ footer {
         padding-left: 15px;
     }
     aside {
-        background-color: #75788a;
+        background-color: $button-cookie;
     }
 }
 
 #copyright {
-    background-color: #212330;
+    background-color: $button-social;
 }

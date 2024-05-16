@@ -10,18 +10,18 @@
 }
 
 #news {
-    background-color: #fff;
+    background-color: $background-white;
     width: 100%;
     h2 {
-        color: #343545;
+        color: $text-dark;
         padding-left: 15px;
     }
     h3 {
-        color: lightblue;
+        color: $news-blue;
         padding-left: 15px;
     }
     a {
-        color: #343545;
+        color: $text-dark;
         font-size: 26px;
         align-self: center;
         text-decoration: none;

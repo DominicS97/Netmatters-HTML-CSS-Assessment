@@ -34,7 +34,7 @@ header {
   align-content: center;
 }
 header h1 {
-  color: #343543;
+  color: #333645;
 }
 header img {
   margin-left: 15px;
@@ -42,7 +42,7 @@ header img {
   max-width: 70%;
 }
 header a {
-  color: #343545;
+  color: #333645;
   font-size: 26px;
   align-self: center;
   text-decoration: none;
@@ -90,10 +90,10 @@ header button {
   font-size: 43px;
   align-self: left;
   padding-left: 15px;
-  color: #343545;
+  color: #333645;
 }
 #grid a {
-  color: #343545;
+  color: #333645;
   font-size: 26px;
   align-self: center;
   text-decoration: none;
@@ -105,11 +105,11 @@ header button {
 .grid-item {
   background-color: #fff;
   margin: 15px;
-  border-color: #343545;
+  border-color: #333645;
   border-radius: 10%;
 }
 .grid-item h2 {
-  color: #343545;
+  color: #333645;
   text-align: center;
 }
 
@@ -127,15 +127,15 @@ header button {
   width: 100%;
 }
 #news h2 {
-  color: #343545;
+  color: #333645;
   padding-left: 15px;
 }
 #news h3 {
-  color: lightblue;
+  color: #4183D7;
   padding-left: 15px;
 }
 #news a {
-  color: #343545;
+  color: #333645;
   font-size: 26px;
   align-self: center;
   text-decoration: none;
@@ -146,7 +146,7 @@ header button {
 
 #bio {
   width: 100%;
-  background-color: #333645;
+  background-color: #323544;
 }
 #bio h2 {
   padding-left: 15px;
@@ -159,16 +159,24 @@ header button {
   font-weight: bold;
 }
 
+#bio-two p:nth-of-type(3) {
+  color: #A3A8AC;
+}
+#bio-two a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #form {
-  background-color: #DDD;
+  background-color: #ddd;
   width: 100%;
 }
 #form h2 {
-  color: #343543;
+  color: #333645;
   padding-left: 15px;
 }
 #form label {
-  color: #343543;
+  color: #333645;
   padding-left: 15px;
 }
 #form input {
@@ -176,7 +184,7 @@ header button {
 }
 #form a {
   text-decoration-line: underline;
-  color: #343543;
+  color: #333645;
 }
 #form aside {
   display: flex;
@@ -209,7 +217,7 @@ footer li, footer p {
   padding-left: 15px;
 }
 footer aside {
-  background-color: #75788a;
+  background-color: #75788A;
 }
 
 #copyright {
@@ -220,22 +228,22 @@ button {
   margin-left: 15px;
   text-transform: uppercase;
   font-size: 20px;
-  background-color: #121318;
+  background-color: #272936;
   color: #fff;
   margin-bottom: 17px;
   border-radius: 10%;
 }
 
 .green {
-  background-color: green;
+  background-color: #00B67B;
 }
 
 .purple {
-  background-color: purple;
+  background-color: #926FB1;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #4387F6;
 }
 
 .hidden {

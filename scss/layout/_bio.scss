@@ -2,7 +2,7 @@
 
 #bio {
     width: 100%;
-    background-color: #333645;
+    background-color: $background-dark;
     h2 {
         padding-left: 15px;
     }
@@ -18,5 +18,12 @@
 }
 
 #bio-two {
-
+    p:nth-of-type(3) {
+        color: $text-midtone;
+    }
+    a {
+        color: $text-white;
+        text-decoration: none;
+    }
 }
+
