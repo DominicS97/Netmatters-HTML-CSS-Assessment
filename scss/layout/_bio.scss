@@ -1,0 +1,22 @@
+// bio
+
+#bio {
+    width: 100%;
+    background-color: #333645;
+    h2 {
+        padding-left: 15px;
+    }
+    p {
+        padding-left: 15px;
+    }
+}
+
+#bio-one {
+    p:first-of-type {
+        font-weight: bold;
+    }
+}
+
+#bio-two {
+
+}

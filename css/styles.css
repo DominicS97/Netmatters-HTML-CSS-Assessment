@@ -113,21 +113,6 @@ header button {
   text-align: center;
 }
 
-#bio {
-  width: 100%;
-  background-color: #333645;
-}
-#bio h2 {
-  padding-left: 15px;
-}
-#bio p {
-  padding-left: 15px;
-}
-
-#bio-one p:first-of-type {
-  font-weight: bold;
-}
-
 .view {
   display: flex;
   flex-direction: row;
@@ -157,6 +142,21 @@ header button {
 }
 #news a:hover {
   text-decoration-line: underline;
+}
+
+#bio {
+  width: 100%;
+  background-color: #333645;
+}
+#bio h2 {
+  padding-left: 15px;
+}
+#bio p {
+  padding-left: 15px;
+}
+
+#bio-one p:first-of-type {
+  font-weight: bold;
 }
 
 #form {
