@@ -30,8 +30,180 @@
     margin: 15px;
     border-color: $text-dark;
     border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    img {
+        height: 70px;
+        width: 70px;
+        margin: auto;
+        border-radius: 50%;
+    }
+    p {
+        color: $text-dark;
+        text-align: center;
+    }
     h2 {
       color: $text-dark;
       text-align: center;
+    }
+    button {
+        margin: auto;
+        width: 160px;
+    }
+}
+
+#grid-1 {
+    img {
+        background-color: $grid-grey;
+    }
+    button {
+        background-color: $grid-grey;
+    }
+    &:hover {
+        background-color: $grid-grey;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-grey;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-2 {
+    img {
+        background-color: $grid-blue;
+    }
+    button {
+        background-color: $grid-blue;
+    }
+    &:hover {
+        background-color: $grid-blue;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-blue;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-3 {
+    img {
+        background-color: $grid-green;
+    }
+    button {
+        background-color: $grid-green;
+    }
+    &:hover {
+        background-color: $grid-green;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-green;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-4 {
+    img {
+        background-color: $grid-red;
+    }
+    button {
+        background-color: $grid-red;
+    }
+    &:hover {
+        background-color: $grid-red;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-red;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-5 {
+    img {
+        background-color: $grid-purple;
+    }
+    button {
+        background-color: $grid-purple;
+    }
+    &:hover {
+        background-color: $grid-purple;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-purple;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-6 {
+    img {
+        background-color: $grid-pink;
+    }
+    button {
+        background-color: $grid-pink;
+    }
+    &:hover {
+        background-color: $grid-pink;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-pink;
+            background-color: $background-white;
+        }
+    }
+}
+
+#grid-7 {
+    img {
+        background-color: $grid-orange;
+    }
+    button {
+        background-color: $grid-orange;
+    }
+    &:hover {
+        background-color: $grid-orange;
+        h2, p {
+            color: $text-white;
+        }
+        img {
+            background-color: $background-white;
+        }
+        button {
+            color: $grid-orange;
+            background-color: $background-white;
+        }
     }
 }

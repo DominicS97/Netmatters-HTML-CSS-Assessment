@@ -3,6 +3,8 @@
 @import '../scss/abstracts/variables';
 @import '../scss/abstracts/media-query';
 @import '../scss/abstracts/colors';
+@import '../scss/components/buttons';
+@import '../scss/components/hidden';
 @import '../scss/layout/header';
 @import '../scss/layout/slider';
 @import '../scss/layout/grid';
@@ -10,5 +12,3 @@
 @import '../scss/layout/bio';
 @import '../scss/layout/body';
 @import '../scss/layout/footer';
-@import '../scss/components/buttons';
-@import '../scss/components/hidden';

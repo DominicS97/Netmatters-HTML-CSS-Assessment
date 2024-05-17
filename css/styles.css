@@ -23,6 +23,76 @@ body {
   align-items: center;
 }
 
+button {
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: #272936;
+  color: #fff;
+  margin-bottom: 17px;
+  border-radius: 10%;
+  border-radius: 5px;
+  padding: 15px;
+}
+button:hover {
+  background-color: #121318;
+}
+
+.subscribe {
+  background-color: #323544;
+}
+.subscribe:hover {
+  background-color: #212330;
+}
+
+.green {
+  background-color: #00B67B;
+}
+.green:hover {
+  background-color: #25A25A;
+}
+
+.purple {
+  background-color: #926FB1;
+}
+.purple:hover {
+  background-color: #79539A;
+}
+
+.blue {
+  background-color: #4387F6;
+}
+.blue:hover {
+  background-color: #286ABD;
+}
+
+.social {
+  height: 60px;
+}
+.social img {
+  height: 90%;
+}
+
+#fb:hover {
+  background-color: #286ABD;
+}
+
+#linkedin:hover {
+  background-color: #4183D7;
+}
+
+#twitter:hover {
+  background-color: #4387F6;
+}
+
+#insta:hover {
+  background-color: #f62459;
+}
+
+.hidden {
+  display: none;
+}
+
 header {
   background-color: #fff;
   width: 100%;
@@ -107,10 +177,168 @@ header button {
   margin: 15px;
   border-color: #333645;
   border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.grid-item img {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  border-radius: 50%;
+}
+.grid-item p {
+  color: #333645;
+  text-align: center;
 }
 .grid-item h2 {
   color: #333645;
   text-align: center;
+}
+.grid-item button {
+  margin: auto;
+  width: 160px;
+}
+
+#grid-1 img {
+  background-color: #67809F;
+}
+#grid-1 button {
+  background-color: #67809F;
+}
+#grid-1:hover {
+  background-color: #67809F;
+}
+#grid-1:hover h2, #grid-1:hover p {
+  color: #fff;
+}
+#grid-1:hover img {
+  background-color: #fff;
+}
+#grid-1:hover button {
+  color: #67809F;
+  background-color: #fff;
+}
+
+#grid-2 img {
+  background-color: #4183D7;
+}
+#grid-2 button {
+  background-color: #4183D7;
+}
+#grid-2:hover {
+  background-color: #4183D7;
+}
+#grid-2:hover h2, #grid-2:hover p {
+  color: #fff;
+}
+#grid-2:hover img {
+  background-color: #fff;
+}
+#grid-2:hover button {
+  color: #4183D7;
+  background-color: #fff;
+}
+
+#grid-3 img {
+  background-color: #2ECC71;
+}
+#grid-3 button {
+  background-color: #2ECC71;
+}
+#grid-3:hover {
+  background-color: #2ECC71;
+}
+#grid-3:hover h2, #grid-3:hover p {
+  color: #fff;
+}
+#grid-3:hover img {
+  background-color: #fff;
+}
+#grid-3:hover button {
+  color: #2ECC71;
+  background-color: #fff;
+}
+
+#grid-4 img {
+  background-color: #D64541;
+}
+#grid-4 button {
+  background-color: #D64541;
+}
+#grid-4:hover {
+  background-color: #D64541;
+}
+#grid-4:hover h2, #grid-4:hover p {
+  color: #fff;
+}
+#grid-4:hover img {
+  background-color: #fff;
+}
+#grid-4:hover button {
+  color: #D64541;
+  background-color: #fff;
+}
+
+#grid-5 img {
+  background-color: #926FB1;
+}
+#grid-5 button {
+  background-color: #926FB1;
+}
+#grid-5:hover {
+  background-color: #926FB1;
+}
+#grid-5:hover h2, #grid-5:hover p {
+  color: #fff;
+}
+#grid-5:hover img {
+  background-color: #fff;
+}
+#grid-5:hover button {
+  color: #926FB1;
+  background-color: #fff;
+}
+
+#grid-6 img {
+  background-color: #f62459;
+}
+#grid-6 button {
+  background-color: #f62459;
+}
+#grid-6:hover {
+  background-color: #f62459;
+}
+#grid-6:hover h2, #grid-6:hover p {
+  color: #fff;
+}
+#grid-6:hover img {
+  background-color: #fff;
+}
+#grid-6:hover button {
+  color: #f62459;
+  background-color: #fff;
+}
+
+#grid-7 img {
+  background-color: #CE4125;
+}
+#grid-7 button {
+  background-color: #CE4125;
+}
+#grid-7:hover {
+  background-color: #CE4125;
+}
+#grid-7:hover h2, #grid-7:hover p {
+  color: #fff;
+}
+#grid-7:hover img {
+  background-color: #fff;
+}
+#grid-7:hover button {
+  color: #CE4125;
+  background-color: #fff;
 }
 
 .view {
@@ -227,74 +455,4 @@ footer #logo {
 
 #copyright {
   background-color: #212330;
-}
-
-button {
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-size: 20px;
-  background-color: #272936;
-  color: #fff;
-  margin-bottom: 17px;
-  border-radius: 10%;
-  border-radius: 5px;
-  padding: 15px;
-}
-button:hover {
-  background-color: #121318;
-}
-
-.subscribe {
-  background-color: #323544;
-}
-.subscribe:hover {
-  background-color: #212330;
-}
-
-.green {
-  background-color: #00B67B;
-}
-.green:hover {
-  background-color: #25A25A;
-}
-
-.purple {
-  background-color: #926FB1;
-}
-.purple:hover {
-  background-color: #79539A;
-}
-
-.blue {
-  background-color: #4387F6;
-}
-.blue:hover {
-  background-color: #286ABD;
-}
-
-.social {
-  height: 60px;
-}
-.social img {
-  height: 90%;
-}
-
-#fb:hover {
-  background-color: #286ABD;
-}
-
-#linkedin:hover {
-  background-color: #4183D7;
-}
-
-#twitter:hover {
-  background-color: #4387F6;
-}
-
-#insta:hover {
-  background-color: #f62459;
-}
-
-.hidden {
-  display: none;
 }/*# sourceMappingURL=styles.css.map */
