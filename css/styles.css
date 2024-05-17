@@ -125,6 +125,20 @@ header a:hover {
 header button {
   text-decoration: underline;
 }
+header input:first-of-type {
+  display: none;
+}
+header input:nth-of-type(2) {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  header input:first-of-type {
+    display: inline;
+  }
+  header input:nth-of-type(2) {
+    display: none;
+  }
+}
 
 #slider {
   background: center no-repeat url(/img/slider1.jpg);
@@ -152,11 +166,20 @@ header button {
 #grid {
   width: 100%;
   background-color: #ddd;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  #grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  #grid #grid-1, #grid #grid-2, #grid #grid-3 {
+    grid-column-start: span 2;
+  }
+  #grid .view {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
 }
 #grid h1 {
   font-size: 43px;
@@ -364,6 +387,20 @@ header button {
 #news {
   background-color: #ddd;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  #news {
+    grid-template-columns: 1fr 1fr;
+  }
+  #news #news-3 {
+    display: none;
+  }
+  #news .view {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
 }
 #news h2 {
   color: #333645;

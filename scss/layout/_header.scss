@@ -29,4 +29,18 @@ header {
     button {
         text-decoration: underline;
     }
+    input:first-of-type {
+        display: none;
+    }
+    input:nth-of-type(2) {
+        display: block;
+    }
+    @include media-1 {
+        input:first-of-type {
+            display: inline;
+        }
+        input:nth-of-type(2) {
+            display: none;
+        }
+    }
 }

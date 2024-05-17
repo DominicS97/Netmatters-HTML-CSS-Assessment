@@ -3,11 +3,18 @@
 #grid {
     width: 100%;
     background-color: $background-light;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-1 {
+        grid-template-columns: 1fr 1fr;
+        #grid-1, #grid-2, #grid-3 {
+            grid-column-start: span 2;
+        }
+        .view {
+            grid-row-start: 1;
+            grid-column-start: 2;
+        }
+    }
     h1 {
         font-size: 43px;
         align-self: left;
