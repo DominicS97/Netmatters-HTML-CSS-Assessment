@@ -4,6 +4,7 @@ footer {
     background-color: $background-dark;
     margin: 0;
     width: 100%;
+    z-index: 0;
     p {
         margin: 0;
     }
@@ -22,6 +23,11 @@ footer {
     }
     aside {
         background-color: $button-cookie;
+        font-style: bold;
+        width: 160px;
+        position: relative;
+        z-index: 1;
+        border-top-right-radius: 5px;
     }
     #logo {
         margin-left: 15px;
