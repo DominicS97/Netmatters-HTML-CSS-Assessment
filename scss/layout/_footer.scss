@@ -38,4 +38,17 @@ footer {
 
 #copyright {
     background-color: $button-social;
+    @include media-1 {
+        p {
+            display: inline;
+        }
+    }
+}
+
+#footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-1 {
+        grid-template-columns: 1fr 1fr;
+    }
 }

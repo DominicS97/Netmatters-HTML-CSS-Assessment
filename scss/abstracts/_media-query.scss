@@ -1,0 +1,9 @@
+// media queries
+
+// 768px
+
+@mixin media-1 {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}

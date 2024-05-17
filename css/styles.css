@@ -516,4 +516,19 @@ footer #logo {
 
 #copyright {
   background-color: #212330;
+}
+@media screen and (min-width: 768px) {
+  #copyright p {
+    display: inline;
+  }
+}
+
+#footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  #footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }/*# sourceMappingURL=styles.css.map */
