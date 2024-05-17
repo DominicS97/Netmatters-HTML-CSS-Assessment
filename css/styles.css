@@ -38,7 +38,7 @@ header h1 {
 }
 header img {
   margin-left: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
   max-width: 70%;
 }
 header a {
@@ -219,6 +219,11 @@ footer li, footer p {
 footer aside {
   background-color: #75788A;
 }
+footer #logo {
+  margin-left: 15px;
+  margin-top: 15px;
+  max-width: 70%;
+}
 
 #copyright {
   background-color: #212330;
@@ -232,18 +237,62 @@ button {
   color: #fff;
   margin-bottom: 17px;
   border-radius: 10%;
+  border-radius: 5px;
+  padding: 15px;
+}
+button:hover {
+  background-color: #121318;
+}
+
+.subscribe {
+  background-color: #323544;
+}
+.subscribe:hover {
+  background-color: #212330;
 }
 
 .green {
   background-color: #00B67B;
 }
+.green:hover {
+  background-color: #25A25A;
+}
 
 .purple {
   background-color: #926FB1;
 }
+.purple:hover {
+  background-color: #79539A;
+}
 
 .blue {
   background-color: #4387F6;
+}
+.blue:hover {
+  background-color: #286ABD;
+}
+
+.social {
+  height: 60px;
+}
+.social img {
+  height: 90%;
+}
+
+#fb:hover {
+  background-color: #286ABD;
+}
+
+#linkedin:hover {
+  background-color: #4183D7;
+}
+
+#twitter:hover {
+  background-color: #4387F6;
+}
+
+#insta:hover {
+  background-color: #f62459;
 }
 
 .hidden {

@@ -8,16 +8,68 @@ button {
     color: $text-white;
     margin-bottom: 17px;
     border-radius: 10%;
+    border-radius: 5px;
+    padding: 15px;
+    &:hover {
+        background-color: $button-hover;
+    }
+}
+
+.subscribe {
+    background-color: $background-dark;
+    &:hover {
+        background-color: $button-social;
+    }
 }
 
 .green {
     background-color: $button-green;
+    &:hover {
+        background-color: $banner-green;
+    }
 }
 
 .purple {
     background-color: $button-purple;
+    &:hover {
+        background-color: $banner-purple;
+    }
 }
 
 .blue {
     background-color: $button-blue;
+    &:hover {
+        background-color: $banner-blue;
+    }
+}
+
+.social {
+    height: 60px;
+    img {
+        height: 90%;
+    }
+}
+
+#fb {
+    &:hover {
+        background-color: $banner-blue;
+    }
+}
+
+#linkedin {
+    &:hover {
+        background-color: $grid-blue;
+    }
+}
+
+#twitter {
+    &:hover {
+        background-color: $button-blue;
+    }
+}
+
+#insta {
+    &:hover {
+        background-color: $grid-pink;
+    }
 }
