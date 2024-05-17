@@ -71,7 +71,7 @@ button:hover {
 .social {
   height: 60px;
 }
-.social img {
+.social svg {
   height: 90%;
 }
 
@@ -207,7 +207,7 @@ header input:nth-of-type(2) {
   flex-wrap: nowrap;
   align-content: center;
 }
-.grid-item img {
+.grid-item svg {
   height: 70px;
   width: 70px;
   margin: auto;
@@ -226,7 +226,7 @@ header input:nth-of-type(2) {
   width: 160px;
 }
 
-#grid-1 img {
+#grid-1 svg {
   background-color: #67809F;
 }
 #grid-1 button {
@@ -238,7 +238,8 @@ header input:nth-of-type(2) {
 #grid-1:hover h2, #grid-1:hover p {
   color: #fff;
 }
-#grid-1:hover img {
+#grid-1:hover svg {
+  color: #67809F;
   background-color: #fff;
 }
 #grid-1:hover button {
@@ -246,7 +247,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-2 img {
+#grid-2 svg {
   background-color: #4183D7;
 }
 #grid-2 button {
@@ -258,7 +259,8 @@ header input:nth-of-type(2) {
 #grid-2:hover h2, #grid-2:hover p {
   color: #fff;
 }
-#grid-2:hover img {
+#grid-2:hover svg {
+  color: #4183D7;
   background-color: #fff;
 }
 #grid-2:hover button {
@@ -266,7 +268,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-3 img {
+#grid-3 svg {
   background-color: #2ECC71;
 }
 #grid-3 button {
@@ -278,7 +280,8 @@ header input:nth-of-type(2) {
 #grid-3:hover h2, #grid-3:hover p {
   color: #fff;
 }
-#grid-3:hover img {
+#grid-3:hover svg {
+  color: #2ECC71;
   background-color: #fff;
 }
 #grid-3:hover button {
@@ -286,7 +289,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-4 img {
+#grid-4 svg {
   background-color: #D64541;
 }
 #grid-4 button {
@@ -298,7 +301,8 @@ header input:nth-of-type(2) {
 #grid-4:hover h2, #grid-4:hover p {
   color: #fff;
 }
-#grid-4:hover img {
+#grid-4:hover svg {
+  color: #D64541;
   background-color: #fff;
 }
 #grid-4:hover button {
@@ -306,7 +310,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-5 img {
+#grid-5 svg {
   background-color: #926FB1;
 }
 #grid-5 button {
@@ -318,7 +322,8 @@ header input:nth-of-type(2) {
 #grid-5:hover h2, #grid-5:hover p {
   color: #fff;
 }
-#grid-5:hover img {
+#grid-5:hover svg {
+  color: #926FB1;
   background-color: #fff;
 }
 #grid-5:hover button {
@@ -326,7 +331,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-6 img {
+#grid-6 svg {
   background-color: #f62459;
 }
 #grid-6 button {
@@ -338,7 +343,8 @@ header input:nth-of-type(2) {
 #grid-6:hover h2, #grid-6:hover p {
   color: #fff;
 }
-#grid-6:hover img {
+#grid-6:hover svg {
+  color: #f62459;
   background-color: #fff;
 }
 #grid-6:hover button {
@@ -346,7 +352,7 @@ header input:nth-of-type(2) {
   background-color: #fff;
 }
 
-#grid-7 img {
+#grid-7 svg {
   background-color: #CE4125;
 }
 #grid-7 button {
@@ -358,7 +364,8 @@ header input:nth-of-type(2) {
 #grid-7:hover h2, #grid-7:hover p {
   color: #fff;
 }
-#grid-7:hover img {
+#grid-7:hover svg {
+  color: #CE4125;
   background-color: #fff;
 }
 #grid-7:hover button {

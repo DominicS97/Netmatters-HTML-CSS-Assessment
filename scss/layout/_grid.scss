@@ -41,7 +41,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    img {
+    svg {
         height: 70px;
         width: 70px;
         margin: auto;
@@ -62,7 +62,7 @@
 }
 
 #grid-1 {
-    img {
+    svg {
         background-color: $grid-grey;
     }
     button {
@@ -73,7 +73,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-grey;
             background-color: $background-white;
         }
         button {
@@ -84,7 +85,7 @@
 }
 
 #grid-2 {
-    img {
+    svg {
         background-color: $grid-blue;
     }
     button {
@@ -95,7 +96,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-blue;
             background-color: $background-white;
         }
         button {
@@ -106,7 +108,7 @@
 }
 
 #grid-3 {
-    img {
+    svg {
         background-color: $grid-green;
     }
     button {
@@ -117,7 +119,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-green;
             background-color: $background-white;
         }
         button {
@@ -128,7 +131,7 @@
 }
 
 #grid-4 {
-    img {
+    svg {
         background-color: $grid-red;
     }
     button {
@@ -139,7 +142,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-red;
             background-color: $background-white;
         }
         button {
@@ -150,7 +154,7 @@
 }
 
 #grid-5 {
-    img {
+    svg {
         background-color: $grid-purple;
     }
     button {
@@ -161,7 +165,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-purple;
             background-color: $background-white;
         }
         button {
@@ -172,7 +177,7 @@
 }
 
 #grid-6 {
-    img {
+    svg {
         background-color: $grid-pink;
     }
     button {
@@ -183,7 +188,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-pink;
             background-color: $background-white;
         }
         button {
@@ -194,7 +200,7 @@
 }
 
 #grid-7 {
-    img {
+    svg {
         background-color: $grid-orange;
     }
     button {
@@ -205,7 +211,8 @@
         h2, p {
             color: $text-white;
         }
-        img {
+        svg {
+            color: $grid-orange;
             background-color: $background-white;
         }
         button {
