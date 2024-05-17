@@ -349,27 +349,80 @@ header button {
   justify-content: center;
   align-items: center;
 }
+.view a {
+  color: #333645;
+  font-size: 26px;
+  align-self: center;
+  text-decoration: none;
+}
+.view a:hover {
+  text-decoration-line: underline;
+}
 
 #news {
-  background-color: #fff;
+  background-color: #ddd;
   width: 100%;
 }
 #news h2 {
   color: #333645;
   padding-left: 15px;
 }
-#news h3 {
-  color: #4183D7;
-  padding-left: 15px;
+
+.news-item {
+  background-color: #fff;
+  margin: 15px;
 }
-#news a {
+.news-item h2 {
+  font-size: 16px;
+}
+.news-item h3 {
+  text-transform: uppercase;
+  color: #A3A8AC;
+  font-size: 16px;
+}
+.news-item p {
   color: #333645;
-  font-size: 26px;
-  align-self: center;
-  text-decoration: none;
 }
-#news a:hover {
-  text-decoration-line: underline;
+.news-item a {
+  position: relative;
+  color: #fff;
+}
+.news-item img {
+  width: 100%;
+}
+.news-item .headshot {
+  width: 10%;
+  margin: 15px;
+}
+
+#news-1 h2:first-of-type {
+  color: #D64541;
+}
+#news-1 button {
+  background-color: #D64541;
+}
+#news-1 a {
+  background-color: #D64541;
+}
+
+#news-2 h2:first-of-type {
+  color: #4183D7;
+}
+#news-2 button {
+  background-color: #4183D7;
+}
+#news-2 a {
+  background-color: #4183D7;
+}
+
+#news-3 h2:first-of-type {
+  color: #D64541;
+}
+#news-3 button {
+  background-color: #D64541;
+}
+#news-3 a {
+  background-color: #D64541;
 }
 
 #bio {
