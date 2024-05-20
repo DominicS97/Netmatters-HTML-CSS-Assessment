@@ -7,6 +7,9 @@
     align-content: center;
     justify-content: center;
     align-items: center; 
+    svg {
+        width: 26px;
+    }
     a {
         color: $text-dark;
         font-size: 26px;

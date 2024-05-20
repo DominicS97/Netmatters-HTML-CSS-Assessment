@@ -17,9 +17,10 @@ header {
         margin-top: 15px;
         max-width: 70%;
     }
-    a {
+    svg {
+        display: block;
         color: $text-dark;
-        font-size: 26px;
+        width: 50px;
         align-self: center;
         text-decoration: none;
         &:hover {

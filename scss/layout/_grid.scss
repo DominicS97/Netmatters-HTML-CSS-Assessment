@@ -41,6 +41,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
+    text-align: center;
     svg {
         height: 70px;
         width: 70px;
@@ -49,11 +50,9 @@
     }
     p {
         color: $text-dark;
-        text-align: center;
     }
     h2 {
       color: $text-dark;
-      text-align: center;
     }
     button {
         margin: auto;
