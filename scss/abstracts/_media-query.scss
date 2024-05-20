@@ -7,3 +7,9 @@
         @content;
     }
 }
+
+@mixin media-2 {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}

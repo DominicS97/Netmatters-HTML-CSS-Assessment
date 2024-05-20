@@ -541,6 +541,32 @@ header input:nth-of-type(2) {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (min-width: 992px) {
+  #form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #form form .name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #form form .email {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  #form form label {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #form form input {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #form form button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
 
 footer {
   background-color: #323544;
@@ -605,5 +631,10 @@ footer #logo {
 @media screen and (min-width: 768px) {
   #footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  #footer-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */

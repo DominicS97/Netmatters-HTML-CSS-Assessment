@@ -60,4 +60,7 @@ footer {
     @include media-1 {
         grid-template-columns: 1fr 1fr;
     }
+    @include media-2 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
