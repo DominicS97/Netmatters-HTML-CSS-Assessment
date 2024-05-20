@@ -199,6 +199,21 @@ header input:nth-of-type(2) {
     grid-column-start: 2;
   }
 }
+@media screen and (min-width: 992px) {
+  #grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  #grid #grid-1, #grid #grid-2, #grid #grid-3 {
+    grid-column-start: span 2;
+  }
+  #grid #grid-4, #grid #grid-5, #grid #grid-6, #grid #grid-7, #grid .view, #grid h1 {
+    grid-column-start: span 3;
+  }
+  #grid h1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+}
 #grid h1 {
   font-size: 43px;
   align-self: left;
@@ -501,6 +516,24 @@ header input:nth-of-type(2) {
 #bio p {
   padding-left: 15px;
 }
+@media screen and (min-width: 992px) {
+  #bio {
+    display: flex;
+  }
+  #bio #bio-one {
+    width: 50%;
+  }
+  #bio #bio-two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #bio #bio-two div {
+    margin-bottom: auto;
+  }
+}
 
 #bio-one p:first-of-type {
   font-weight: bold;
@@ -545,6 +578,7 @@ header input:nth-of-type(2) {
   #form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
   }
   #form form .name {
     grid-column-start: 1;

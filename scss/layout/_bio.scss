@@ -9,6 +9,22 @@
     p {
         padding-left: 15px;
     }
+    @include media-2 {
+        display: flex;
+        #bio-one {
+            width: 50%;
+        }
+        #bio-two {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            div {
+                margin-bottom: auto;
+            }
+        }
+    }
 }
 
 #bio-one {

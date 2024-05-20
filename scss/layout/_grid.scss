@@ -15,6 +15,20 @@
             grid-column-start: 2;
         }
     }
+    @include media-2 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        #grid-1, #grid-2, #grid-3 {
+            grid-column-start: span 2;
+        }
+        #grid-4, #grid-5, #grid-6, #grid-7, .view, h1 {
+            grid-column-start: span 3;
+        }
+        h1 {
+            grid-row-start: 1;
+            grid-column-start: 2;
+        }
+    }
     h1 {
         font-size: 43px;
         align-self: left;
