@@ -2,14 +2,16 @@
 
 header {
     background-color: $background-white;
-    width: 100%;
+    margin-top: 15px;
     min-height: 18%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     align-items: center;
     color: $text-white;
+    .hidden_button {
+        display: none;
+    }
     img {
         margin-left: 15px;
         margin-top: 15px;
@@ -34,18 +36,67 @@ header {
     input:nth-of-type(2) {
         display: block;
     }
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: normal;
+        width: 100%;
+        background-color: $background-dark;
+        div {
+            width: 14%;
+            button {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                h2 {
+                    font-size: 16px;
+                }
+            }
+            div {
+                display: none;
+                a {
+                    font-size: 16px;
+                    color: $text-white;
+                }
+                h2 {
+                    font-size: 16px;
+                }
+            }
+            &:hover {
+                div {
+                    display: block;
+                }
+            }
+        }
+    }
     @include media-1 {
+        a {
+            display: none;
+        }
         input:first-of-type {
             display: inline;
         }
         input:nth-of-type(2) {
             display: none;
         }
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @include media-2 {
+        .hidden_button {
+            display: flex;
+        }
         input:first-of-type {
             display: none;
         }
         flex-wrap: nowrap;
+        aside {
+            grid-column-start: span 5;
+            display: flex;
+            a {
+                color: $text-dark;
+            }
+        }
+        grid-template-columns: 40% 18% 18% 7% 7%;
     }
 }
