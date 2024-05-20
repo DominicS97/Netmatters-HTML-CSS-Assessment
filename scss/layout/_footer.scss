@@ -40,6 +40,14 @@ footer {
         margin-top: 15px;
         max-width: 70%;
     }
+    @include media-3 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        #copyright {
+            grid-column-start: span 2;
+            grid-row-start: 2;
+        }
+    }
 }
 
 #copyright {

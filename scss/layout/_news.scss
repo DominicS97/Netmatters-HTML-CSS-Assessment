@@ -26,6 +26,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    .view {
+        justify-self: right;
+    }
     @include media-1 {
         grid-template-columns: 1fr 1fr;
         #news-3 {
@@ -34,6 +37,20 @@
         .view {
             grid-row-start: 1;
             grid-column-start: 2;
+        }
+    }
+    @include media-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        #news-3 {
+            display: block;
+        }
+        h2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .view {
+            grid-row-start: 1;
+            grid-column-start: 3;
         }
     }
     h2 {

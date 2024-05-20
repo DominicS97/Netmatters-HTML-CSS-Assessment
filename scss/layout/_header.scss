@@ -27,9 +27,6 @@ header {
                 text-decoration-line: underline;
         }
     }
-    button {
-        color: $text-white;
-    }
     input:first-of-type {
         display: none;
     }
@@ -40,36 +37,21 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: space-around;
-        align-items: normal;
+        align-items: center;
         width: 100%;
+        padding-left: 15px;
         background-color: $background-dark;
         div {
-            width: 14%;
-            button {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
                 h2 {
                     font-size: 16px;
-                }
-            }
-            div {
-                display: none;
-                a {
-                    font-size: 16px;
-                    color: $text-white;
-                }
-                h2 {
-                    font-size: 16px;
-                }
-            }
-            &:hover {
-                div {
-                    display: block;
                 }
             }
         }
-    }
     @include media-1 {
         a {
             display: none;
@@ -92,11 +74,126 @@ header {
         flex-wrap: nowrap;
         aside {
             grid-column-start: span 5;
-            display: flex;
-            a {
-                color: $text-dark;
-            }
         }
-        grid-template-columns: 40% 18% 18% 7% 7%;
+        grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
+    }
+    @include media-3 {
+        input:first-of-type {
+            display: block;
+        }
+        grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+        aside {
+            grid-column-start: span 6;
+        }
+    }
+}
+
+.banner_item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#banner-1 {
+    svg {
+        color: $grid-grey;
+    }
+    button {
+        background-color: $grid-grey;
+    }
+    &:hover {
+        background-color: $grid-grey;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-2 {
+    svg {
+        color: $grid-blue;
+    }
+    button {
+        background-color: $grid-blue;
+    }
+    &:hover {
+        background-color: $grid-blue;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-3 {
+    svg {
+        color: $grid-green;
+    }
+    button {
+        background-color: $grid-green;
+    }
+    &:hover {
+        background-color: $grid-green;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-4 {
+    svg {
+        color: $grid-red;
+    }
+    button {
+        background-color: $grid-red;
+    }
+    &:hover {
+        background-color: $grid-red;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-5 {
+    svg {
+        color: $grid-purple;
+    }
+    button {
+        background-color: $grid-purple;
+    }
+    &:hover {
+        background-color: $grid-purple;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-6 {
+    svg {
+        color: $grid-pink;
+    }
+    button {
+        background-color: $grid-pink;
+    }
+    &:hover {
+        background-color: $grid-pink;
+        svg {
+            color: $background-white;
+        }
+    }
+}
+
+#banner-7 {
+    svg {
+        color: $grid-orange;
+    }
+    button {
+        background-color: $grid-orange;
+    }
+    &:hover {
+        background-color: $grid-orange;
+        svg {
+            color: $background-white;
+        }
     }
 }
