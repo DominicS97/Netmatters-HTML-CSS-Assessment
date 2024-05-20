@@ -21,12 +21,13 @@
         #grid-1, #grid-2, #grid-3 {
             grid-column-start: span 2;
         }
-        #grid-4, #grid-5, #grid-6, #grid-7, .view, h1 {
+        #grid-4, #grid-5, #grid-6, #grid-7, .view {
             grid-column-start: span 3;
         }
         h1 {
             grid-row-start: 1;
-            grid-column-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
         }
     }
     h1 {
@@ -34,6 +35,9 @@
         align-self: left;
         padding-left: 15px;
         color: $text-dark;
+    }
+    .view {
+        justify-self: right;
     }
     a {
         color: $text-dark;

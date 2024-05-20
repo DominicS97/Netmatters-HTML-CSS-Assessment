@@ -26,6 +26,7 @@ body {
 }
 
 button {
+  height: 60px;
   margin-left: 15px;
   text-transform: uppercase;
   font-size: 20px;
@@ -75,6 +76,13 @@ button:hover {
   background-color: #286ABD;
 }
 
+.grey {
+  background-color: #A3A8AC;
+}
+.grey:hover {
+  background-color: #75788A;
+}
+
 .social {
   height: 60px;
   display: inline;
@@ -116,11 +124,9 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-}
-header h1 {
-  color: #333645;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
 }
 header img {
   margin-left: 15px;
@@ -138,7 +144,7 @@ header svg:hover {
   text-decoration-line: underline;
 }
 header button {
-  text-decoration: underline;
+  color: #fff;
 }
 header input:first-of-type {
   display: none;
@@ -151,6 +157,14 @@ header input:nth-of-type(2) {
     display: inline;
   }
   header input:nth-of-type(2) {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  header input:first-of-type {
     display: none;
   }
 }
@@ -206,12 +220,13 @@ header input:nth-of-type(2) {
   #grid #grid-1, #grid #grid-2, #grid #grid-3 {
     grid-column-start: span 2;
   }
-  #grid #grid-4, #grid #grid-5, #grid #grid-6, #grid #grid-7, #grid .view, #grid h1 {
+  #grid #grid-4, #grid #grid-5, #grid #grid-6, #grid #grid-7, #grid .view {
     grid-column-start: span 3;
   }
   #grid h1 {
     grid-row-start: 1;
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 }
 #grid h1 {
@@ -219,6 +234,9 @@ header input:nth-of-type(2) {
   align-self: left;
   padding-left: 15px;
   color: #333645;
+}
+#grid .view {
+  justify-self: right;
 }
 #grid a {
   color: #333645;

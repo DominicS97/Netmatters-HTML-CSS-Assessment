@@ -7,11 +7,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    h1 {
-        color: $text-dark;
-    }
+    justify-content: flex-start;
+    align-items: center;
+    color: $text-white;
     img {
         margin-left: 15px;
         margin-top: 15px;
@@ -28,7 +26,7 @@ header {
         }
     }
     button {
-        text-decoration: underline;
+        color: $text-white;
     }
     input:first-of-type {
         display: none;
@@ -43,5 +41,11 @@ header {
         input:nth-of-type(2) {
             display: none;
         }
+    }
+    @include media-2 {
+        input:first-of-type {
+            display: none;
+        }
+        flex-wrap: nowrap;
     }
 }
