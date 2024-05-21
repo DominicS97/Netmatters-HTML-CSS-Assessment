@@ -13,6 +13,7 @@
         .view {
             grid-row-start: 1;
             grid-column-start: 2;
+            justify-self: right;
         }
     }
     @include media-2 {
@@ -51,9 +52,6 @@
         padding-left: 15px;
         color: $text-dark;
     }
-    .view {
-        justify-self: right;
-    }
     a {
         color: $text-dark;
         font-size: 26px;
@@ -75,6 +73,13 @@
     flex-wrap: nowrap;
     align-content: center;
     text-align: center;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+    &:hover {
+        top: -10px;
+        transition: .5s ease;
+    }
     svg {
         height: 70px;
         width: 70px;

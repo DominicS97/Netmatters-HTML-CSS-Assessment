@@ -43,3 +43,10 @@
     }
 }
 
+#bio-two {
+    h2:after {
+        margin-top: 40px;
+        display: block;
+        content: url('/img/star.png') url('/img/star.png') url('/img/star.png') url('/img/star.png') url('/img/star.png');
+    }
+}

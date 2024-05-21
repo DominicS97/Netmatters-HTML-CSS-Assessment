@@ -6,6 +6,13 @@ footer {
     width: 100%;
     position: relative;
     z-index: 0;
+    a {
+        text-decoration: none;
+        color: $text-white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     p {
         margin: 0;
     }
@@ -26,8 +33,8 @@ footer {
         background-color: $button-cookie;
         font-style: bold;
         width: 160px;
-        position: absolute;
-        bottom: -60px;
+        position: fixed;
+        bottom: 0;
         @include media-1 {
             bottom: -25px;
         }
@@ -53,8 +60,7 @@ footer {
 #copyright {
     background-color: $button-social;
     width: 100%;
-    position: absolute;
-    z-index: 0;
+    height: 9%;
     @include media-1 {
         p {
             display: inline;
