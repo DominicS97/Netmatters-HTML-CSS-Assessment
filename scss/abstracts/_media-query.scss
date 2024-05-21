@@ -1,6 +1,7 @@
-// media queries
+// Media queries
 
 // 768px
+// Mobile site
 
 @mixin media-1 {
     @media screen and (min-width: 768px) {
@@ -8,11 +9,17 @@
     }
 }
 
+// 992px
+// Small screen site
+
 @mixin media-2 {
     @media screen and (min-width: 992px) {
         @content;
     }
 }
+
+// 1260px
+// Full-sized site
 
 @mixin media-3 {
     @media screen and (min-width: 1260px) {

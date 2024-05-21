@@ -1,4 +1,7 @@
-// base colours
+// Site colours
+
+// Base colours
+
 $black: #000;
 $white: #fff;
 $off-white: #ddd;
@@ -11,7 +14,8 @@ $netmatters-alt2: #272936;
 $netmatters-alt3: #212330;
 $netmatters-alt4: #333645;
 
-// spot colours
+// Spot colours
+
 $dark-purple: #79539A;
 $purple: #926FB1;
 
@@ -38,18 +42,24 @@ $red: #D64541;
 $dark-orange: #A3331D;
 $orange: #CE4125;
 
-// colour functions
+// Colour functions
+
+// Buttons
+
 $button: $netmatters-alt2;
 $button-hover: $netmatters-alt1;
 $button-light: $grey;
 $button-social: $netmatters-alt3;
 $button-cookie: $dark-grey;
+
 $button-blue: $blue;
 $button-green: $mid-green;
 $button-purple: $purple;
 $button-grey: $mid-grey;
 
 $hover-grey: $dark-grey;
+
+// Banner
 
 $banner-grey: $dark-bluegrey;
 $banner-blue: $dark-blue;
@@ -59,6 +69,8 @@ $banner-purple: $dark-purple;
 $banner-pink: $dark-pink;
 $banner-orange: $dark-orange;
 
+// Grid
+
 $grid-grey: $bluegrey;
 $grid-blue: $mid-blue;
 $grid-green: $green;
@@ -67,11 +79,17 @@ $grid-purple: $purple;
 $grid-pink: $pink;
 $grid-orange: $orange;
 
+// Bio
+
 $star: $yellow;
+
+// News
 
 $news-blue: $mid-blue;
 $news-red: $red;
 $news-yellow: $dark-yellow;
+
+// General Use
 
 $background-dark: $netmatters;
 $background-light: $off-white;
