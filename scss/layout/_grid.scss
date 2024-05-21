@@ -2,7 +2,7 @@
 
 #grid {
     width: 100%;
-    background-color: $background-light;
+    background-color: $background-white;
     display: grid;
     grid-template-columns: 1fr;
     @include media-1 {
@@ -66,8 +66,9 @@
 .grid-item {
     background-color: $background-white;
     margin: 15px;
-    border-color: $text-dark;
+    border: 1px solid $text-midtone;
     border-radius: 10%;
+    box-shadow: 0 0 5px 0 $text-midtone;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

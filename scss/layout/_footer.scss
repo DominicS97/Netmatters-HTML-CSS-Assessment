@@ -33,11 +33,9 @@ footer {
         background-color: $button-cookie;
         font-style: bold;
         width: 160px;
+        height: 20px;
         position: fixed;
         bottom: 0;
-        @include media-1 {
-            bottom: -25px;
-        }
         left: 0;
         z-index: 1;
         border-top-right-radius: 5px;
@@ -54,6 +52,16 @@ footer {
             grid-column-start: span 2;
             grid-row-start: 2;
         }
+    }
+    #chat {
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+        height: 60px;
+        width: 60px;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: $background-dark;
     }
 }
 

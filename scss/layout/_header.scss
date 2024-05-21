@@ -9,6 +9,12 @@ header {
     justify-content: space-between;
     align-items: center;
     color: $text-white;
+    button:nth-of-type(3) {
+        display: none;
+        @include media-1 {
+            display: flex;
+        }
+    }
     .hidden_button {
         display: none;
     }
@@ -22,6 +28,8 @@ header {
         color: $text-dark;
         width: 50px;
         align-self: center;
+    }
+    a {
         text-decoration: none;
         &:hover {
                 text-decoration-line: underline;
