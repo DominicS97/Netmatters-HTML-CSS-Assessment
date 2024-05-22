@@ -1,0 +1,176 @@
+// Creating icon pseudo-elements
+
+// Header
+
+.icon-search:before {
+    font-family: 'icon';
+    content: "\e986";
+    color: $text-white;
+}
+
+#phone:before {
+    font-family: 'icon';
+    content: "\e91b";
+    color: $text-dark;
+}
+
+
+.icon-nav:before {
+    font-family: 'icon';
+    content: "\e90d";
+    color: $text-white;
+}
+
+
+.icon-search2:before {
+    font-family: 'icon';
+    content: "\e986";
+    color: $text-dark;  
+    @include media-1 {
+        display: none;
+    }
+}
+
+// Banner
+
+.icon-banner-1:before {
+    font-family: 'icon';
+    content: "\e920";
+}
+
+.icon-banner-2:before {
+    font-family: 'icon';
+    content: "\e917";
+}
+
+.icon-banner-3:before {
+    font-family: 'icon';
+    content: "\e910";
+}
+
+.icon-banner-4:before {
+    font-family: 'icon';
+    content: "\e91b";
+}
+
+.icon-banner-5:before {
+    font-family: 'icon';
+    content: "\e90f";
+}
+
+.icon-banner-6:before {
+    font-family: 'icon';
+    content: "\e91d";
+}
+
+.icon-banner-7:before {
+    font-family: 'icon';
+    content: "\e913";
+}
+
+// Grid
+
+.icon-grid-1:before {
+    font-family: 'icon';
+    content: "\e920";
+}
+
+.icon-grid-2:before {
+    font-family: 'icon';
+    content: "\e917";
+}
+
+.icon-grid-3:before {
+    font-family: 'icon';
+    content: "\e910";
+}
+
+.icon-grid-4:before {
+    font-family: 'icon';
+    content: "\e91b";
+}
+
+.icon-grid-5:before {
+    font-family: 'icon';
+    content: "\e90f";
+}
+
+.icon-grid-6:before {
+    font-family: 'icon';
+    content: "\e91d";
+}
+
+.icon-grid-7:before {
+    font-family: 'icon';
+    content: "\e913";
+}
+
+// Bio
+
+#bio {
+    span {
+        &:after {
+            font-family: 'icon';
+            content: "\e91c";
+            color: $text-white;
+        }
+    }
+}
+
+// News
+
+.view {
+    a {
+        &:after {
+            font-family: 'icon';
+            content: "\e91c";
+            color: $text-dark;
+        }
+    }
+}
+
+// Form
+
+#form {
+    aside {
+        label:before {
+            display: block;
+            font-family: 'icon';
+            content: "\ea53";
+            color: $text-dark;
+        }
+        
+    }
+}
+
+// Footer
+
+.icon-fb:before {
+    font-family: 'icon';
+    content: "\e912";
+    color: $text-white;
+}
+
+.icon-lin:before {
+    font-family: 'icon';
+    content: "\e916";
+    color: $text-white;
+}
+
+.icon-twitter:before {
+    font-family: 'icon';
+    content: "\e921";
+    color: $text-white;
+}
+
+.icon-insta:before {
+    font-family: 'icon';
+    content: "\e915";
+    color: $text-white;
+}
+
+.icon-chat:before {
+    font-family: 'icon';
+    content: "\e908";
+    color: $text-white;
+}

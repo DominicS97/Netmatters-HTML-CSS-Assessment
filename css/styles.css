@@ -307,6 +307,13 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "icon";
+  src: url("/fonts/icomoon.eot");
+  src: url("/fonts/icomoon.woff2") format("woff2"), url("/fonts/icomoon.woff") format("woff"), url("/fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -421,6 +428,154 @@ button:hover {
   display: none;
 }
 
+.icon-search:before {
+  font-family: "icon";
+  content: "\e986";
+  color: #fff;
+}
+
+#phone:before {
+  font-family: "icon";
+  content: "\e91b";
+  color: #333645;
+}
+
+.icon-nav:before {
+  font-family: "icon";
+  content: "\e90d";
+  color: #fff;
+}
+
+.icon-search2:before {
+  font-family: "icon";
+  content: "\e986";
+  color: #333645;
+}
+@media screen and (min-width: 768px) {
+  .icon-search2:before {
+    display: none;
+  }
+}
+
+.icon-banner-1:before {
+  font-family: "icon";
+  content: "\e920";
+}
+
+.icon-banner-2:before {
+  font-family: "icon";
+  content: "\e917";
+}
+
+.icon-banner-3:before {
+  font-family: "icon";
+  content: "\e910";
+}
+
+.icon-banner-4:before {
+  font-family: "icon";
+  content: "\e91b";
+}
+
+.icon-banner-5:before {
+  font-family: "icon";
+  content: "\e90f";
+}
+
+.icon-banner-6:before {
+  font-family: "icon";
+  content: "\e91d";
+}
+
+.icon-banner-7:before {
+  font-family: "icon";
+  content: "\e913";
+}
+
+.icon-grid-1:before {
+  font-family: "icon";
+  content: "\e920";
+}
+
+.icon-grid-2:before {
+  font-family: "icon";
+  content: "\e917";
+}
+
+.icon-grid-3:before {
+  font-family: "icon";
+  content: "\e910";
+}
+
+.icon-grid-4:before {
+  font-family: "icon";
+  content: "\e91b";
+}
+
+.icon-grid-5:before {
+  font-family: "icon";
+  content: "\e90f";
+}
+
+.icon-grid-6:before {
+  font-family: "icon";
+  content: "\e91d";
+}
+
+.icon-grid-7:before {
+  font-family: "icon";
+  content: "\e913";
+}
+
+#bio span:after {
+  font-family: "icon";
+  content: "\e91c";
+  color: #fff;
+}
+
+.view a:after {
+  font-family: "icon";
+  content: "\e91c";
+  color: #333645;
+}
+
+#form aside label:before {
+  display: block;
+  font-family: "icon";
+  content: "\ea53";
+  color: #333645;
+}
+
+.icon-fb:before {
+  font-family: "icon";
+  content: "\e912";
+  color: #fff;
+}
+
+.icon-lin:before {
+  font-family: "icon";
+  content: "\e916";
+  color: #fff;
+}
+
+.icon-twitter:before {
+  font-family: "icon";
+  content: "\e921";
+  color: #fff;
+}
+
+.icon-insta:before {
+  font-family: "icon";
+  content: "\e915";
+  color: #fff;
+}
+
+.icon-chat:before {
+  font-family: "icon";
+  content: "\e908";
+  color: #fff;
+}
+
 header {
   background-color: #fff;
   margin-top: 15px;
@@ -447,7 +602,7 @@ header img {
   margin-top: 15px;
   max-width: 70%;
 }
-header svg {
+header span {
   display: block;
   color: #333645;
   width: 50px;
@@ -466,12 +621,11 @@ header input:nth-of-type(2) {
   display: block;
 }
 header aside {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding-left: 15px;
   background-color: #323544;
 }
 header aside div {
@@ -488,7 +642,7 @@ header aside div h2 {
   header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  header a {
+  header #phone {
     display: none;
   }
   header input:first-of-type {
@@ -496,6 +650,9 @@ header aside div h2 {
   }
   header input:nth-of-type(2) {
     display: none;
+  }
+  header aside {
+    display: grid;
   }
 }
 @media screen and (min-width: 992px) {
@@ -530,7 +687,21 @@ header aside div h2 {
   padding-bottom: 15px;
 }
 
-#banner-1 svg {
+.banner_hidden {
+  display: none;
+  grid-row-start: 2;
+  grid-column-start: span 7;
+  width: 100%;
+  color: #fff;
+}
+.banner_hidden a {
+  color: #fff;
+}
+.banner_hidden:hover {
+  display: block;
+}
+
+#banner-1 span {
   color: #67809F;
 }
 #banner-1 button {
@@ -539,11 +710,14 @@ header aside div h2 {
 #banner-1:hover {
   background-color: #67809F;
 }
-#banner-1:hover svg {
+#banner-1:hover span {
   color: #fff;
 }
+#banner-1:hover + #banner-1b {
+  display: block;
+}
 
-#banner-2 svg {
+#banner-2 span {
   color: #4183D7;
 }
 #banner-2 button {
@@ -552,11 +726,14 @@ header aside div h2 {
 #banner-2:hover {
   background-color: #4183D7;
 }
-#banner-2:hover svg {
+#banner-2:hover span {
   color: #fff;
 }
+#banner-2:hover + #banner-2b {
+  display: block;
+}
 
-#banner-3 svg {
+#banner-3 span {
   color: #2ECC71;
 }
 #banner-3 button {
@@ -565,11 +742,14 @@ header aside div h2 {
 #banner-3:hover {
   background-color: #2ECC71;
 }
-#banner-3:hover svg {
+#banner-3:hover span {
   color: #fff;
 }
+#banner-3:hover + #banner-3b {
+  display: block;
+}
 
-#banner-4 svg {
+#banner-4 span {
   color: #D64541;
 }
 #banner-4 button {
@@ -578,11 +758,14 @@ header aside div h2 {
 #banner-4:hover {
   background-color: #D64541;
 }
-#banner-4:hover svg {
+#banner-4:hover span {
   color: #fff;
 }
+#banner-4:hover + #banner-4b {
+  display: block;
+}
 
-#banner-5 svg {
+#banner-5 span {
   color: #926FB1;
 }
 #banner-5 button {
@@ -591,11 +774,14 @@ header aside div h2 {
 #banner-5:hover {
   background-color: #926FB1;
 }
-#banner-5:hover svg {
+#banner-5:hover span {
   color: #fff;
 }
+#banner-5:hover + #banner-5b {
+  display: block;
+}
 
-#banner-6 svg {
+#banner-6 span {
   color: #f62459;
 }
 #banner-6 button {
@@ -604,11 +790,14 @@ header aside div h2 {
 #banner-6:hover {
   background-color: #f62459;
 }
-#banner-6:hover svg {
+#banner-6:hover span {
   color: #fff;
 }
+#banner-6:hover + #banner-6b {
+  display: block;
+}
 
-#banner-7 svg {
+#banner-7 span {
   color: #CE4125;
 }
 #banner-7 button {
@@ -617,8 +806,39 @@ header aside div h2 {
 #banner-7:hover {
   background-color: #CE4125;
 }
-#banner-7:hover svg {
+#banner-7:hover span {
   color: #fff;
+}
+#banner-7:hover + #banner-7b {
+  display: block;
+}
+
+#banner-1b {
+  background-color: #526781;
+}
+
+#banner-2b {
+  background-color: #286ABD;
+}
+
+#banner-3b {
+  background-color: #25A25A;
+}
+
+#banner-4b {
+  background-color: #BC2C28;
+}
+
+#banner-5b {
+  background-color: #79539A;
+}
+
+#banner-6b {
+  background-color: #DE093F;
+}
+
+#banner-7b {
+  background-color: #A3331D;
 }
 
 #slider div {
@@ -742,11 +962,12 @@ header aside div h2 {
   top: -10px;
   transition: 0.5s ease;
 }
-.grid-item svg {
+.grid-item span {
   height: 70px;
   width: 70px;
   margin: auto;
   border-radius: 50%;
+  font-size: 40px;
 }
 .grid-item p {
   color: #333645;
@@ -759,7 +980,7 @@ header aside div h2 {
   width: 160px;
 }
 
-#grid-1 svg {
+#grid-1 span {
   background-color: #67809F;
 }
 #grid-1 button {
@@ -771,7 +992,7 @@ header aside div h2 {
 #grid-1:hover h2, #grid-1:hover p {
   color: #fff;
 }
-#grid-1:hover svg {
+#grid-1:hover span {
   color: #67809F;
   background-color: #fff;
 }
@@ -780,7 +1001,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-2 svg {
+#grid-2 span {
   background-color: #4183D7;
 }
 #grid-2 button {
@@ -792,7 +1013,7 @@ header aside div h2 {
 #grid-2:hover h2, #grid-2:hover p {
   color: #fff;
 }
-#grid-2:hover svg {
+#grid-2:hover span {
   color: #4183D7;
   background-color: #fff;
 }
@@ -801,7 +1022,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-3 svg {
+#grid-3 span {
   background-color: #2ECC71;
 }
 #grid-3 button {
@@ -813,7 +1034,7 @@ header aside div h2 {
 #grid-3:hover h2, #grid-3:hover p {
   color: #fff;
 }
-#grid-3:hover svg {
+#grid-3:hover span {
   color: #2ECC71;
   background-color: #fff;
 }
@@ -822,7 +1043,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-4 svg {
+#grid-4 span {
   background-color: #D64541;
 }
 #grid-4 button {
@@ -834,7 +1055,7 @@ header aside div h2 {
 #grid-4:hover h2, #grid-4:hover p {
   color: #fff;
 }
-#grid-4:hover svg {
+#grid-4:hover span {
   color: #D64541;
   background-color: #fff;
 }
@@ -843,7 +1064,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-5 svg {
+#grid-5 span {
   background-color: #926FB1;
 }
 #grid-5 button {
@@ -855,7 +1076,7 @@ header aside div h2 {
 #grid-5:hover h2, #grid-5:hover p {
   color: #fff;
 }
-#grid-5:hover svg {
+#grid-5:hover span {
   color: #926FB1;
   background-color: #fff;
 }
@@ -864,7 +1085,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-6 svg {
+#grid-6 span {
   background-color: #f62459;
 }
 #grid-6 button {
@@ -876,7 +1097,7 @@ header aside div h2 {
 #grid-6:hover h2, #grid-6:hover p {
   color: #fff;
 }
-#grid-6:hover svg {
+#grid-6:hover span {
   color: #f62459;
   background-color: #fff;
 }
@@ -885,7 +1106,7 @@ header aside div h2 {
   background-color: #fff;
 }
 
-#grid-7 svg {
+#grid-7 span {
   background-color: #CE4125;
 }
 #grid-7 button {
@@ -897,7 +1118,7 @@ header aside div h2 {
 #grid-7:hover h2, #grid-7:hover p {
   color: #fff;
 }
-#grid-7:hover svg {
+#grid-7:hover span {
   color: #CE4125;
   background-color: #fff;
 }
@@ -913,9 +1134,6 @@ header aside div h2 {
   align-content: center;
   justify-content: center;
   align-items: center;
-}
-.view svg {
-  width: 26px;
 }
 .view a {
   color: #333645;
@@ -985,7 +1203,7 @@ header aside div h2 {
 .news-item a {
   position: relative;
   top: -160px;
-  left: 380px;
+  left: 360px;
   color: #fff;
 }
 .news-item img {

@@ -23,7 +23,7 @@ header {
         margin-top: 15px;
         max-width: 70%;
     }
-    svg {
+    span {
         display: block;
         color: $text-dark;
         width: 50px;
@@ -42,12 +42,11 @@ header {
         display: block;
     }
     aside {
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        padding-left: 15px;
         background-color: $background-dark;
         div {
             width: 100%;
@@ -61,7 +60,7 @@ header {
             }
         }
     @include media-1 {
-        a {
+        #phone {
             display: none;
         }
         input:first-of-type {
@@ -71,6 +70,9 @@ header {
             display: none;
         }
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        aside {
+            display: grid;
+        }
     }
     @include media-2 {
         .hidden_button {
@@ -103,8 +105,22 @@ header {
     padding-bottom: 15px;
 }
 
+.banner_hidden {
+    display: none;
+    grid-row-start: 2;
+    grid-column-start: span 7;
+    width: 100%;
+    color: $text-white;
+    a {
+        color: $text-white;
+    }
+    &:hover {
+        display: block;
+    }
+}
+
 #banner-1 {
-    svg {
+    span {
         color: $grid-grey;
     }
     button {
@@ -112,14 +128,17 @@ header {
     }
     &:hover {
         background-color: $grid-grey;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-1b {
+            display: block;
         }
     }
 }
 
 #banner-2 {
-    svg {
+    span {
         color: $grid-blue;
     }
     button {
@@ -127,14 +146,17 @@ header {
     }
     &:hover {
         background-color: $grid-blue;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-2b {
+            display: block;
         }
     }
 }
 
 #banner-3 {
-    svg {
+    span {
         color: $grid-green;
     }
     button {
@@ -142,14 +164,17 @@ header {
     }
     &:hover {
         background-color: $grid-green;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-3b {
+            display: block;
         }
     }
 }
 
 #banner-4 {
-    svg {
+    span {
         color: $grid-red;
     }
     button {
@@ -157,14 +182,17 @@ header {
     }
     &:hover {
         background-color: $grid-red;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-4b {
+            display: block;
         }
     }
 }
 
 #banner-5 {
-    svg {
+    span {
         color: $grid-purple;
     }
     button {
@@ -172,14 +200,17 @@ header {
     }
     &:hover {
         background-color: $grid-purple;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-5b {
+            display: block;
         }
     }
 }
 
 #banner-6 {
-    svg {
+    span {
         color: $grid-pink;
     }
     button {
@@ -187,14 +218,17 @@ header {
     }
     &:hover {
         background-color: $grid-pink;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-6b {
+            display: block;
         }
     }
 }
 
 #banner-7 {
-    svg {
+    span {
         color: $grid-orange;
     }
     button {
@@ -202,8 +236,39 @@ header {
     }
     &:hover {
         background-color: $grid-orange;
-        svg {
-            color: $background-white;
+        span {
+            color: $text-white;
+        }
+        & + #banner-7b {
+            display: block;
         }
     }
+}
+
+#banner-1b {
+    background-color: $banner-grey;
+}
+
+#banner-2b {
+    background-color: $banner-blue;
+}
+
+#banner-3b {
+    background-color: $banner-green;
+}
+
+#banner-4b {
+    background-color: $banner-red;
+}
+
+#banner-5b {
+    background-color: $banner-purple;
+}
+
+#banner-6b {
+    background-color: $banner-pink;
+}
+
+#banner-7b {
+    background-color: $banner-orange;
 }
