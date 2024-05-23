@@ -39,6 +39,9 @@ footer {
         left: 0;
         z-index: 1;
         border-top-right-radius: 5px;
+        &:hover {
+            background-color: $hover-cookie;
+        }
     }
     #logo {
         margin-left: 15px;

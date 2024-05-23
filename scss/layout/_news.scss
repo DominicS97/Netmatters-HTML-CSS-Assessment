@@ -86,7 +86,19 @@
 
 #news-1 {
     h2:first-of-type {
-        color:$news-red;
+        color:$news-green;
+    }
+    button {
+        background-color: $news-green;
+    }
+    a {
+        background-color: $news-green;
+    }
+}
+
+#news-2 {
+    h2:first-of-type {
+        color: $news-red;
     }
     button {
         background-color: $news-red;
@@ -96,7 +108,7 @@
     }
 }
 
-#news-2 {
+#news-3 {
     h2:first-of-type {
         color:$news-blue;
     }
@@ -105,17 +117,5 @@
     }
     a {
         background-color: $news-blue;
-    }
-}
-
-#news-3 {
-    h2:first-of-type {
-        color:$news-red;
-    }
-    button {
-        background-color: $news-red;
-    }
-    a {
-        background-color: $news-red;
     }
 }

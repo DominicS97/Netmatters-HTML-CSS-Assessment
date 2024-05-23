@@ -1216,33 +1216,33 @@ header aside div h2 {
 }
 
 #news-1 h2:first-of-type {
-  color: #D64541;
+  color: #2ECC71;
 }
 #news-1 button {
-  background-color: #D64541;
+  background-color: #2ECC71;
 }
 #news-1 a {
-  background-color: #D64541;
+  background-color: #2ECC71;
 }
 
 #news-2 h2:first-of-type {
-  color: #4183D7;
+  color: #D64541;
 }
 #news-2 button {
-  background-color: #4183D7;
+  background-color: #D64541;
 }
 #news-2 a {
-  background-color: #4183D7;
+  background-color: #D64541;
 }
 
 #news-3 h2:first-of-type {
-  color: #D64541;
+  color: #4183D7;
 }
 #news-3 button {
-  background-color: #D64541;
+  background-color: #4183D7;
 }
 #news-3 a {
-  background-color: #D64541;
+  background-color: #4183D7;
 }
 
 #bio {
@@ -1394,6 +1394,9 @@ footer aside {
   left: 0;
   z-index: 1;
   border-top-right-radius: 5px;
+}
+footer aside:hover {
+  background-color: #999AA2;
 }
 footer #logo {
   margin-left: 15px;

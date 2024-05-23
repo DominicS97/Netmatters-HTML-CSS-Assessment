@@ -23,3 +23,7 @@ Solved through reading online guides and documentation.
 4. Needing to normalise styles across different platforms and browsers
 
 Solved by applying an online style reset template (github.com/necolas/normalize.css).
+
+5. Issues with deploying the project to github.io with images and fonts not loading
+
+Solved by reading online advice and asking on the discord. 
