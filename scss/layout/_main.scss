@@ -1,5 +1,40 @@
 // Main styles
 
+// Carousel
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carousel-item {
+    display: none;
+    height: 80%;
+    filter: grayscale(1);
+    &:hover {
+        filter: none;
+    }
+    &:nth-child(-n+2) {
+        display: block;
+    }
+    @include media-1 {
+        &:nth-child(-n+3) {
+            display: block;
+        }
+    }
+    @include media-2 {
+        &:nth-child(-n+4) {
+            display: block;
+        }
+    }
+    @include media-1 {
+        &:nth-child(-n+5) {
+            display: block;
+        }
+    }
+}
+
 // Form
 
 #form {

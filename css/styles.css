@@ -1292,6 +1292,39 @@ header aside div h2 {
   content: url("/img/star.png") url("/img/star.png") url("/img/star.png") url("/img/star.png") url("/img/star.png");
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.carousel-item {
+  display: none;
+  height: 80%;
+  filter: grayscale(1);
+}
+.carousel-item:hover {
+  filter: none;
+}
+.carousel-item:nth-child(-n+2) {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .carousel-item:nth-child(-n+3) {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-item:nth-child(-n+4) {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-item:nth-child(-n+5) {
+    display: block;
+  }
+}
+
 #form {
   background-color: #ddd;
   width: 100%;
