@@ -19,7 +19,7 @@
 }
 
 #news {
-    background-color: $background-light;
+    background-color: $background-white;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -55,8 +55,17 @@
 }
 
 .news-item {
+    border: 1px solid $text-midtone;
+    box-shadow: 0 0 5px 0 $text-midtone;
     background-color: $background-white;
     margin: 15px;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+    &:hover {
+        top: -10px;
+        transition: .5s ease;
+    }
     h2 {
         font-size: 16px;
     }
@@ -71,7 +80,7 @@
     a {
         position: relative;
         top: -160px;
-        left: 360px;
+        left: 300px;
         color: $text-white;
     }
     img {
