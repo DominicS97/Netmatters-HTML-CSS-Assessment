@@ -3,47 +3,49 @@
 #grid {
     width: 100%;
     background-color: $background-white;
-    display: grid;
-    grid-template-columns: 1fr;
-    @include media-1 {
-        grid-template-columns: 1fr 1fr;
-        #grid-1, #grid-2, #grid-3 {
-            grid-column-start: span 2;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include media-1 {
+            grid-template-columns: 1fr 1fr;
+            #grid-1, #grid-2, #grid-3 {
+                grid-column-start: span 2;
+            }
+            .view {
+                grid-row-start: 1;
+                grid-column-start: 2;
+                justify-self: right;
+            }
         }
-        .view {
-            grid-row-start: 1;
-            grid-column-start: 2;
-            justify-self: right;
-        }
-    }
-    @include media-2 {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        @include media-2 {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-        #grid-1, #grid-2, #grid-3 {
-            grid-column-start: span 2;
+            #grid-1, #grid-2, #grid-3 {
+                grid-column-start: span 2;
+            }
+            #grid-4, #grid-5, #grid-6, #grid-7, .view {
+                grid-column-start: span 3;
+            }
+            h1 {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
         }
-        #grid-4, #grid-5, #grid-6, #grid-7, .view {
-            grid-column-start: span 3;
-        }
-        h1 {
-            grid-row-start: 1;
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-    }
-    @include media-3 {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @include media-3 {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-        #grid-1, #grid-2, #grid-3 {
-            grid-column-start: span 4;
-        }
-        #grid-4, #grid-5, #grid-6, #grid-7, .view {
-            grid-column-start: span 3;
-        }
-        h1 {
-            grid-row-start: 1;
-            grid-column-start: 1;
-            grid-column-end: 10;
+            #grid-1, #grid-2, #grid-3 {
+                grid-column-start: span 4;
+            }
+            #grid-4, #grid-5, #grid-6, #grid-7, .view {
+                grid-column-start: span 3;
+            }
+            h1 {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 10;
+            }
         }
     }
     h1 {

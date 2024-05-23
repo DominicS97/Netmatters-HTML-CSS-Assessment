@@ -423,9 +423,14 @@ button:hover {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1260px) {
+  .container {
+    max-width: 1260px;
+  }
 }
 
 .hidden {
@@ -584,11 +589,13 @@ header {
   background-color: #fff;
   margin-top: 15px;
   min-height: 18%;
+  color: #fff;
+}
+header .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
 }
 header button:nth-of-type(3) {
   display: none;
@@ -643,47 +650,68 @@ header aside div h2 {
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
-  header {
+  header aside {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  header #phone {
+  header aside #phone {
     display: none;
   }
-  header input:first-of-type {
+  header aside input:first-of-type {
     display: inline;
   }
-  header input:nth-of-type(2) {
+  header aside input:nth-of-type(2) {
     display: none;
   }
-  header aside {
+  header aside aside {
     display: grid;
   }
 }
 @media screen and (min-width: 992px) {
-  header {
+  header aside {
     flex-wrap: nowrap;
     grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
   }
-  header .hidden_button {
+  header aside .hidden_button {
     display: flex;
   }
-  header input:first-of-type {
+  header aside input:first-of-type {
     display: none;
   }
-  header aside {
+  header aside aside {
     grid-column-start: span 5;
   }
 }
 @media screen and (min-width: 1260px) {
-  header {
+  header aside {
     grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
   }
-  header input:first-of-type {
+  header aside input:first-of-type {
     display: block;
   }
-  header aside {
+  header aside aside {
     grid-column-start: span 6;
   }
+}
+@media screen and (min-width: 1260px) {
+  header aside {
+    grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+  }
+  header aside input:first-of-type {
+    display: block;
+  }
+  header aside aside {
+    grid-column-start: span 6;
+  }
+}
+
+aside {
+  margin: 0;
+  background-color: #323544;
+  height: 10vh;
+  display: block;
+}
+aside .container {
+  max-width: 1260px;
 }
 
 .banner_item {
@@ -883,49 +911,51 @@ header aside div h2 {
 #grid {
   width: 100%;
   background-color: #fff;
+}
+#grid .container {
   display: grid;
   grid-template-columns: 1fr;
 }
 @media screen and (min-width: 768px) {
-  #grid {
+  #grid .container {
     grid-template-columns: 1fr 1fr;
   }
-  #grid #grid-1, #grid #grid-2, #grid #grid-3 {
+  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
     grid-column-start: span 2;
   }
-  #grid .view {
+  #grid .container .view {
     grid-row-start: 1;
     grid-column-start: 2;
     justify-self: right;
   }
 }
 @media screen and (min-width: 992px) {
-  #grid {
+  #grid .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  #grid #grid-1, #grid #grid-2, #grid #grid-3 {
+  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
     grid-column-start: span 2;
   }
-  #grid #grid-4, #grid #grid-5, #grid #grid-6, #grid #grid-7, #grid .view {
+  #grid .container #grid-4, #grid .container #grid-5, #grid .container #grid-6, #grid .container #grid-7, #grid .container .view {
     grid-column-start: span 3;
   }
-  #grid h1 {
+  #grid .container h1 {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
   }
 }
 @media screen and (min-width: 1260px) {
-  #grid {
+  #grid .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  #grid #grid-1, #grid #grid-2, #grid #grid-3 {
+  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
     grid-column-start: span 4;
   }
-  #grid #grid-4, #grid #grid-5, #grid #grid-6, #grid #grid-7, #grid .view {
+  #grid .container #grid-4, #grid .container #grid-5, #grid .container #grid-6, #grid .container #grid-7, #grid .container .view {
     grid-column-start: span 3;
   }
-  #grid h1 {
+  #grid .container h1 {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 10;
@@ -1152,39 +1182,41 @@ header aside div h2 {
 #news {
   background-color: #fff;
   width: 100%;
+}
+#news .container {
   display: grid;
   grid-template-columns: 1fr;
 }
 @media screen and (min-width: 768px) {
-  #news {
+  #news .container {
     grid-template-columns: 1fr 1fr;
   }
-  #news #news-3 {
+  #news .container #news-3 {
     display: none;
   }
-  #news .view {
+  #news .container .view {
     grid-row-start: 1;
     grid-column-start: 2;
     justify-self: right;
   }
 }
 @media screen and (min-width: 1260px) {
-  #news {
+  #news .container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #news #news-3 {
+  #news .container #news-3 {
     display: block;
   }
-  #news h2 {
+  #news .container h2 {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  #news .view {
+  #news .container .view {
     grid-row-start: 1;
     grid-column-start: 3;
   }
 }
-#news h2 {
+#news .container h2 {
   color: #333645;
   padding-left: 15px;
 }
@@ -1269,20 +1301,20 @@ header aside div h2 {
   padding-left: 15px;
 }
 @media screen and (min-width: 992px) {
-  #bio {
+  #bio .container {
     display: flex;
   }
-  #bio #bio-one {
+  #bio .container #bio-one {
     width: 50%;
   }
-  #bio #bio-two {
+  #bio .container #bio-two {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  #bio #bio-two div {
+  #bio .container #bio-two div {
     margin-bottom: auto;
   }
 }
@@ -1462,11 +1494,11 @@ footer #logo {
   max-width: 70%;
 }
 @media screen and (min-width: 1260px) {
-  footer {
+  footer .container:first-of-type(1) {
     display: grid;
     grid-template-columns: 2fr 3fr;
   }
-  footer #copyright {
+  footer .container:first-of-type(1) #copyright {
     grid-column-start: span 2;
     grid-row-start: 2;
   }

@@ -4,11 +4,13 @@ header {
     background-color: $background-white;
     margin-top: 15px;
     min-height: 18%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
     color: $text-white;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+    }
     button:nth-of-type(3) {
         display: none;
         @include media-1 {
@@ -58,47 +60,67 @@ header {
                     font-size: 16px;
                 }
             }
+        @include media-1 {
+            #phone {
+                display: none;
+            }
+            input:first-of-type {
+                display: inline;
+            }
+            input:nth-of-type(2) {
+                display: none;
+            }
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            aside {
+                display: grid;
+            }
         }
-    @include media-1 {
-        #phone {
-            display: none;
+        @include media-2 {
+            .hidden_button {
+                display: flex;
+            }
+            input:first-of-type {
+                display: none;
+            }
+            flex-wrap: nowrap;
+            aside {
+                grid-column-start: span 5;
+            }
+            grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
         }
-        input:first-of-type {
-            display: inline;
+        @include media-3 {
+            input:first-of-type {
+                display: block;
+            }
+            grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+            aside {
+                grid-column-start: span 6;
+            }
         }
-        input:nth-of-type(2) {
-            display: none;
-        }
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        aside {
-            display: grid;
-        }
-    }
-    @include media-2 {
-        .hidden_button {
-            display: flex;
-        }
-        input:first-of-type {
-            display: none;
-        }
-        flex-wrap: nowrap;
-        aside {
-            grid-column-start: span 5;
-        }
-        grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
-    }
-    @include media-3 {
-        input:first-of-type {
-            display: block;
-        }
-        grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-        aside {
-            grid-column-start: span 6;
+        @include media-3 {
+            input:first-of-type {
+                display: block;
+            }
+            grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+            aside {
+                grid-column-start: span 6;
+            }
         }
     }
 }
 
+
 // Banner
+
+aside {
+    margin: 0;
+    background-color: $background-dark;
+    height: 10vh;
+    display: block;
+    .container {
+        max-width: 1260px;
+    }
+}
 
 .banner_item {
     padding-top: 15px;
