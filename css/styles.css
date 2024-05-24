@@ -1658,10 +1658,6 @@ aside #header-cont-2 {
   margin: 0;
 }
 .news-item a {
-  position: relative;
-  top: -160px;
-  left: 200px;
-  width: 200px;
   color: #fff;
   text-decoration: none;
 }
@@ -1670,6 +1666,9 @@ aside #header-cont-2 {
 }
 .news-item img {
   width: 100%;
+  position: relative;
+  top: -21px;
+  z-index: 0;
 }
 .news-item #headshot-img {
   width: 10%;
@@ -1722,6 +1721,17 @@ aside #header-cont-2 {
 }
 #news-3 a {
   background-color: #4183D7;
+}
+
+.news-item a {
+  width: fit-content;
+  height: 21px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0%;
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 
 #bio {
