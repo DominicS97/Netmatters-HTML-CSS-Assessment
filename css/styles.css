@@ -474,10 +474,11 @@ button:hover {
   font-family: "icon";
   content: "\e986";
   color: #333645;
+  font-size: 1.4rem;
   z-index: 1;
   position: absolute;
   left: 90%;
-  top: 14%;
+  top: 15.4%;
 }
 @media screen and (min-width: 768px) {
   .icon-search2:before {
@@ -488,36 +489,294 @@ button:hover {
 .icon-banner-1:before {
   font-family: "icon";
   content: "\e920";
+  font-size: 25px;
+  position: relative;
+  left: 0%;
 }
 
 .icon-banner-2:before {
   font-family: "icon";
   content: "\e917";
+  font-size: 25px;
+  position: relative;
+  left: 8%;
 }
 
 .icon-banner-3:before {
   font-family: "icon";
   content: "\e910";
+  font-size: 25px;
+  position: relative;
+  left: 8%;
 }
 
 .icon-banner-4:before {
   font-family: "icon";
   content: "\e91b";
+  font-size: 25px;
+  position: relative;
+  left: 6%;
 }
 
 .icon-banner-5:before {
   font-family: "icon";
   content: "\e90f";
+  font-size: 25px;
+  position: relative;
+  left: 7%;
 }
 
 .icon-banner-6:before {
   font-family: "icon";
   content: "\e91d";
+  font-size: 25px;
+  position: relative;
+  left: 8%;
 }
 
 .icon-banner-7:before {
   font-family: "icon";
   content: "\e913";
+  font-size: 25px;
+  position: relative;
+  left: 0%;
+}
+
+#banner-1b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e995";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e90e";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e907";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e959";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e930";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\ea45";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(7):before {
+  font-family: "icon";
+  content: "\e9c5";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(8):before {
+  font-family: "icon";
+  content: "\e976";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(9):before {
+  font-family: "icon";
+  content: "\e90b";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(10):before {
+  font-family: "icon";
+  content: "\e909";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(11):before {
+  font-family: "icon";
+  content: "\e90a";
+  font-size: 1.4rem;
+}
+#banner-1b span:nth-of-type(12):before {
+  font-family: "icon";
+  content: "\e902";
+  font-size: 1.4rem;
+}
+
+#banner-2b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e900";
+  font-size: 1.4rem;
+}
+#banner-2b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e90e";
+  font-size: 1.4rem;
+}
+#banner-2b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e90b";
+  font-size: 1.4rem;
+}
+#banner-2b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e913";
+  font-size: 1.4rem;
+}
+#banner-2b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e909";
+  font-size: 1.4rem;
+}
+#banner-2b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\e963";
+  font-size: 1.4rem;
+}
+
+#banner-3b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e986";
+  font-size: 1.4rem;
+}
+#banner-3b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e93d";
+  font-size: 1.4rem;
+}
+#banner-3b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e91f";
+  font-size: 1.4rem;
+}
+#banner-3b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e90c";
+  font-size: 1.4rem;
+}
+#banner-3b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e976";
+  font-size: 1.4rem;
+}
+#banner-3b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\e905";
+  font-size: 1.4rem;
+}
+
+#banner-4b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e959";
+  font-size: 1.4rem;
+}
+#banner-4b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e942";
+  font-size: 1.4rem;
+}
+#banner-4b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e976";
+  font-size: 1.4rem;
+}
+#banner-4b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e901";
+  font-size: 1.4rem;
+}
+#banner-4b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e914";
+  font-size: 1.4rem;
+}
+#banner-4b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\e91b";
+  font-size: 1.4rem;
+}
+
+#banner-5b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e905";
+  font-size: 1.4rem;
+}
+#banner-5b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e906";
+  font-size: 1.4rem;
+}
+#banner-5b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e917";
+  font-size: 1.4rem;
+}
+#banner-5b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e91a";
+  font-size: 1.4rem;
+}
+#banner-5b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e959";
+  font-size: 1.4rem;
+}
+#banner-5b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\e909";
+  font-size: 1.4rem;
+}
+
+#banner-6b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e92d";
+  font-size: 1.4rem;
+}
+#banner-6b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e94e";
+  font-size: 1.4rem;
+}
+#banner-6b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e904";
+  font-size: 1.4rem;
+}
+#banner-6b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e913";
+  font-size: 1.4rem;
+}
+#banner-6b span:nth-of-type(5):before {
+  font-family: "icon";
+  content: "\e91d";
+  font-size: 1.4rem;
+}
+#banner-6b span:nth-of-type(6):before {
+  font-family: "icon";
+  content: "\e98f";
+  font-size: 1.4rem;
+}
+
+#banner-7b span:first-of-type:before {
+  font-family: "icon";
+  content: "\e90b";
+  font-size: 1.4rem;
+}
+#banner-7b span:nth-of-type(2):before {
+  font-family: "icon";
+  content: "\e90f";
+  font-size: 1.4rem;
+}
+#banner-7b span:nth-of-type(3):before {
+  font-family: "icon";
+  content: "\e903";
+  font-size: 1.4rem;
+}
+#banner-7b span:nth-of-type(4):before {
+  font-family: "icon";
+  content: "\e914";
+  font-size: 1.4rem;
 }
 
 .icon-grid-1:before {
@@ -636,18 +895,20 @@ header {
   min-height: 18%;
   color: #fff;
 }
-header .container {
+header #header-cont-1 {
   padding-bottom: 5px;
   display: grid;
   grid-template-columns: 8fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
-header .container a {
+header #header-cont-1 a {
   margin-top: 15px;
 }
 header button:nth-of-type(3) {
   display: none;
+  margin-left: 0;
+  border-radius: 0 5% 5% 0;
 }
 @media screen and (min-width: 768px) {
   header button:nth-of-type(3) {
@@ -690,73 +951,86 @@ header input:nth-of-type(2) {
 }
 header aside {
   display: none;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   background-color: #323544;
 }
-header aside div {
+header aside #header-cont-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+header aside #header-cont-2 .banner_item {
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
 }
-header aside div h2 {
+header aside #header-cont-2 .banner_item h2 {
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
-  header aside {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  header aside #phone {
+  header #phone {
     display: none;
   }
-  header aside input:first-of-type {
+  header input:first-of-type {
     display: inline;
+    border: 1px solid #A3A8AC;
+    margin-left: 50px;
+    height: 40px;
+    z-index: 0;
+    margin-right: 0;
+    height: 60px;
   }
-  header aside input:nth-of-type(2) {
+  header input:nth-of-type(2) {
     display: none;
   }
-  header aside aside {
-    display: grid;
+  header #header-cont-1 {
+    grid-template-columns: 6fr 2fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 992px) {
-  header aside {
+  header {
     flex-wrap: nowrap;
-    grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
   }
-  header aside .hidden_button {
+  header .hidden_button {
     display: flex;
   }
-  header aside input:first-of-type {
+  header input:first-of-type {
     display: none;
   }
-  header aside aside {
+  header aside {
     grid-column-start: span 5;
+  }
+  header #header-cont-1 {
+    grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
+  }
+  header aside {
+    display: grid;
   }
 }
 @media screen and (min-width: 1260px) {
-  header aside {
-    grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-  }
-  header aside input:first-of-type {
+  header input:first-of-type {
     display: block;
   }
-  header aside aside {
+  header #header-cont-1 {
+    grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+  }
+  header aside {
     grid-column-start: span 6;
   }
 }
 @media screen and (min-width: 1260px) {
-  header aside {
+  header {
     grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
   }
-  header aside input:first-of-type {
+  header input:first-of-type {
     display: block;
   }
-  header aside aside {
+  header aside {
     grid-column-start: span 6;
   }
 }
@@ -767,27 +1041,49 @@ aside {
   height: 10vh;
   display: block;
 }
-aside .container {
+aside #header-cont-2 {
   max-width: 1260px;
 }
 
 .banner_item {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner_item h3 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 10px;
+  margin-bottom: -5px;
 }
 
 .banner_hidden {
   display: none;
   grid-row-start: 2;
   grid-column-start: span 7;
+  row-gap: 15px;
   width: 100%;
+  color: #fff;
+  z-index: 1;
+  padding-left: 15px;
+  grid-template-columns: 1fr 10fr 1fr 10fr 1fr 10fr;
+}
+.banner_hidden span {
   color: #fff;
 }
 .banner_hidden a {
   color: #fff;
+  font-size: 1rem;
+  padding-left: 5px;
 }
 .banner_hidden:hover {
-  display: block;
+  display: grid;
+}
+.banner_hidden h2 {
+  grid-column-start: span 6;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 #banner-1 span {
@@ -803,7 +1099,7 @@ aside .container {
   color: #fff;
 }
 #banner-1:hover + #banner-1b {
-  display: block;
+  display: grid;
 }
 
 #banner-2 span {
@@ -819,7 +1115,7 @@ aside .container {
   color: #fff;
 }
 #banner-2:hover + #banner-2b {
-  display: block;
+  display: grid;
 }
 
 #banner-3 span {
@@ -835,7 +1131,7 @@ aside .container {
   color: #fff;
 }
 #banner-3:hover + #banner-3b {
-  display: block;
+  display: grid;
 }
 
 #banner-4 span {
@@ -851,7 +1147,7 @@ aside .container {
   color: #fff;
 }
 #banner-4:hover + #banner-4b {
-  display: block;
+  display: grid;
 }
 
 #banner-5 span {
@@ -867,7 +1163,7 @@ aside .container {
   color: #fff;
 }
 #banner-5:hover + #banner-5b {
-  display: block;
+  display: grid;
 }
 
 #banner-6 span {
@@ -883,7 +1179,7 @@ aside .container {
   color: #fff;
 }
 #banner-6:hover + #banner-6b {
-  display: block;
+  display: grid;
 }
 
 #banner-7 span {
@@ -899,7 +1195,7 @@ aside .container {
   color: #fff;
 }
 #banner-7:hover + #banner-7b {
-  display: block;
+  display: grid;
 }
 
 #banner-1b {
@@ -930,6 +1226,9 @@ aside .container {
   background-color: #A3331D;
 }
 
+#slider {
+  padding-top: 0;
+}
 #slider div {
   display: none;
 }
@@ -942,21 +1241,35 @@ aside .container {
 }
 
 .slider-item {
+  width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
   background: center no-repeat url(../img/slider1e.png);
+  background-size: cover;
   text-align: center;
   min-height: 500px;
   margin-top: 0;
 }
 .slider-item h2 {
-  margin-top: 25%;
+  margin-top: 18%;
   font-weight: bold;
   line-height: normal;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
 }
 @media screen and (min-width: 992px) {
+  .slider-item h2 {
+    margin-top: 50px;
+    margin-right: 20%;
+    font-size: 50px;
+  }
+  .slider-item p {
+    font-size: 20px;
+  }
   .slider-item h2, .slider-item p, .slider-item button {
     text-align: left;
+    padding-left: 15px;
+    margin-left: 15px;
   }
 }
 .slider-item button {
@@ -964,10 +1277,27 @@ aside .container {
 }
 .slider-item p {
   padding-left: 25%;
-  width: 50%;
   font-weight: bold;
+  width: 50%;
 }
 
+@media screen and (min-width: 992px) {
+  #slider-p {
+    padding-left: 15px;
+  }
+  #slider-btn {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  #slider-p, #header-slider {
+    padding-left: calc((100vw - 1260px) / 2 + 15px);
+    width: 620px;
+  }
+  #slider-btn {
+    margin-left: calc((100vw - 1260px) / 2 + 30px);
+  }
+}
 #grid {
   width: 100%;
   background-color: #fff;
