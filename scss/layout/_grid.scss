@@ -68,8 +68,8 @@
 .grid-item {
     background-color: $background-white;
     margin: 15px;
-    border: 1px solid $text-midtone;
-    border-radius: 10%;
+    padding: 30px;
+    border-radius: 20px;
     box-shadow: 0 0 5px 0 $text-midtone;
     display: flex;
     flex-direction: column;
@@ -87,6 +87,7 @@
         height: 70px;
         width: 70px;
         margin: auto;
+        margin-bottom: 15px;
         border-radius: 50%;
         font-size: 40px;
     }
@@ -95,6 +96,8 @@
     }
     h2 {
       color: $text-dark;
+      font-size: 1.3rem;
+      font-weight: 400;
     }
     button {
         margin: auto;

@@ -12,6 +12,7 @@
         font-size: 26px;
         align-self: center;
         text-decoration: none;
+        font-weight: 600;
         &:hover {
             text-decoration-line: underline;
         }
@@ -19,6 +20,9 @@
 }
 
 #news {
+    h2 {
+        color: $text-dark;
+    }
     background-color: $background-white;
     width: 100%;
     .container {
@@ -50,7 +54,7 @@
             }
         }
         h2 {
-            color: $text-dark;
+            font-weight: bold;
             padding-left: 15px;
         }
     }
@@ -61,43 +65,82 @@
     box-shadow: 0 0 5px 0 $text-midtone;
     background-color: $background-white;
     margin: 15px;
+    padding-top: 0;
     position: relative;
     top: 0;
     transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
     &:hover {
         top: -10px;
         transition: .5s ease;
     }
+    h2, h3, p {
+        margin: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     h2 {
         font-size: 16px;
+        margin-left: 15px;
     }
     h3 {
         text-transform: uppercase;
         color: $text-midtone;
         font-size: 16px;
+        font-weight: 300;
     }
     p {
         color: $text-dark;
+        &:nth-child(2) {
+            margin: 0;
+        }
     }
     a {
         position: relative;
         top: -160px;
-        left: 300px;
+        left: 200px;
+        width: 200px;
         color: $text-white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     img {
         width: 100%;
     }
-    .headshot {
+    #headshot-img {
         width: 10%;
         margin: 15px;
         float: left;
+        border-radius: 50%;
+    }
+    .headshot {
+        margin: 0;
+        margin-top: 10px;
+    }
+    button {
+        margin-right: 150px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.headshot-div {
+    h2 {
+        color: $text-dark;
+    }
+    hr {
+        width: 80%;
     }
 }
 
 #news-1 {
-    h2:first-of-type {
-        color:$news-green;
+    .newsheader {
+        color: $news-green;
     }
     button {
         background-color: $news-green;
@@ -108,7 +151,7 @@
 }
 
 #news-2 {
-    h2:first-of-type {
+    .newsheader {
         color: $news-red;
     }
     button {
@@ -120,7 +163,7 @@
 }
 
 #news-3 {
-    h2:first-of-type {
+    .newsheader {
         color:$news-blue;
     }
     button {
