@@ -3,13 +3,21 @@
 #bio {
     width: 100%;
     background-color: $background-dark;
+    a {
+        text-decoration: none;
+        color: $text-white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     h2 {
         padding-left: 15px;
+        padding-bottom: 25px;
         font-weight: bold;
     }
     p {
         padding-left: 15px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.875rem;
     }
     .container {
@@ -60,6 +68,6 @@
     h2:after {
         margin-top: 40px;
         display: block;
-        content: url('/img/star.png') url('/img/star.png') url('/img/star.png') url('/img/star.png') url('/img/star.png');
+        content: url('../img/star.png') url('../img/star.png') url('../img/star.png') url('../img/star.png') url('../img/star.png');
     }
 }

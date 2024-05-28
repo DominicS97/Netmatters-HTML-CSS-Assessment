@@ -42,7 +42,7 @@
         @include media-3 {
             grid-template-columns: 1fr 1fr 1fr;
             #news-3 {
-                display: block;
+                display: flex;
             }
             h2 {
                 grid-column-start: 1;
@@ -134,6 +134,7 @@
     }
     hr {
         width: 80%;
+        margin-bottom: 30px;
     }
 }
 

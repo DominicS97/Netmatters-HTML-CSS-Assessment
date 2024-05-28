@@ -40,8 +40,8 @@
     }
     z-index: 1;
     position: absolute;
-    left: 90%;
-    top: 15.4%;
+    left: calc(90% - 19px);
+    top: 12%;
 }
 
 // Banner

@@ -48,16 +48,6 @@ footer {
         margin-top: 15px;
         max-width: 70%;
     }
-    .container:first-of-type(1) {
-        @include media-3 {
-            display: grid;
-            grid-template-columns: 2fr 3fr;
-            #copyright {
-                grid-column-start: span 2;
-                grid-row-start: 2;
-            }
-        }
-    }
     #chat {
         position: fixed;
         bottom: 0;
@@ -92,5 +82,18 @@ footer {
     }
     @include media-2 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+footer {
+    #footer-cont-1 {
+        @include media-3 {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            #copyright {
+                grid-column-start: span 2;
+                grid-row-start: 2;
+            }
+        }
     }
 }
