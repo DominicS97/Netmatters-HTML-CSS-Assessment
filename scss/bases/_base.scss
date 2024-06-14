@@ -1,37 +1,37 @@
 // Import icomoons font
 
 @font-face {
-    font-family: 'icon';
-    src: url('../fonts/icomoon.eot');
-    src: url('../fonts/icomoon.woff2') format('woff2'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "icon";
+	src: url("../fonts/icomoon.eot");
+	src: url("../fonts/icomoon.woff2") format("woff2"),
+		url("../fonts/icomoon.woff") format("woff"),
+		url("../fonts/icomoon.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 // Base styles
 
 body {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: sans-serif;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    font-size: .8125rem;
-    line-height: 1.3rem;
-    letter-spacing: .4px;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+	font-size: 0.8125rem;
+	line-height: 1.3rem;
+	letter-spacing: 0.4px;
 }
 
 h2 {
-    font-size: 36px;
-    color: #fff;
-    font-weight: 300;
-    padding: 0px;
-    margin: 0px;
+	font-size: 36px;
+	color: #fff;
+	font-weight: 300;
+	padding: 0px;
+	margin: 0px;
 }

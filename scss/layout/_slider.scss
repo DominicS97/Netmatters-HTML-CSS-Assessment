@@ -1,75 +1,78 @@
 // Slider styles
 
 #slider {
-    padding-top: 0;
-    div {
-        display: none;
-    }
-    div:first-of-type {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-    }
+	padding-top: 0;
+	div {
+		display: none;
+	}
+	div:first-of-type {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+	}
 }
 
 .slider-item {
-    width: 100%;
-    height: 100%;
-    h2 {
-        margin-top: 18%;
-        font-weight: bold;
-        line-height: normal;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-    }
-    @include media-2 {
-        h2 {
-            margin-top: 50px;
-            margin-right: 20%;
-            font-size: 50px;
-        }
-        p {
-            font-size: 20px;
-        }
-        h2, p, button {
-            text-align: left;
-            padding-left: 15px;
-            margin-left: 15px;
-        }
-    }
-    background: center no-repeat url(../img/slider1e.png);
-    background-size: cover;
-    text-align: center;
-    min-height: 500px;
-    margin-top: 0;
-    button {
-        margin: auto;
-    }
-    p {
-        padding-left: 25%;
-        font-weight: bold;
-        width: 50%;
-    }
+	width: 100%;
+	height: 100%;
+	h2 {
+		margin-top: 18%;
+		font-weight: bold;
+		line-height: normal;
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: center;
+	}
+	@include media-2 {
+		h2 {
+			margin-top: 50px;
+			margin-right: 20%;
+			font-size: 50px;
+		}
+		p {
+			font-size: 20px;
+		}
+		h2,
+		p,
+		button {
+			text-align: left;
+			padding-left: 15px;
+			margin-left: 15px;
+		}
+	}
+	background: center no-repeat url(../img/slider1e.png);
+	background-size: cover;
+	text-align: center;
+	min-height: 500px;
+	margin-top: 0;
+	button {
+		margin: auto;
+	}
+	p {
+		padding-left: 25%;
+		font-weight: bold;
+		width: 50%;
+	}
 }
 
 @include media-2 {
-    #slider-p {
-        padding-left: 15px;
-    }
-    #slider-btn {
-        margin-left: 30px;
-    }
+	#slider-p {
+		padding-left: 15px;
+	}
+	#slider-btn {
+		margin-left: 30px;
+	}
 }
 
 @include media-3 {
-    #slider-p, #header-slider {
-        padding-left: calc((100vw - 1260px) / 2 + 15px);
-        width: 620px;
-    }
-    #slider-btn {
-        margin-left: calc((100vw - 1260px) / 2 + 30px)
-    }
+	#slider-p,
+	#header-slider {
+		padding-left: calc((100vw - 1260px) / 2 + 15px);
+		width: 620px;
+	}
+	#slider-btn {
+		margin-left: calc((100vw - 1260px) / 2 + 30px);
+	}
 }

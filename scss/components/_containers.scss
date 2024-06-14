@@ -1,10 +1,10 @@
 // Container styles
 
 .container {
-    align-self: center;
-    width: 100%;
-    margin: 0 auto;
-    @include media-3 {
-        max-width: 1260px;
-    }
+	align-self: center;
+	width: 100%;
+	margin: 0 auto;
+	@include media-3 {
+		max-width: 1260px;
+	}
 }

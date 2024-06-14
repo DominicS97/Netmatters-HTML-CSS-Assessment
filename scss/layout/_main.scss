@@ -1,110 +1,110 @@
 // Main styles
 
 div {
-    padding-top: 15px;
-    padding-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 // Carousel
 
 .carousel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .carousel-item {
-    display: none;
-    height: 80%;
-    max-height: 70px;
-    filter: grayscale(1);
-    &:hover {
-        filter: none;
-    }
-    &:nth-child(-n+2) {
-        display: block;
-    }
-    @include media-1 {
-        &:nth-child(-n+3) {
-            display: block;
-        }
-    }
-    @include media-2 {
-        &:nth-child(-n+4) {
-            display: block;
-        }
-    }
-    @include media-3 {
-        &:nth-child(-n+5) {
-            display: block;
-        }
-    }
+	display: none;
+	height: 80%;
+	max-height: 70px;
+	filter: grayscale(1);
+	&:hover {
+		filter: none;
+	}
+	&:nth-child(-n + 2) {
+		display: block;
+	}
+	@include media-1 {
+		&:nth-child(-n + 3) {
+			display: block;
+		}
+	}
+	@include media-2 {
+		&:nth-child(-n + 4) {
+			display: block;
+		}
+	}
+	@include media-3 {
+		&:nth-child(-n + 5) {
+			display: block;
+		}
+	}
 }
 
 // Form
 
 #form {
-    background-color: $background-light;
-    width: 100%;
-    max-height: 100%;
-    h2 {
-        color: $text-dark;
-        padding-left: 15px;
-    }
-    label {
-        color: $text-dark;
-        padding-left: 15px;
-        font-weight: bold;
-        &:after {
-            color: $grid-orange;
-            content: ' *';
-            display: inline;
-        }
-    }
-    input {
-        margin-left: 15px;
-    }
-    a {
-        text-decoration-line: underline;
-        color: $text-dark;
-    }
-    aside {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    form {
-        @include media-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: flex-start;
-            .name {
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-            .email {
-                grid-column-start: 2;
-                grid-column-end: 3;
-            }
-            label {
-                grid-row-start: 1;
-                grid-row-end: 2;
-            }
-            input {
-                grid-row-start: 2;
-                grid-row-end: 3;
-            }
-            button {
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-        }
-    }
+	background-color: $background-light;
+	width: 100%;
+	max-height: 100%;
+	h2 {
+		color: $text-dark;
+		padding-left: 15px;
+	}
+	label {
+		color: $text-dark;
+		padding-left: 15px;
+		font-weight: bold;
+		&:after {
+			color: $grid-orange;
+			content: " *";
+			display: inline;
+		}
+	}
+	input {
+		margin-left: 15px;
+	}
+	a {
+		text-decoration-line: underline;
+		color: $text-dark;
+	}
+	aside {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: space-between;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	form {
+		@include media-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: flex-start;
+			.name {
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+			.email {
+				grid-column-start: 2;
+				grid-column-end: 3;
+			}
+			label {
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+			input {
+				grid-row-start: 2;
+				grid-row-end: 3;
+			}
+			button {
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+		}
+	}
 }
