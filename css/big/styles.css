@@ -11,36 +11,36 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
+   * Remove the margin in all browsers.
+   */
 body {
   margin: 0;
 }
 
 /**
- * Render the `main` element consistently in IE.
- */
+   * Render the `main` element consistently in IE.
+   */
 main {
   display: block;
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
@@ -48,27 +48,27 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
- */
+   * Remove the gray background on active links in IE 10.
+   */
 a {
   background-color: transparent;
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
@@ -76,17 +76,17 @@ abbr[title] {
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 code,
 kbd,
 samp {
@@ -95,16 +95,16 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+   * Add the correct font size in all browsers.
+   */
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 sub,
 sup {
   font-size: 75%;
@@ -122,20 +122,20 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
 img {
   border-style: none;
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 button,
 input,
 optgroup,
@@ -148,26 +148,28 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 button,
 [type=button],
 [type=reset],
@@ -176,8 +178,8 @@ button,
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -187,8 +189,8 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -197,18 +199,18 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
- */
+   * Correct the padding in Firefox.
+   */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
 legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
@@ -219,23 +221,23 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
 [type=checkbox],
 [type=radio] {
   box-sizing: border-box; /* 1 */
@@ -243,66 +245,66 @@ textarea {
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
 summary {
   display: list-item;
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
 [hidden] {
   display: none;
 }
@@ -370,31 +372,31 @@ button:hover {
 }
 
 .green {
-  background-color: #00B67B;
+  background-color: #00b67b;
 }
 .green:hover {
-  background-color: #25A25A;
+  background-color: #25a25a;
 }
 
 .purple {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
 .purple:hover {
-  background-color: #79539A;
+  background-color: #79539a;
 }
 
 .blue {
-  background-color: #4387F6;
+  background-color: #4387f6;
 }
 .blue:hover {
-  background-color: #286ABD;
+  background-color: #286abd;
 }
 
 .grey {
-  background-color: #A3A8AC;
+  background-color: #a3a8ac;
 }
 .grey:hover {
-  background-color: #75788A;
+  background-color: #75788a;
 }
 
 .social {
@@ -413,19 +415,19 @@ button:hover {
 }
 
 #fb:hover {
-  background-color: #3B5998;
+  background-color: #3b5998;
 }
 
 #linkedin:hover {
-  background-color: #0077B5;
+  background-color: #0077b5;
 }
 
 #twitter:hover {
-  background-color: #00ACED;
+  background-color: #00aced;
 }
 
 #insta:hover {
-  background-color: #D93175;
+  background-color: #d93175;
 }
 
 .container {
@@ -941,7 +943,7 @@ header input:first-of-type {
 }
 header input:nth-of-type(2) {
   display: block;
-  border: 2px solid #A3A8AC;
+  border: 2px solid #a3a8ac;
   background: #ddd;
   border-radius: 5%;
   grid-column: span 3;
@@ -979,7 +981,7 @@ header aside #header-cont-2 .banner_item h2 {
   }
   header input:first-of-type {
     display: inline;
-    border: 1px solid #A3A8AC;
+    border: 1px solid #a3a8ac;
     margin-left: 50px;
     height: 40px;
     z-index: 0;
@@ -1089,13 +1091,13 @@ aside #header-cont-2 {
 }
 
 #banner-1 span {
-  color: #67809F;
+  color: #67809f;
 }
 #banner-1 button {
-  background-color: #67809F;
+  background-color: #67809f;
 }
 #banner-1:hover {
-  background-color: #67809F;
+  background-color: #67809f;
 }
 #banner-1:hover span {
   color: #fff;
@@ -1105,13 +1107,13 @@ aside #header-cont-2 {
 }
 
 #banner-2 span {
-  color: #4183D7;
+  color: #4183d7;
 }
 #banner-2 button {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 #banner-2:hover {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 #banner-2:hover span {
   color: #fff;
@@ -1121,13 +1123,13 @@ aside #header-cont-2 {
 }
 
 #banner-3 span {
-  color: #2ECC71;
+  color: #2ecc71;
 }
 #banner-3 button {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 #banner-3:hover {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 #banner-3:hover span {
   color: #fff;
@@ -1137,13 +1139,13 @@ aside #header-cont-2 {
 }
 
 #banner-4 span {
-  color: #D64541;
+  color: #d64541;
 }
 #banner-4 button {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 #banner-4:hover {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 #banner-4:hover span {
   color: #fff;
@@ -1153,13 +1155,13 @@ aside #header-cont-2 {
 }
 
 #banner-5 span {
-  color: #926FB1;
+  color: #926fb1;
 }
 #banner-5 button {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
 #banner-5:hover {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
 #banner-5:hover span {
   color: #fff;
@@ -1185,13 +1187,13 @@ aside #header-cont-2 {
 }
 
 #banner-7 span {
-  color: #CE4125;
+  color: #ce4125;
 }
 #banner-7 button {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
 #banner-7:hover {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
 #banner-7:hover span {
   color: #fff;
@@ -1205,27 +1207,27 @@ aside #header-cont-2 {
 }
 
 #banner-2b {
-  background-color: #286ABD;
+  background-color: #286abd;
 }
 
 #banner-3b {
-  background-color: #25A25A;
+  background-color: #25a25a;
 }
 
 #banner-4b {
-  background-color: #BC2C28;
+  background-color: #bc2c28;
 }
 
 #banner-5b {
-  background-color: #79539A;
+  background-color: #79539a;
 }
 
 #banner-6b {
-  background-color: #DE093F;
+  background-color: #de093f;
 }
 
 #banner-7b {
-  background-color: #A3331D;
+  background-color: #a3331d;
 }
 
 #slider {
@@ -1268,7 +1270,9 @@ aside #header-cont-2 {
   .slider-item p {
     font-size: 20px;
   }
-  .slider-item h2, .slider-item p, .slider-item button {
+  .slider-item h2,
+  .slider-item p,
+  .slider-item button {
     text-align: left;
     padding-left: 15px;
     margin-left: 15px;
@@ -1292,7 +1296,8 @@ aside #header-cont-2 {
   }
 }
 @media screen and (min-width: 1260px) {
-  #slider-p, #header-slider {
+  #slider-p,
+  #header-slider {
     padding-left: calc((100vw - 1260px) / 2 + 15px);
     width: 620px;
   }
@@ -1312,7 +1317,9 @@ aside #header-cont-2 {
   #grid .container {
     grid-template-columns: 1fr 1fr;
   }
-  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
+  #grid .container #grid-1,
+  #grid .container #grid-2,
+  #grid .container #grid-3 {
     grid-column-start: span 2;
   }
   #grid .container .view {
@@ -1325,10 +1332,16 @@ aside #header-cont-2 {
   #grid .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
+  #grid .container #grid-1,
+  #grid .container #grid-2,
+  #grid .container #grid-3 {
     grid-column-start: span 2;
   }
-  #grid .container #grid-4, #grid .container #grid-5, #grid .container #grid-6, #grid .container #grid-7, #grid .container .view {
+  #grid .container #grid-4,
+  #grid .container #grid-5,
+  #grid .container #grid-6,
+  #grid .container #grid-7,
+  #grid .container .view {
     grid-column-start: span 3;
   }
   #grid .container h1 {
@@ -1341,10 +1354,16 @@ aside #header-cont-2 {
   #grid .container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  #grid .container #grid-1, #grid .container #grid-2, #grid .container #grid-3 {
+  #grid .container #grid-1,
+  #grid .container #grid-2,
+  #grid .container #grid-3 {
     grid-column-start: span 4;
   }
-  #grid .container #grid-4, #grid .container #grid-5, #grid .container #grid-6, #grid .container #grid-7, #grid .container .view {
+  #grid .container #grid-4,
+  #grid .container #grid-5,
+  #grid .container #grid-6,
+  #grid .container #grid-7,
+  #grid .container .view {
     grid-column-start: span 3;
   }
   #grid .container h1 {
@@ -1374,7 +1393,7 @@ aside #header-cont-2 {
   margin: 15px;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 5px 0 #A3A8AC;
+  box-shadow: 0 0 5px 0 #a3a8ac;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1410,107 +1429,112 @@ aside #header-cont-2 {
 }
 
 #grid-1 span {
-  background-color: #67809F;
+  background-color: #67809f;
 }
 #grid-1 button {
-  background-color: #67809F;
+  background-color: #67809f;
 }
 #grid-1:hover {
-  background-color: #67809F;
+  background-color: #67809f;
 }
-#grid-1:hover h2, #grid-1:hover p {
+#grid-1:hover h2,
+#grid-1:hover p {
   color: #fff;
 }
 #grid-1:hover span {
-  color: #67809F;
+  color: #67809f;
   background-color: #fff;
 }
 #grid-1:hover button {
-  color: #67809F;
+  color: #67809f;
   background-color: #fff;
 }
 
 #grid-2 span {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 #grid-2 button {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 #grid-2:hover {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
-#grid-2:hover h2, #grid-2:hover p {
+#grid-2:hover h2,
+#grid-2:hover p {
   color: #fff;
 }
 #grid-2:hover span {
-  color: #4183D7;
+  color: #4183d7;
   background-color: #fff;
 }
 #grid-2:hover button {
-  color: #4183D7;
+  color: #4183d7;
   background-color: #fff;
 }
 
 #grid-3 span {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 #grid-3 button {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 #grid-3:hover {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
-#grid-3:hover h2, #grid-3:hover p {
+#grid-3:hover h2,
+#grid-3:hover p {
   color: #fff;
 }
 #grid-3:hover span {
-  color: #2ECC71;
+  color: #2ecc71;
   background-color: #fff;
 }
 #grid-3:hover button {
-  color: #2ECC71;
+  color: #2ecc71;
   background-color: #fff;
 }
 
 #grid-4 span {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 #grid-4 button {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 #grid-4:hover {
-  background-color: #D64541;
+  background-color: #d64541;
 }
-#grid-4:hover h2, #grid-4:hover p {
+#grid-4:hover h2,
+#grid-4:hover p {
   color: #fff;
 }
 #grid-4:hover span {
-  color: #D64541;
+  color: #d64541;
   background-color: #fff;
 }
 #grid-4:hover button {
-  color: #D64541;
+  color: #d64541;
   background-color: #fff;
 }
 
 #grid-5 span {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
 #grid-5 button {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
 #grid-5:hover {
-  background-color: #926FB1;
+  background-color: #926fb1;
 }
-#grid-5:hover h2, #grid-5:hover p {
+#grid-5:hover h2,
+#grid-5:hover p {
   color: #fff;
 }
 #grid-5:hover span {
-  color: #926FB1;
+  color: #926fb1;
   background-color: #fff;
 }
 #grid-5:hover button {
-  color: #926FB1;
+  color: #926fb1;
   background-color: #fff;
 }
 
@@ -1523,7 +1547,8 @@ aside #header-cont-2 {
 #grid-6:hover {
   background-color: #f62459;
 }
-#grid-6:hover h2, #grid-6:hover p {
+#grid-6:hover h2,
+#grid-6:hover p {
   color: #fff;
 }
 #grid-6:hover span {
@@ -1536,23 +1561,24 @@ aside #header-cont-2 {
 }
 
 #grid-7 span {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
 #grid-7 button {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
 #grid-7:hover {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
-#grid-7:hover h2, #grid-7:hover p {
+#grid-7:hover h2,
+#grid-7:hover p {
   color: #fff;
 }
 #grid-7:hover span {
-  color: #CE4125;
+  color: #ce4125;
   background-color: #fff;
 }
 #grid-7:hover button {
-  color: #CE4125;
+  color: #ce4125;
   background-color: #fff;
 }
 
@@ -1621,8 +1647,8 @@ aside #header-cont-2 {
 }
 
 .news-item {
-  border: 1px solid #A3A8AC;
-  box-shadow: 0 0 5px 0 #A3A8AC;
+  border: 1px solid #a3a8ac;
+  box-shadow: 0 0 5px 0 #a3a8ac;
   background-color: #fff;
   margin: 15px;
   padding-top: 0;
@@ -1638,7 +1664,9 @@ aside #header-cont-2 {
   top: -10px;
   transition: 0.5s ease;
 }
-.news-item h2, .news-item h3, .news-item p {
+.news-item h2,
+.news-item h3,
+.news-item p {
   margin: 30px;
   margin-top: auto;
   margin-bottom: auto;
@@ -1649,7 +1677,7 @@ aside #header-cont-2 {
 }
 .news-item h3 {
   text-transform: uppercase;
-  color: #A3A8AC;
+  color: #a3a8ac;
   font-size: 16px;
   font-weight: 300;
 }
@@ -1697,33 +1725,33 @@ aside #header-cont-2 {
 }
 
 #news-1 .newsheader {
-  color: #2ECC71;
+  color: #2ecc71;
 }
 #news-1 button {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 #news-1 a {
-  background-color: #2ECC71;
+  background-color: #2ecc71;
 }
 
 #news-2 .newsheader {
-  color: #D64541;
+  color: #d64541;
 }
 #news-2 button {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 #news-2 a {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 
 #news-3 .newsheader {
-  color: #4183D7;
+  color: #4183d7;
 }
 #news-3 button {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 #news-3 a {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 
 .news-item a {
@@ -1786,7 +1814,7 @@ aside #header-cont-2 {
   font-weight: bold;
 }
 #bio-two p:nth-of-type(2) {
-  color: #A3A8AC;
+  color: #a3a8ac;
   font-weight: 400;
 }
 #bio-two a {
@@ -1861,7 +1889,7 @@ div {
   font-weight: bold;
 }
 #form label:after {
-  color: #CE4125;
+  color: #ce4125;
   content: " *";
   display: inline;
 }
@@ -1934,12 +1962,13 @@ footer ul {
   list-style-type: none;
   padding: 0;
 }
-footer li, footer p {
+footer li,
+footer p {
   font-size: 13px;
   padding-left: 15px;
 }
 footer aside {
-  background-color: #75788A;
+  background-color: #75788a;
   font-style: bold;
   width: 160px;
   height: 20px;
@@ -1950,7 +1979,7 @@ footer aside {
   border-top-right-radius: 5px;
 }
 footer aside:hover {
-  background-color: #999AA2;
+  background-color: #999aa2;
 }
 footer #logo {
   margin-left: 15px;

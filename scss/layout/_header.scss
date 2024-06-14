@@ -1,350 +1,350 @@
 // Header styles
 
 header {
-    background-color: $background-white;
-    margin-top: 15px;
-    min-height: 18%;
-    color: $text-white;
-    #header-cont-1 {
-        padding-bottom: 5px;
-        display: grid;
-        grid-template-columns: 8fr 1fr 1fr;
-        justify-content: space-between;
-        align-items: center;
-        a {
-            margin-top: 15px;
-        }
-    }
-    button:nth-of-type(3) {
-        display: none;
-        @include media-1 {
-            display: flex;
-        }
-        margin-left: 0;
-        border-radius: 0 5% 5% 0;
-    }
-    .hidden_button {
-        display: none;
-    }
-    img {
-        margin-left: 15px;
-        margin-top: 15px;
-        margin-right: 15px;
-        max-width: 100%;
-    }
-    span {
-        display: block;
-        color: $text-dark;
-        width: 50px;
-        align-self: center;
-    }
-    a {
-        text-decoration: none;
-        &:hover {
-                text-decoration-line: underline;
-        }
-    }
-    input:first-of-type {
-        display: none;
-    }
-    input:nth-of-type(2) {
-        display: block;
-        border: 2px solid $mid-grey;
-        background: $off-white;
-        border-radius: 5%;
-        grid-column: span 3;
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 40px;
-        z-index: 0;
-    }
-    aside {
-        display: none;
-        grid-template-columns: 1fr;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        background-color: $background-dark;
-        #header-cont-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            padding: 0;
-            .banner_item {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                margin: 0;
-                    h2 {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    @include media-1 {
-        #phone {
-            display: none;
-        }
-        input:first-of-type {
-            display: inline;
-            border: 1px solid $mid-grey;
-            margin-left: 50px;
-            height: 40px;
-            z-index: 0;
-            margin-right: 0;
-            height: 60px;
-            padding-left: 5px;
-        }
-        input:nth-of-type(2) {
-            display: none;
-        }
-        #header-cont-1 {
-            grid-template-columns: 6fr 2fr 1fr 1fr;
-        }
-    }
-    @include media-2 {
-        .hidden_button {
-            display: flex;
-        }
-        input:first-of-type {
-            display: none;
-        }
-        flex-wrap: nowrap;
-        aside {
-            grid-column-start: span 5;
-        }
-        #header-cont-1 {
-            grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
-        }
-        aside {
-            display: grid;
-        }
-    }
-    @include media-3 {
-        input:first-of-type {
-            display: block;
-        }
-        #header-cont-1 {
-            grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-        }
-        aside {
-            grid-column-start: span 6;
-        }
-    }
-    @include media-3 {
-        input:first-of-type {
-            display: block;
-        }
-        grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-        aside {
-            grid-column-start: span 6;
-        }
-    }
+	background-color: $background-white;
+	margin-top: 15px;
+	min-height: 18%;
+	color: $text-white;
+	#header-cont-1 {
+		padding-bottom: 5px;
+		display: grid;
+		grid-template-columns: 8fr 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			margin-top: 15px;
+		}
+	}
+	button:nth-of-type(3) {
+		display: none;
+		@include media-1 {
+			display: flex;
+		}
+		margin-left: 0;
+		border-radius: 0 5% 5% 0;
+	}
+	.hidden_button {
+		display: none;
+	}
+	img {
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-right: 15px;
+		max-width: 100%;
+	}
+	span {
+		display: block;
+		color: $text-dark;
+		width: 50px;
+		align-self: center;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+	input:first-of-type {
+		display: none;
+	}
+	input:nth-of-type(2) {
+		display: block;
+		border: 2px solid $mid-grey;
+		background: $off-white;
+		border-radius: 5%;
+		grid-column: span 3;
+		margin-left: 15px;
+		margin-right: 15px;
+		height: 40px;
+		z-index: 0;
+	}
+	aside {
+		display: none;
+		grid-template-columns: 1fr;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		background-color: $background-dark;
+		#header-cont-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			padding: 0;
+			.banner_item {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				margin: 0;
+				h2 {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	@include media-1 {
+		#phone {
+			display: none;
+		}
+		input:first-of-type {
+			display: inline;
+			border: 1px solid $mid-grey;
+			margin-left: 50px;
+			height: 40px;
+			z-index: 0;
+			margin-right: 0;
+			height: 60px;
+			padding-left: 5px;
+		}
+		input:nth-of-type(2) {
+			display: none;
+		}
+		#header-cont-1 {
+			grid-template-columns: 6fr 2fr 1fr 1fr;
+		}
+	}
+	@include media-2 {
+		.hidden_button {
+			display: flex;
+		}
+		input:first-of-type {
+			display: none;
+		}
+		flex-wrap: nowrap;
+		aside {
+			grid-column-start: span 5;
+		}
+		#header-cont-1 {
+			grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
+		}
+		aside {
+			display: grid;
+		}
+	}
+	@include media-3 {
+		input:first-of-type {
+			display: block;
+		}
+		#header-cont-1 {
+			grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+		}
+		aside {
+			grid-column-start: span 6;
+		}
+	}
+	@include media-3 {
+		input:first-of-type {
+			display: block;
+		}
+		grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+		aside {
+			grid-column-start: span 6;
+		}
+	}
 }
 
 // Banner
 
 aside {
-    margin: 0;
-    background-color: $background-dark;
-    height: 10vh;
-    display: block;
-    #header-cont-2 {
-        max-width: 1260px;
-    }
+	margin: 0;
+	background-color: $background-dark;
+	height: 10vh;
+	display: block;
+	#header-cont-2 {
+		max-width: 1260px;
+	}
 }
 
 .banner_item {
-    padding-top: 15px;
-    padding-bottom: 0;
-    text-align: center;
-    text-transform: uppercase;
-    h3 {
-        font-weight: normal;
-        margin: 0;
-        font-size: 10px;
-        margin-bottom: -5px;
-    }
+	padding-top: 15px;
+	padding-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	h3 {
+		font-weight: normal;
+		margin: 0;
+		font-size: 10px;
+		margin-bottom: -5px;
+	}
 }
 
 .banner_hidden {
-    display: none;
-    grid-row-start: 2;
-    grid-column-start: span 7;
-    row-gap: 15px;
-    width: 100%;
-    color: $text-white;
-    z-index: 1;
-    padding-left: 15px;
-    span {
-        color: $text-white;
-    }
-    a {
-        color: $text-white;
-        font-size: 1rem;
-        padding-left: 5px;
-    }
-    &:hover {
-        display: grid;
-    }
-    grid-template-columns: 1fr 10fr 1fr 10fr 1fr 10fr;
-    h2 {
-        grid-column-start: span 6;
-        padding-top: 15px;
-        padding-bottom: 30px;
-    }
+	display: none;
+	grid-row-start: 2;
+	grid-column-start: span 7;
+	row-gap: 15px;
+	width: 100%;
+	color: $text-white;
+	z-index: 1;
+	padding-left: 15px;
+	span {
+		color: $text-white;
+	}
+	a {
+		color: $text-white;
+		font-size: 1rem;
+		padding-left: 5px;
+	}
+	&:hover {
+		display: grid;
+	}
+	grid-template-columns: 1fr 10fr 1fr 10fr 1fr 10fr;
+	h2 {
+		grid-column-start: span 6;
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
 }
 
 #banner-1 {
-    span {
-        color: $grid-grey;
-    }
-    button {
-        background-color: $grid-grey;
-    }
-    &:hover {
-        background-color: $grid-grey;
-        span {
-            color: $text-white;
-        }
-        & + #banner-1b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-grey;
+	}
+	button {
+		background-color: $grid-grey;
+	}
+	&:hover {
+		background-color: $grid-grey;
+		span {
+			color: $text-white;
+		}
+		& + #banner-1b {
+			display: grid;
+		}
+	}
 }
 
 #banner-2 {
-    span {
-        color: $grid-blue;
-    }
-    button {
-        background-color: $grid-blue;
-    }
-    &:hover {
-        background-color: $grid-blue;
-        span {
-            color: $text-white;
-        }
-        & + #banner-2b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-blue;
+	}
+	button {
+		background-color: $grid-blue;
+	}
+	&:hover {
+		background-color: $grid-blue;
+		span {
+			color: $text-white;
+		}
+		& + #banner-2b {
+			display: grid;
+		}
+	}
 }
 
 #banner-3 {
-    span {
-        color: $grid-green;
-    }
-    button {
-        background-color: $grid-green;
-    }
-    &:hover {
-        background-color: $grid-green;
-        span {
-            color: $text-white;
-        }
-        & + #banner-3b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-green;
+	}
+	button {
+		background-color: $grid-green;
+	}
+	&:hover {
+		background-color: $grid-green;
+		span {
+			color: $text-white;
+		}
+		& + #banner-3b {
+			display: grid;
+		}
+	}
 }
 
 #banner-4 {
-    span {
-        color: $grid-red;
-    }
-    button {
-        background-color: $grid-red;
-    }
-    &:hover {
-        background-color: $grid-red;
-        span {
-            color: $text-white;
-        }
-        & + #banner-4b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-red;
+	}
+	button {
+		background-color: $grid-red;
+	}
+	&:hover {
+		background-color: $grid-red;
+		span {
+			color: $text-white;
+		}
+		& + #banner-4b {
+			display: grid;
+		}
+	}
 }
 
 #banner-5 {
-    span {
-        color: $grid-purple;
-    }
-    button {
-        background-color: $grid-purple;
-    }
-    &:hover {
-        background-color: $grid-purple;
-        span {
-            color: $text-white;
-        }
-        & + #banner-5b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-purple;
+	}
+	button {
+		background-color: $grid-purple;
+	}
+	&:hover {
+		background-color: $grid-purple;
+		span {
+			color: $text-white;
+		}
+		& + #banner-5b {
+			display: grid;
+		}
+	}
 }
 
 #banner-6 {
-    span {
-        color: $grid-pink;
-    }
-    button {
-        background-color: $grid-pink;
-    }
-    &:hover {
-        background-color: $grid-pink;
-        span {
-            color: $text-white;
-        }
-        & + #banner-6b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-pink;
+	}
+	button {
+		background-color: $grid-pink;
+	}
+	&:hover {
+		background-color: $grid-pink;
+		span {
+			color: $text-white;
+		}
+		& + #banner-6b {
+			display: grid;
+		}
+	}
 }
 
 #banner-7 {
-    span {
-        color: $grid-orange;
-    }
-    button {
-        background-color: $grid-orange;
-    }
-    &:hover {
-        background-color: $grid-orange;
-        span {
-            color: $text-white;
-        }
-        & + #banner-7b {
-            display: grid;
-        }
-    }
+	span {
+		color: $grid-orange;
+	}
+	button {
+		background-color: $grid-orange;
+	}
+	&:hover {
+		background-color: $grid-orange;
+		span {
+			color: $text-white;
+		}
+		& + #banner-7b {
+			display: grid;
+		}
+	}
 }
 
 #banner-1b {
-    background-color: $banner-grey;
+	background-color: $banner-grey;
 }
 
 #banner-2b {
-    background-color: $banner-blue;
+	background-color: $banner-blue;
 }
 
 #banner-3b {
-    background-color: $banner-green;
+	background-color: $banner-green;
 }
 
 #banner-4b {
-    background-color: $banner-red;
+	background-color: $banner-red;
 }
 
 #banner-5b {
-    background-color: $banner-purple;
+	background-color: $banner-purple;
 }
 
 #banner-6b {
-    background-color: $banner-pink;
+	background-color: $banner-pink;
 }
 
 #banner-7b {
-    background-color: $banner-orange;
+	background-color: $banner-orange;
 }
