@@ -101,6 +101,8 @@
 	left: 0%;
 }
 
+// Banner triangles
+
 #banner-1:before {
 	content: "";
 	display: var(--display1, none);
@@ -191,6 +193,7 @@
 	border-width: 35px Min(calc(100vw / 14), 90px) 0;
 	border-color: $grid-orange transparent transparent;
 }
+
 // Sub-header
 
 #banner-1b {
