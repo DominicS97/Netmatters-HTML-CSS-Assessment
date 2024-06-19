@@ -6,18 +6,21 @@ const banner_1span = document.getElementById("icon-banner-1");
 banner_1.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_1b.style.display = "grid";
+	banner_1.style.setProperty("--display1", "block");
 });
 
 // Add a mouseout event listener
 banner_1.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_1b.style.display = "none";
+	banner_1.style.setProperty("--display1", "none");
 });
 
 // Add a mouseover event listener
 banner_1b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_1b.style.display = "grid";
+	banner_1.style.setProperty("--display1", "block");
 	banner_1.style.backgroundColor = "#67809f";
 	banner_1span.style.color = "#fff";
 });
@@ -26,6 +29,7 @@ banner_1b.addEventListener("mouseover", () => {
 banner_1b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_1b.style.display = "none";
+	banner_1.style.setProperty("--display1", "none");
 	banner_1.style.backgroundColor = "";
 	banner_1span.style.color = "";
 });
@@ -38,18 +42,21 @@ const banner_2span = document.getElementById("icon-banner-2");
 banner_2.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_2b.style.display = "grid";
+	banner_2.style.setProperty("--display2", "block");
 });
 
 // Add a mouseout event listener
 banner_2.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_2b.style.display = "none";
+	banner_2.style.setProperty("--display2", "none");
 });
 
 // Add a mouseover event listener
 banner_2b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_2b.style.display = "grid";
+	banner_2.style.setProperty("--display2", "block");
 	banner_2.style.backgroundColor = "#4183d7";
 	banner_2span.style.color = "#fff";
 });
@@ -58,6 +65,7 @@ banner_2b.addEventListener("mouseover", () => {
 banner_2b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_2b.style.display = "none";
+	banner_2.style.setProperty("--display2", "none");
 	banner_2.style.backgroundColor = "";
 	banner_2span.style.color = "";
 });
@@ -70,18 +78,21 @@ const banner_3span = document.getElementById("icon-banner-3");
 banner_3.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_3b.style.display = "grid";
+	banner_3.style.setProperty("--display3", "block");
 });
 
 // Add a mouseout event listener
 banner_3.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_3b.style.display = "none";
+	banner_3.style.setProperty("--display3", "none");
 });
 
 // Add a mouseover event listener
 banner_3b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_3b.style.display = "grid";
+	banner_3.style.setProperty("--display3", "block");
 	banner_3.style.backgroundColor = "#2ecc71";
 	banner_3span.style.color = "#fff";
 });
@@ -90,6 +101,7 @@ banner_3b.addEventListener("mouseover", () => {
 banner_3b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_3b.style.display = "none";
+	banner_3.style.setProperty("--display3", "none");
 	banner_3.style.backgroundColor = "";
 	banner_3span.style.color = "";
 });
@@ -102,18 +114,21 @@ const banner_4span = document.getElementById("icon-banner-4");
 banner_4.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_4b.style.display = "grid";
+	banner_4.style.setProperty("--display4", "block");
 });
 
 // Add a mouseout event listener
 banner_4.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_4b.style.display = "none";
+	banner_4.style.setProperty("--display4", "none");
 });
 
 // Add a mouseover event listener
 banner_4b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_4b.style.display = "grid";
+	banner_4.style.setProperty("--display4", "block");
 	banner_4.style.backgroundColor = "#d64541";
 	banner_4span.style.color = "#fff";
 });
@@ -122,6 +137,7 @@ banner_4b.addEventListener("mouseover", () => {
 banner_4b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_4b.style.display = "none";
+	banner_4.style.setProperty("--display4", "none");
 	banner_4.style.backgroundColor = "";
 	banner_4span.style.color = "";
 });
@@ -134,18 +150,21 @@ const banner_5span = document.getElementById("icon-banner-5");
 banner_5.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_5b.style.display = "grid";
+	banner_5.style.setProperty("--display5", "block");
 });
 
 // Add a mouseout event listener
 banner_5.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_5b.style.display = "none";
+	banner_5.style.setProperty("--display5", "none");
 });
 
 // Add a mouseover event listener
 banner_5b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_5b.style.display = "grid";
+	banner_5.style.setProperty("--display5", "block");
 	banner_5.style.backgroundColor = "#926fb1";
 	banner_5span.style.color = "#fff";
 });
@@ -154,6 +173,7 @@ banner_5b.addEventListener("mouseover", () => {
 banner_5b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_5b.style.display = "none";
+	banner_5.style.setProperty("--display5", "none");
 	banner_5.style.backgroundColor = "";
 	banner_5span.style.color = "";
 });
@@ -166,18 +186,21 @@ const banner_6span = document.getElementById("icon-banner-6");
 banner_6.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_6b.style.display = "grid";
+	banner_6.style.setProperty("--display6", "block");
 });
 
 // Add a mouseout event listener
 banner_6.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_6b.style.display = "none";
+	banner_6.style.setProperty("--display6", "none");
 });
 
 // Add a mouseover event listener
 banner_6b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_6b.style.display = "grid";
+	banner_6.style.setProperty("--display6", "block");
 	banner_6.style.backgroundColor = "#f62459";
 	banner_6span.style.color = "#fff";
 });
@@ -186,6 +209,7 @@ banner_6b.addEventListener("mouseover", () => {
 banner_6b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_6b.style.display = "none";
+	banner_6.style.setProperty("--display6", "none");
 	banner_6.style.backgroundColor = "";
 	banner_6span.style.color = "";
 });
@@ -198,18 +222,21 @@ const banner_7span = document.getElementById("icon-banner-7");
 banner_7.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_7b.style.display = "grid";
+	banner_7.style.setProperty("--display7", "block");
 });
 
 // Add a mouseout event listener
 banner_7.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_7b.style.display = "none";
+	banner_7.style.setProperty("--display7", "none");
 });
 
 // Add a mouseover event listener
 banner_7b.addEventListener("mouseover", () => {
 	// Change the button's background color
 	banner_7b.style.display = "grid";
+	banner_7.style.setProperty("--display7", "block");
 	banner_7.style.backgroundColor = "#67809f";
 	banner_7span.style.color = "#fff";
 });
@@ -218,6 +245,7 @@ banner_7b.addEventListener("mouseover", () => {
 banner_7b.addEventListener("mouseout", () => {
 	// Change the button's background color back to its original color
 	banner_7b.style.display = "none";
+	banner_7.style.setProperty("--display7", "none");
 	banner_7.style.backgroundColor = "";
 	banner_7span.style.color = "";
 });

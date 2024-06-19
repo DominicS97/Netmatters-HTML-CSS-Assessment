@@ -101,6 +101,96 @@
 	left: 0%;
 }
 
+#banner-1:before {
+	content: "";
+	display: var(--display1, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-grey transparent transparent;
+}
+
+#banner-2:before {
+	content: "";
+	display: var(--display2, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-blue transparent transparent;
+}
+
+#banner-3:before {
+	content: "";
+	display: var(--display3, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-green transparent transparent;
+}
+
+#banner-4:before {
+	content: "";
+	display: var(--display4, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-red transparent transparent;
+}
+
+#banner-5:before {
+	content: "";
+	display: var(--display5, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-purple transparent transparent;
+}
+
+#banner-6:before {
+	content: "";
+	display: var(--display6, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-pink transparent transparent;
+}
+
+#banner-7:before {
+	content: "";
+	display: var(--display7, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-orange transparent transparent;
+}
 // Sub-header
 
 #banner-1b {

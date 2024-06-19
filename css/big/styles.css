@@ -544,6 +544,97 @@ button:hover {
   left: 0%;
 }
 
+#banner-1:before {
+  content: "";
+  display: var(--display1, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #67809f transparent transparent;
+}
+
+#banner-2:before {
+  content: "";
+  display: var(--display2, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #4183d7 transparent transparent;
+}
+
+#banner-3:before {
+  content: "";
+  display: var(--display3, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #2ecc71 transparent transparent;
+}
+
+#banner-4:before {
+  content: "";
+  display: var(--display4, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #d64541 transparent transparent;
+}
+
+#banner-5:before {
+  content: "";
+  display: var(--display5, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #926fb1 transparent transparent;
+}
+
+#banner-6:before {
+  content: "";
+  display: var(--display6, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #f62459 transparent transparent;
+}
+
+#banner-7:before {
+  content: "";
+  display: var(--display7, none);
+  position: absolute;
+  top: calc(10vh + 90px + 26px);
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px min(7.1428571429vw, 90px) 0;
+  border-color: #ce4125 transparent transparent;
+}
+
 #banner-1b span:first-of-type:before {
   font-family: "icon";
   content: "\e995";
@@ -1074,6 +1165,7 @@ aside #header-cont-2 {
   z-index: 1;
   padding-left: max(15px, (100% - 1260px) / 2);
   padding-right: max(15px, (100% - 1260px) / 2);
+  padding-top: 35px;
   grid-template-columns: 1fr 10fr 1fr 10fr 1fr 10fr;
 }
 .banner_hidden span {
