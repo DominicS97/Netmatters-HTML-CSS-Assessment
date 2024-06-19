@@ -45,7 +45,7 @@
 
 // Banner
 
-.icon-banner-1:before {
+#icon-banner-1:before {
 	font-family: "icon";
 	content: "\e920";
 	font-size: 25px;
@@ -53,7 +53,7 @@
 	left: 0%;
 }
 
-.icon-banner-2:before {
+#icon-banner-2:before {
 	font-family: "icon";
 	content: "\e917";
 	font-size: 25px;
@@ -61,7 +61,7 @@
 	left: 8%;
 }
 
-.icon-banner-3:before {
+#icon-banner-3:before {
 	font-family: "icon";
 	content: "\e910";
 	font-size: 25px;
@@ -69,7 +69,7 @@
 	left: 8%;
 }
 
-.icon-banner-4:before {
+#icon-banner-4:before {
 	font-family: "icon";
 	content: "\e91b";
 	font-size: 25px;
@@ -77,7 +77,7 @@
 	left: 6%;
 }
 
-.icon-banner-5:before {
+#icon-banner-5:before {
 	font-family: "icon";
 	content: "\e90f";
 	font-size: 25px;
@@ -85,7 +85,7 @@
 	left: 7%;
 }
 
-.icon-banner-6:before {
+#icon-banner-6:before {
 	font-family: "icon";
 	content: "\e91d";
 	font-size: 25px;
@@ -93,12 +93,105 @@
 	left: 8%;
 }
 
-.icon-banner-7:before {
+#icon-banner-7:before {
 	font-family: "icon";
 	content: "\e913";
 	font-size: 25px;
 	position: relative;
 	left: 0%;
+}
+
+// Banner triangles
+
+#banner-1:before {
+	content: "";
+	display: var(--display1, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-grey transparent transparent;
+}
+
+#banner-2:before {
+	content: "";
+	display: var(--display2, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-blue transparent transparent;
+}
+
+#banner-3:before {
+	content: "";
+	display: var(--display3, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-green transparent transparent;
+}
+
+#banner-4:before {
+	content: "";
+	display: var(--display4, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-red transparent transparent;
+}
+
+#banner-5:before {
+	content: "";
+	display: var(--display5, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-purple transparent transparent;
+}
+
+#banner-6:before {
+	content: "";
+	display: var(--display6, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-pink transparent transparent;
+}
+
+#banner-7:before {
+	content: "";
+	display: var(--display7, none);
+	position: absolute;
+	top: calc(10vh + 90px + 26px);
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-orange transparent transparent;
 }
 
 // Sub-header

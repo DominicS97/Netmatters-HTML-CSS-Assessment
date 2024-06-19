@@ -15,6 +15,7 @@
 		/>
 		<!-- importing stylesheet -->
 		<link rel="stylesheet" href="css/styles.css" />
+		<!-- importing javascript (deferred) -->
 		<script
 			src="https://code.jquery.com/jquery-3.7.1.min.js"
 			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -74,133 +75,130 @@
 				<!-- 2nd Search box. Hidden/revealed by media queries -->
 				<input type="search" placeholder="Search..." />
 				<span class="icon-search2"></span>
-
-				<!-- Banner element. Hidden/revealed by media queries -->
 			</div>
+			<!-- Banner element. Hidden/revealed by media queries -->
 			<aside>
 				<div class="container" id="header-cont-2">
 					<div class="banner_item" id="banner-1">
-						<span class="icon-banner-1"></span>
+						<span id="icon-banner-1"></span>
 						<h3>Bespoke</h3>
 						<h2>Software</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-1b">
-						<h2>Our Bespoke Software Services</h2>
-						<span></span><a href="#">Bespoke CRM</a> <span></span
-						><a href="#">Business Automation</a> <span></span
-						><a href="#">Software Integrations</a> <span></span
-						><a href="#">Mobile App Development</a> <span></span
-						><a href="#">Bespoke Databases</a> <span></span
-						><a href="#">Sharepoint Development</a> <span></span
-						><a href="#">Operational Systems</a> <span></span
-						><a href="#">Business Central Implementation</a>
-						<span></span
-						><a href="#">Internet of Things (IoT) Software</a>
-						<span></span><a href="#">Intranet Development</a>
-						<span></span
-						><a href="#">Customer Portal Development</a>
-						<span></span><a href="#">Reporting Hub</a>
-					</div>
-
 					<div class="banner_item" id="banner-2">
-						<span class="icon-banner-2"></span>
+						<span id="icon-banner-2"></span>
 						<h3>IT</h3>
 						<h2>Support</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-2b">
-						<h2>Our IT Support Services</h2>
-						<span></span><a href="#">Managed IT Support</a>
-						<span></span><a href="#">Business IT Support</a>
-						<span></span><a href="#">Office 365 for Business</a>
-						<span></span><a href="#">IT Consultancy</a> <span></span
-						><a href="#">Cloud Service Provider</a> <span></span
-						><a href="#">Data Backup & Disaster Recovery</a>
-					</div>
-
 					<div class="banner_item" id="banner-3">
-						<span class="icon-banner-3"></span>
+						<span id="icon-banner-3"></span>
 						<h3>Digital</h3>
 						<h2>Marketing</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-3b">
-						<h2>Our Digital Marketing Services</h2>
-						<span></span
-						><a href="#">Search Engine Optimisation<br />(SEO)</a>
-						<span></span
-						><a href="#">Pay Per Click Advertising<br />(PPC)</a>
-						<span></span
-						><a href="#">Conversion Rate Optimisation<br />(CRO)</a>
-						<span></span><a href="#">Email Marketing</a>
-						<span></span><a href="#">Social Media Marketing</a>
-						<span></span><a href="#">Content Marketing</a>
-					</div>
-
 					<div class="banner_item" id="banner-4">
-						<span class="icon-banner-4"></span>
+						<span id="icon-banner-4"></span>
 						<h3>Telecoms</h3>
 						<h2>Services</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-4b">
-						<h2>Our Telecoms Services</h2>
-						<span></span><a href="#">Business Mobile</a>
-						<span></span><a href="#">Hosted VoIP Provider</a>
-						<span></span><a href="#">Business VoIP Systems</a>
-						<span></span><a href="#">Business Broadband</a>
-						<span></span><a href="#">Leased Lines Provider</a>
-						<span></span><a href="#">3CX Systems</a>
-					</div>
-
 					<div class="banner_item" id="banner-5">
-						<span class="icon-banner-5"></span>
+						<span id="icon-banner-5"></span>
 						<h3>Web</h3>
 						<h2>Design</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-5b">
-						<h2>Our Web Design Services</h2>
-						<span></span><a href="#">Bespoke Website Design</a>
-						<span></span><a href="#">eCommerce Website Design</a>
-						<span></span><a href="#">Pay Monthly Websites</a>
-						<span></span><a href="#">Branding & Design</a>
-						<span></span><a href="#">Mobile App Development</a>
-						<span></span><a href="#">Web Hosting</a>
-					</div>
-
 					<div class="banner_item" id="banner-6">
-						<span class="icon-banner-6"></span>
+						<span id="icon-banner-6"></span>
 						<h3>Cyber</h3>
 						<h2>Security</h2>
 					</div>
 
-					<div class="banner_hidden" id="banner-6b">
-						<h2>Our Cyber Security Services</h2>
-						<span></span><a href="#">Cyber Security Assessment</a>
-						<span></span><a href="#">Cyber Security Management</a>
-						<span></span><a href="#">Cyber Penetration Testing</a>
-						<span></span
-						><a href="#">Cyber Essentials Certification</a>
-						<span></span><a href="#">PCI Compliance</a> <span></span
-						><a href="#">Hacking Prevention</a>
-					</div>
-
 					<div class="banner_item" id="banner-7">
-						<span class="icon-banner-7"></span>
+						<span id="icon-banner-7"></span>
 						<h3>Developer</h3>
 						<h2>Course</h2>
 					</div>
+				</div>
 
-					<div class="banner_hidden" id="banner-7b">
-						<h2>Our Developer Course Services</h2>
-						<span></span><a href="#">Train For A Career In Tech</a>
-						<span></span><a href="#">Skills Bootcamp</a>
-						<span></span
-						><a href="#">Scion Scheme Frequently Asked Questions</a>
-						<span></span><a href="#">Scion Collaborators</a>
-					</div>
+				<!-- Subheaders -->
+				<div class="banner_hidden" id="banner-1b">
+					<h2>Our Bespoke Software Services</h2>
+					<span></span><a href="#">Bespoke CRM</a> <span></span
+					><a href="#">Business Automation</a> <span></span
+					><a href="#">Software Integrations</a> <span></span
+					><a href="#">Mobile App Development</a> <span></span
+					><a href="#">Bespoke Databases</a> <span></span
+					><a href="#">Sharepoint Development</a> <span></span
+					><a href="#">Operational Systems</a> <span></span
+					><a href="#">Business Central Implementation</a>
+					<span></span
+					><a href="#">Internet of Things (IoT) Software</a>
+					<span></span><a href="#">Intranet Development</a>
+					<span></span><a href="#">Customer Portal Development</a>
+					<span></span><a href="#">Reporting Hub</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-2b">
+					<h2>Our IT Support Services</h2>
+					<span></span><a href="#">Managed IT Support</a> <span></span
+					><a href="#">Business IT Support</a> <span></span
+					><a href="#">Office 365 for Business</a> <span></span
+					><a href="#">IT Consultancy</a> <span></span
+					><a href="#">Cloud Service Provider</a> <span></span
+					><a href="#">Data Backup & Disaster Recovery</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-3b">
+					<h2>Our Digital Marketing Services</h2>
+					<span></span
+					><a href="#">Search Engine Optimisation<br />(SEO)</a>
+					<span></span
+					><a href="#">Pay Per Click Advertising<br />(PPC)</a>
+					<span></span
+					><a href="#">Conversion Rate Optimisation<br />(CRO)</a>
+					<span></span><a href="#">Email Marketing</a> <span></span
+					><a href="#">Social Media Marketing</a> <span></span
+					><a href="#">Content Marketing</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-4b">
+					<h2>Our Telecoms Services</h2>
+					<span></span><a href="#">Business Mobile</a> <span></span
+					><a href="#">Hosted VoIP Provider</a> <span></span
+					><a href="#">Business VoIP Systems</a> <span></span
+					><a href="#">Business Broadband</a> <span></span
+					><a href="#">Leased Lines Provider</a> <span></span
+					><a href="#">3CX Systems</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-5b">
+					<h2>Our Web Design Services</h2>
+					<span></span><a href="#">Bespoke Website Design</a>
+					<span></span><a href="#">eCommerce Website Design</a>
+					<span></span><a href="#">Pay Monthly Websites</a>
+					<span></span><a href="#">Branding & Design</a> <span></span
+					><a href="#">Mobile App Development</a> <span></span
+					><a href="#">Web Hosting</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-6b">
+					<h2>Our Cyber Security Services</h2>
+					<span></span><a href="#">Cyber Security Assessment</a>
+					<span></span><a href="#">Cyber Security Management</a>
+					<span></span><a href="#">Cyber Penetration Testing</a>
+					<span></span><a href="#">Cyber Essentials Certification</a>
+					<span></span><a href="#">PCI Compliance</a> <span></span
+					><a href="#">Hacking Prevention</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-7b">
+					<h2>Our Developer Course Services</h2>
+					<span></span><a href="#">Train For A Career In Tech</a>
+					<span></span><a href="#">Skills Bootcamp</a> <span></span
+					><a href="#">Scion Scheme Frequently Asked Questions</a>
+					<span></span><a href="#">Scion Collaborators</a>
 				</div>
 			</aside>
 		</header>
@@ -222,7 +220,7 @@
 					</button>
 				</div>
 
-				<!-- Slider items. Functionality requires js -->
+				<!-- Slider items -->
 				<div class="slider-item" hidden>
 					<img src="img/slider2.jpg" />
 					<h2>Bespoke Software</h2>

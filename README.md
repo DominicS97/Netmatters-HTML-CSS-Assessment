@@ -1,5 +1,5 @@
 # Netmatters HTML CSS Assessment
- 
+
 Documentation for the Netmatters HTML CSS Assessment
 
 Task: Recreate Netmatters homepage
@@ -10,20 +10,24 @@ Challenges & Solutions:
 
 1. Building my own SCSS structure for the first time and debugging errors with importing nested files.
 
-Solved using Scout-App errors and reading documentation at sass-lang.com.
+    Solved using Scout-App errors and reading documentation at sass-lang.com.
 
 2. Difficulty with slow workflow and inconsistent Scout-App errors.
 
-Solved using Live Server and Live Sass Compiler extensions.
+    Solved using Live Server and Live Sass Compiler extensions.
 
 3. Difficulty with manipulating flexboxes and grids.
 
-Solved through reading online guides and documentation.
+    Solved through reading online guides and documentation.
 
-4. Needing to normalise styles across different platforms and browsers
+4. Needing to normalise styles across different platforms and browsers.
 
-Solved by applying an online style reset template (github.com/necolas/normalize.css).
+    Solved by applying an online style reset template (github.com/necolas/normalize.css).
 
-5. Issues with deploying the project to github.io with images and fonts not loading
+5. Issues with deploying the project to github.io with images and fonts not loading.
 
-Solved by reading online advice and asking on the discord. 
+    Solved by reading online advice and asking on the discord.
+
+6. Needing to style CSS pseudo-elements with JavaScript.
+
+    Solved with online resources, using CSS variables and inheritance.
