@@ -120,6 +120,7 @@ header {
 		aside {
 			display: grid;
 		}
+		min-height: 202px;
 	}
 	@include media-3 {
 		input:first-of-type {
@@ -145,14 +146,15 @@ header {
 
 // Banner
 
-aside {
-	margin: 0;
-	background-color: $background-dark;
-	height: 10vh;
-	display: block;
-	#header-cont-2 {
-		max-width: 1260px;
-		height: 100%;
+header {
+	aside {
+		margin: 0;
+		background-color: $background-dark;
+		height: 92.5px;
+		#header-cont-2 {
+			max-width: 1260px;
+			height: 100%;
+		}
 	}
 }
 
@@ -330,4 +332,38 @@ aside {
 
 #banner-7b {
 	background-color: $banner-orange;
+}
+
+// Navbar
+
+#navbar {
+	position: fixed;
+	min-height: 100vh;
+	width: 15vw;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	background-color: $background-dark;
+	padding: 0;
+	z-index: 99;
+	display: none;
+	h2 {
+		background-color: $background-dark;
+		border: 1px solid $text-white;
+		margin: 0;
+		padding: 10px;
+		font-size: 1.4rem;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		background-color: $button-hover;
+		border: 1px solid $text-white;
+		margin: 0;
+		padding: 10px;
+		font-size: 1rem;
+	}
 }
