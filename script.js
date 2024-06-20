@@ -248,7 +248,7 @@ banner_7b.addEventListener("mouseover", () => {
 	// Change display
 	banner_7b.style.display = "grid";
 	banner_7.style.setProperty("--display7", "block");
-	banner_7.style.backgroundColor = "#67809f";
+	banner_7.style.backgroundColor = "#ce4125";
 	banner_7span.style.color = "#fff";
 });
 

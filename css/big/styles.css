@@ -548,7 +548,7 @@ button:hover {
   content: "";
   display: var(--display1, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -561,7 +561,7 @@ button:hover {
   content: "";
   display: var(--display2, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -574,7 +574,7 @@ button:hover {
   content: "";
   display: var(--display3, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -587,7 +587,7 @@ button:hover {
   content: "";
   display: var(--display4, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -600,7 +600,7 @@ button:hover {
   content: "";
   display: var(--display5, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -613,7 +613,7 @@ button:hover {
   content: "";
   display: var(--display6, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -626,7 +626,7 @@ button:hover {
   content: "";
   display: var(--display7, none);
   position: absolute;
-  top: calc(10vh + 90px + 26px);
+  top: max(206.5px, 10vh);
   z-index: 2;
   width: 0;
   height: 0;
@@ -1091,6 +1091,7 @@ header aside #header-cont-2 .banner_item h2 {
 @media screen and (min-width: 992px) {
   header {
     flex-wrap: nowrap;
+    min-height: 202px;
   }
   header .hidden_button {
     display: flex;
@@ -1131,13 +1132,12 @@ header aside #header-cont-2 .banner_item h2 {
   }
 }
 
-aside {
+header aside {
   margin: 0;
   background-color: #323544;
-  height: 10vh;
-  display: block;
+  height: 92.5px;
 }
-aside #header-cont-2 {
+header aside #header-cont-2 {
   max-width: 1260px;
   height: 100%;
 }

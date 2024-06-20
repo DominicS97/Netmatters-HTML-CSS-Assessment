@@ -120,6 +120,7 @@ header {
 		aside {
 			display: grid;
 		}
+		min-height: 202px;
 	}
 	@include media-3 {
 		input:first-of-type {
@@ -145,14 +146,15 @@ header {
 
 // Banner
 
-aside {
-	margin: 0;
-	background-color: $background-dark;
-	height: 10vh;
-	display: block;
-	#header-cont-2 {
-		max-width: 1260px;
-		height: 100%;
+header {
+	aside {
+		margin: 0;
+		background-color: $background-dark;
+		height: 92.5px;
+		#header-cont-2 {
+			max-width: 1260px;
+			height: 100%;
+		}
 	}
 }
 
