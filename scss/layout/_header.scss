@@ -346,6 +346,7 @@ header {
 	background-color: $background-dark;
 	padding: 0;
 	z-index: 99;
+	display: none;
 	h2 {
 		background-color: $background-dark;
 		border: 1px solid $text-white;

@@ -467,7 +467,7 @@ button:hover {
 
 .icon-nav:before {
   font-family: "icon";
-  content: "\e90d";
+  content: var(--navCont, "\e90d");
   color: #fff;
   font-size: 2.5rem;
 }
@@ -1314,6 +1314,7 @@ header aside #header-cont-2 {
   background-color: #323544;
   padding: 0;
   z-index: 99;
+  display: none;
 }
 #navbar h2 {
   background-color: #323544;

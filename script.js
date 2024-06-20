@@ -260,3 +260,20 @@ banner_7b.addEventListener("mouseout", () => {
 	banner_7.style.backgroundColor = "";
 	banner_7span.style.color = "";
 });
+
+//
+// NAVBAR
+//
+const navbar = document.getElementById("navbar");
+const navbutt = document.getElementById("icon-nav");
+navbar.style.display = "none";
+// prettier-ignore
+function navbarToggle() {
+	if (navbar.style.display === "none") {
+		navbar.style.display = "block";
+		navbutt.style.setProperty("--navCont", "\2716");
+	} else {
+		navbar.style.display = "none";
+		navbutt.style.setProperty("--navCont", "\e90d");
+	}
+}
