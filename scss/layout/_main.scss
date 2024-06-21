@@ -21,6 +21,11 @@ div {
 	display: none;
 	height: 80%;
 	max-height: 70px;
+	img {
+		max-height: 70px;
+		width: auto;
+		height: auto;
+	}
 	filter: grayscale(1);
 	&:hover {
 		filter: none;

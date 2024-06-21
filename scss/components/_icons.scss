@@ -43,6 +43,14 @@
 	top: 12%;
 }
 
+// Navbar
+
+#navbar {
+	li a:before {
+		content: "»    ";
+	}
+}
+
 // Banner
 
 #icon-banner-1:before {
@@ -107,7 +115,7 @@
 	content: "";
 	display: var(--display1, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -120,7 +128,7 @@
 	content: "";
 	display: var(--display2, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -133,7 +141,7 @@
 	content: "";
 	display: var(--display3, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -146,7 +154,7 @@
 	content: "";
 	display: var(--display4, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -159,7 +167,7 @@
 	content: "";
 	display: var(--display5, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -172,7 +180,7 @@
 	content: "";
 	display: var(--display6, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
@@ -185,7 +193,7 @@
 	content: "";
 	display: var(--display7, none);
 	position: absolute;
-	top: Max(calc(202.5px + 4px), calc(10vh));
+	top: Max(calc(202.5px + 7px), calc(10vh));
 	z-index: 2;
 	width: 0;
 	height: 0;
