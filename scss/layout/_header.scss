@@ -339,7 +339,7 @@ header {
 #navbar {
 	position: fixed;
 	min-height: 100vh;
-	width: 15vw;
+	width: 18vw;
 	top: 0;
 	right: 0;
 	text-transform: uppercase;
@@ -349,10 +349,10 @@ header {
 	display: none;
 	h2 {
 		background-color: $background-dark;
-		border: 1px solid $text-white;
+		border: 1px solid $button-hover;
 		margin: 0;
 		padding: 10px;
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 	}
 	ul {
 		padding: 0;
@@ -360,10 +360,10 @@ header {
 		list-style: none;
 	}
 	li {
-		background-color: $button-hover;
-		border: 1px solid $text-white;
+		background-color: $button;
+		border: 1px solid $button-hover;
 		margin: 0;
 		padding: 10px;
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 }
