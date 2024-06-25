@@ -407,6 +407,20 @@ button:hover {
   background-color: #75788a;
 }
 
+.pink {
+  background-color: #f62459;
+}
+.pink:hover {
+  background-color: #de093f;
+}
+
+.red {
+  background-color: #d64541;
+}
+.red:hover {
+  background-color: #bc2c28;
+}
+
 .social {
   border-radius: 0;
   height: 60px;
@@ -1370,12 +1384,14 @@ header aside #header-cont-2 {
   padding-top: 0;
   position: relative;
   margin: auto;
+  background-color: #333645;
 }
 
 .slider-item {
   display: none;
   width: 100%;
   height: 100%;
+  flex-direction: column;
   text-align: center;
   min-height: 500px;
   margin-top: 0;
@@ -1420,11 +1436,12 @@ header aside #header-cont-2 {
   position: absolute;
   left: 0;
   top: 0;
+  opacity: 0.6;
 }
 .slider-item h2,
 .slider-item p,
 .slider-item button {
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 
@@ -1448,20 +1465,23 @@ header aside #header-cont-2 {
 }
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  margin: 0 15px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: relative;
   z-index: 1;
-  left: calc(50vw - 52.5px);
+  left: calc(50vw - 147px);
 }
 
-.dot:hover,
-.active {
+.dot:hover {
   background-color: #717171;
+}
+
+.active {
+  background-color: #fff;
 }
 
 #grid {

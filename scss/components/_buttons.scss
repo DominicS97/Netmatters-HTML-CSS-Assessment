@@ -63,6 +63,20 @@ button {
 	}
 }
 
+.pink {
+	background-color: $grid-pink;
+	&:hover {
+		background-color: $banner-pink;
+	}
+}
+
+.red {
+	background-color: $grid-red;
+	&:hover {
+		background-color: $banner-red;
+	}
+}
+
 // Footer socials
 
 .social {
