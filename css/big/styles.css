@@ -332,6 +332,7 @@ body {
   font-size: 0.8125rem;
   line-height: 1.3rem;
   letter-spacing: 0.4px;
+  margin-top: min(18%, 202px);
 }
 
 h2 {
@@ -559,7 +560,7 @@ button:hover {
   content: "";
   display: var(--display1, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -572,7 +573,7 @@ button:hover {
   content: "";
   display: var(--display2, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -585,7 +586,7 @@ button:hover {
   content: "";
   display: var(--display3, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -598,7 +599,7 @@ button:hover {
   content: "";
   display: var(--display4, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -611,7 +612,7 @@ button:hover {
   content: "";
   display: var(--display5, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -624,7 +625,7 @@ button:hover {
   content: "";
   display: var(--display6, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -637,7 +638,7 @@ button:hover {
   content: "";
   display: var(--display7, none);
   position: absolute;
-  top: max(209.5px, 10vh);
+  top: 190px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -993,6 +994,15 @@ button:hover {
   color: #fff;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  margin-top: 0;
+}
+
 header {
   background-color: #fff;
   margin-top: 15px;
@@ -1346,7 +1356,16 @@ header aside #header-cont-2 {
   padding: 10px;
   font-size: 0.9rem;
 }
+#navbar div {
+  padding: 0;
+  margin: 0;
+}
 
+@media screen and (min-width: 992px) {
+  #mobile-nav {
+    display: none;
+  }
+}
 #slider {
   padding-top: 0;
 }
@@ -2056,6 +2075,54 @@ div {
     grid-column-start: 1;
     grid-column-end: 2;
   }
+}
+
+#cookie-popup {
+  position: fixed;
+  left: calc(50vw - 300px);
+  top: calc(50vh - 175px);
+  width: 600px;
+  height: 350px;
+  z-index: 99;
+  background-color: #fff;
+  color: #333645;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#cookie-popup h2 {
+  color: #333645;
+  font-size: 1.625rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#cookie-popup h2,
+#cookie-popup p,
+#cookie-popup hr {
+  grid-column-start: span 2;
+}
+#cookie-popup hr {
+  width: 590px;
+  border-color: #fff;
+}
+#cookie-popup button {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+#cookie-popup #cookie-settings {
+  margin-left: 0px;
+}
+#cookie-popup #cookie-accept {
+  margin-right: 0px;
+}
+#cookie-popup a {
+  text-decoration: none;
+  color: #333645;
+}
+#cookie-popup a:hover {
+  text-decoration: underline;
 }
 
 footer {

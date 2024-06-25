@@ -113,3 +113,53 @@ div {
 		}
 	}
 }
+
+// Cookie popup
+
+#cookie-popup {
+	position: fixed;
+	left: calc(50vw - 300px);
+	top: calc(50vh - 175px);
+	width: 600px;
+	height: 350px;
+	z-index: 99;
+	background-color: $background-white;
+	color: $text-dark;
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	h2 {
+		color: $text-dark;
+		font-size: 1.625rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	h2,
+	p,
+	hr {
+		grid-column-start: span 2;
+	}
+	hr {
+		width: 590px;
+		border-color: $text-white;
+	}
+	button {
+		display: inline-block;
+		margin-bottom: 0px;
+	}
+	#cookie-settings {
+		margin-left: 0px;
+	}
+	#cookie-accept {
+		margin-right: 0px;
+	}
+	a {
+		text-decoration: none;
+		color: $text-dark;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
