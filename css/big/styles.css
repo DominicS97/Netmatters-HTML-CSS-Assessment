@@ -1368,23 +1368,14 @@ header aside #header-cont-2 {
 }
 #slider {
   padding-top: 0;
-}
-#slider div {
-  display: none;
-}
-#slider div:first-of-type {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
+  position: relative;
+  margin: auto;
 }
 
 .slider-item {
+  display: none;
   width: 100%;
   height: 100%;
-  background: center no-repeat url(../img/slider1e.png);
-  background-size: cover;
   text-align: center;
   min-height: 500px;
   margin-top: 0;
@@ -1422,6 +1413,20 @@ header aside #header-cont-2 {
   font-weight: bold;
   width: 50%;
 }
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slider-item h2,
+.slider-item p,
+.slider-item button {
+  z-index: 1;
+  position: relative;
+}
 
 @media screen and (min-width: 992px) {
   #slider-p {
@@ -1441,6 +1446,24 @@ header aside #header-cont-2 {
     margin-left: calc((100vw - 1260px) / 2 + 30px);
   }
 }
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  left: calc(50vw - 52.5px);
+}
+
+.dot:hover,
+.active {
+  background-color: #717171;
+}
+
 #grid {
   width: 100%;
   background-color: #fff;
