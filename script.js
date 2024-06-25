@@ -1,3 +1,5 @@
+const SAVE_COOKIE = "cookie"; // save key for local storage of cookies
+
 //
 // HEADER INTERACTIVITY
 //
@@ -267,13 +269,78 @@ banner_7b.addEventListener("mouseout", () => {
 const navbar = document.getElementById("navbar");
 const navbutt = document.getElementById("icon-nav");
 navbar.style.display = "none";
-// prettier-ignore
+// prettier-ignore not working
 function navbarToggle() {
 	if (navbar.style.display === "none") {
 		navbar.style.display = "block";
-		navbutt.style.setProperty("--navCont", "\2716");
+		// 		navbutt.style.setProperty("--navCont", "\2716");
 	} else {
 		navbar.style.display = "none";
-		navbutt.style.setProperty("--navCont", "\e90d");
+		// 		navbutt.style.setProperty("--navCont", "\e90d");
 	}
+}
+
+//
+// COOKIES
+//
+
+const popup = document.getElementById("cookie-popup");
+let cookie = localStorage.getItem(SAVE_COOKIE);
+
+if (!cookie) {
+	localStorage.setItem(SAVE_COOKIE, false);
+}
+
+function acceptCookie() {
+	cookie = true;
+	localStorage.setItem(SAVE_COOKIE, cookie);
+	popup.style.display = "none";
+}
+
+function popupCookie() {
+	popup.style.display = "grid";
+}
+
+if (cookie) {
+	popup.style.display = "none";
+}
+
+//
+// SCROLLING HEADER
+//
+
+let lastsscrollPos = window.pageYOffset;
+let header = document.getElementById("header");
+let headerBtm = header.offsetTop + header.offsetHeight;
+
+window.onscroll = function () {
+	let scrollPos = window.pageYOffset;
+
+	if (lastsscrollPos > scrollPos || scrollPos < headerBtm) {
+		header.style.top = "0";
+	} else {
+		header.style.top = "-202px";
+	}
+
+	lastsscrollPos = scrollPos;
+};
+
+//
+// IMAGE SLIDER
+//
+
+let currentSlide = 1;
+changeSlide(1);
+
+function changeSlide(n) {
+	let slides = document.getElementsByClassName("slider-item");
+	let dots = document.getElementsByClassName("dot");
+	for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[n - 1].style.display = "block";
+	dots[n - 1].className += " active";
 }
