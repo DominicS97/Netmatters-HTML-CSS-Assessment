@@ -364,6 +364,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 button svg {
   width: 26px;
@@ -457,9 +458,14 @@ button:hover {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
 @media screen and (min-width: 1260px) {
   .container {
-    max-width: 1260px;
+    max-width: 1200px;
   }
 }
 
