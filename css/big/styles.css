@@ -2273,4 +2273,14 @@ footer #chat {
     grid-column-start: span 2;
     grid-row-start: 2;
   }
+}
+
+#socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  #socials {
+    display: block;
+  }
 }/*# sourceMappingURL=styles.css.map */

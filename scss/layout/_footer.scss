@@ -98,3 +98,11 @@ footer {
 		}
 	}
 }
+
+#socials {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	@include media-1 {
+		display: block;
+	}
+}
