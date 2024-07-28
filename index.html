@@ -78,21 +78,25 @@
 				<input type="search" placeholder="Search..." />
 
 				<!-- Search button -->
-				<button class="grey"><span class="icon-search"></span></button>
+				<button id="search" class="grey button-box">
+					<span class="icon-search"></span>
+				</button>
 
 				<!-- Call link. Phone icon -->
 				<a id="phone"></a>
 
 				<!-- Nav button. Functionality requires js -->
 				<nav>
-					<button onclick="navbarToggle()">
+					<button onclick="navbarToggle()" class="button-box">
 						<span class="icon-nav" id="icon-nav"></span>
 					</button>
 				</nav>
 
 				<!-- 2nd Search box. Hidden/revealed by media queries -->
-				<input type="search" placeholder="Search..." />
-				<span class="icon-search2"></span>
+				<form>
+					<input type="search" placeholder="Search..." />
+					<span class="icon-search2"></span>
+				</form>
 			</div>
 			<!-- Banner element. Hidden/revealed by media queries -->
 			<aside>

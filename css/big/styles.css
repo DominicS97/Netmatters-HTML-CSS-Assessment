@@ -349,76 +349,74 @@ img {
 }
 
 button {
-  height: 60px;
-  margin-left: 15px;
+  height: 56px;
   text-transform: uppercase;
   font-size: 20px;
   background-color: #272936;
   color: #fff;
   border: 0;
-  border-radius: 10%;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 15px;
+  padding: 5px 15px;
+  margin: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
 }
-button svg {
-  width: 26px;
-}
-button:hover {
+button:hover, button:focus {
   background-color: #121318;
+}
+
+.button-box {
+  width: 63px;
 }
 
 .subscribe {
   background-color: #323544;
 }
-.subscribe:hover {
+.subscribe:hover, .subscribe:focus {
   background-color: #212330;
 }
 
 .green {
   background-color: #00b67b;
 }
-.green:hover {
+.green:hover, .green:focus {
   background-color: #25a25a;
 }
 
 .purple {
   background-color: #926fb1;
 }
-.purple:hover {
+.purple:hover, .purple:focus {
   background-color: #79539a;
 }
 
 .blue {
   background-color: #4387f6;
 }
-.blue:hover {
+.blue:hover, .blue:focus {
   background-color: #286abd;
 }
 
 .grey {
   background-color: #a3a8ac;
 }
-.grey:hover {
+.grey:hover, .grey:focus {
   background-color: #75788a;
 }
 
 .pink {
   background-color: #f62459;
 }
-.pink:hover {
+.pink:hover, .pink:focus {
   background-color: #de093f;
 }
 
 .red {
   background-color: #d64541;
 }
-.red:hover {
+.red:hover, .red:focus {
   background-color: #bc2c28;
 }
 
@@ -437,19 +435,19 @@ button:hover {
   margin-left: 15px;
 }
 
-#fb:hover {
+#fb:hover, #fb:focus {
   background-color: #3b5998;
 }
 
-#linkedin:hover {
+#linkedin:hover, #linkedin:focus {
   background-color: #0077b5;
 }
 
-#twitter:hover {
+#twitter:hover, #twitter:focus {
   background-color: #00aced;
 }
 
-#insta:hover {
+#insta:hover, #insta:focus {
   background-color: #d93175;
 }
 
@@ -497,7 +495,7 @@ button:hover {
   font-family: "icon";
   content: var(--navCont, "\e90d");
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .icon-search2:before {
@@ -506,7 +504,6 @@ button:hover {
   color: #333645;
   font-size: 1.4rem;
   z-index: 1;
-  position: absolute;
   left: calc(90% - 19px);
   top: 12%;
 }
@@ -1026,11 +1023,11 @@ button:hover {
 header {
   background-color: #fff;
   margin-top: 15px;
-  min-height: 18%;
+  min-height: 110px;
   color: #fff;
 }
 header #header-cont-1 {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 8fr 1fr 1fr;
   justify-content: space-between;
@@ -1042,7 +1039,7 @@ header #header-cont-1 a {
 header button:nth-of-type(3) {
   display: none;
   margin-left: 0;
-  border-radius: 0 5% 5% 0;
+  border-radius: 0 3px 3px 0;
 }
 @media screen and (min-width: 768px) {
   header button:nth-of-type(3) {
@@ -1056,7 +1053,7 @@ header img {
   margin-left: 15px;
   margin-top: 15px;
   margin-right: 15px;
-  max-width: 100%;
+  max-width: 90%;
 }
 header span {
   display: block;
@@ -1070,19 +1067,29 @@ header a {
 header a:hover {
   text-decoration-line: underline;
 }
-header input:first-of-type {
+header input {
   display: none;
 }
-header input:nth-of-type(2) {
+header form {
+  display: flex;
+  grid-column-start: span 3;
+  width: 100%;
+}
+header form input {
   display: block;
   border: 2px solid #a3a8ac;
   background: #ddd;
-  border-radius: 5%;
   grid-column: span 3;
   margin-left: 15px;
   margin-right: 15px;
   height: 40px;
   z-index: 0;
+  width: 100%;
+  padding: 5px 40px 5px 15px;
+}
+header form span {
+  position: absolute;
+  right: 5px;
 }
 header aside {
   display: none;
@@ -1112,17 +1119,16 @@ header aside #header-cont-2 .banner_item h2 {
   header #phone {
     display: none;
   }
-  header input:first-of-type {
+  header input {
     display: inline;
     border: 1px solid #a3a8ac;
     margin-left: 50px;
-    height: 40px;
     z-index: 0;
     margin-right: 0;
-    height: 60px;
+    height: 56px;
     padding-left: 5px;
   }
-  header input:nth-of-type(2) {
+  header form input {
     display: none;
   }
   header #header-cont-1 {
@@ -1137,8 +1143,18 @@ header aside #header-cont-2 .banner_item h2 {
   header .hidden_button {
     display: flex;
   }
-  header input:first-of-type {
+  header input {
     display: none;
+  }
+  header button,
+  header #search {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  header button svg,
+  header #search svg {
+    width: 35px;
   }
   header aside {
     grid-column-start: span 5;
@@ -1151,22 +1167,17 @@ header aside #header-cont-2 .banner_item h2 {
   }
 }
 @media screen and (min-width: 1260px) {
-  header input:first-of-type {
+  header #search {
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 0 3px 3px 0;
+  }
+  header input {
     display: block;
+    margin-left: 10px;
   }
   header #header-cont-1 {
     grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-  }
-  header aside {
-    grid-column-start: span 6;
-  }
-}
-@media screen and (min-width: 1260px) {
-  header {
-    grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
-  }
-  header input:first-of-type {
-    display: block;
   }
   header aside {
     grid-column-start: span 6;
@@ -2019,6 +2030,12 @@ header aside #header-cont-2 {
 div {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+input:focus {
+  border-color: #00aced;
+  outline: 0;
+  box-shadow: inset 0 1px 1px #121318, 0 0 8px #00aced;
 }
 
 .carousel {

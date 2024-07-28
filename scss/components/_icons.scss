@@ -26,7 +26,7 @@
 	font-family: "icon";
 	content: var(--navCont, "\e90d");
 	color: $text-white;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .icon-search2:before {
@@ -38,7 +38,6 @@
 		display: none;
 	}
 	z-index: 1;
-	position: absolute;
 	left: calc(90% - 19px);
 	top: 12%;
 }
