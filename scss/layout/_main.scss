@@ -36,24 +36,32 @@ input:focus {
 	&:hover {
 		filter: none;
 	}
-	&:nth-child(-n + 2) {
-		display: block;
-	}
-	@include media-1 {
-		&:nth-child(-n + 3) {
-			display: block;
-		}
-	}
-	@include media-2 {
-		&:nth-child(-n + 4) {
-			display: block;
-		}
-	}
-	@include media-3 {
-		&:nth-child(-n + 5) {
-			display: block;
-		}
-	}
+	// &:nth-child(-n + 2) {
+	// 	display: block;
+	// }
+	// @include media-1 {
+	// 	&:nth-child(-n + 3) {
+	// 		display: block;
+	// 	}
+	// }
+	// @include media-2 {
+	// 	&:nth-child(-n + 4) {
+	// 		display: block;
+	// 	}
+	// }
+	// @include media-3 {
+	// 	&:nth-child(-n + 5) {
+	// 		display: block;
+	// 	}
+	// }
+}
+
+.carousel-hidden {
+	display: none;
+}
+
+.carousel-visible {
+	display: block;
 }
 
 // Carousel 2

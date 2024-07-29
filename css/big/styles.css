@@ -2121,23 +2121,13 @@ input:focus {
 .carousel-item1:hover {
   filter: none;
 }
-.carousel-item1:nth-child(-n+2) {
+
+.carousel-hidden {
+  display: none;
+}
+
+.carousel-visible {
   display: block;
-}
-@media screen and (min-width: 768px) {
-  .carousel-item1:nth-child(-n+3) {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  .carousel-item1:nth-child(-n+4) {
-    display: block;
-  }
-}
-@media screen and (min-width: 1260px) {
-  .carousel-item1:nth-child(-n+5) {
-    display: block;
-  }
 }
 
 .carousel {
