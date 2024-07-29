@@ -36,24 +36,6 @@ input:focus {
 	&:hover {
 		filter: none;
 	}
-	// &:nth-child(-n + 2) {
-	// 	display: block;
-	// }
-	// @include media-1 {
-	// 	&:nth-child(-n + 3) {
-	// 		display: block;
-	// 	}
-	// }
-	// @include media-2 {
-	// 	&:nth-child(-n + 4) {
-	// 		display: block;
-	// 	}
-	// }
-	// @include media-3 {
-	// 	&:nth-child(-n + 5) {
-	// 		display: block;
-	// 	}
-	// }
 }
 
 .carousel-hidden {
@@ -105,13 +87,13 @@ input:focus {
 }
 
 .carousel-item {
+	display: none;
 	&:hover {
 		.carousel-box-cont {
 			display: block;
 		}
 	}
 	picture {
-		display: none;
 		height: 80%;
 		max-height: 70px;
 		img {
@@ -122,32 +104,6 @@ input:focus {
 		filter: grayscale(1);
 		&:hover {
 			filter: none;
-		}
-	}
-	&:nth-child(-n + 2) {
-		picture {
-			display: block;
-		}
-	}
-	@include media-1 {
-		&:nth-child(-n + 3) {
-			picture {
-				display: block;
-			}
-		}
-	}
-	@include media-2 {
-		&:nth-child(-n + 4) {
-			picture {
-				display: block;
-			}
-		}
-	}
-	@include media-3 {
-		&:nth-child(-n + 5) {
-			picture {
-				display: block;
-			}
 		}
 	}
 }

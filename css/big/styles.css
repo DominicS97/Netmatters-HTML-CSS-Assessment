@@ -2168,11 +2168,13 @@ input:focus {
   width: 280px;
 }
 
+.carousel-item {
+  display: none;
+}
 .carousel-item:hover .carousel-box-cont {
   display: block;
 }
 .carousel-item picture {
-  display: none;
   height: 80%;
   max-height: 70px;
   filter: grayscale(1);
@@ -2184,24 +2186,6 @@ input:focus {
 }
 .carousel-item picture:hover {
   filter: none;
-}
-.carousel-item:nth-child(-n+2) picture {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .carousel-item:nth-child(-n+3) picture {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  .carousel-item:nth-child(-n+4) picture {
-    display: block;
-  }
-}
-@media screen and (min-width: 1260px) {
-  .carousel-item:nth-child(-n+5) picture {
-    display: block;
-  }
 }
 
 #form {
