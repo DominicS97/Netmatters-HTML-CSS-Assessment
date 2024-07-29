@@ -220,18 +220,23 @@ input:focus {
 
 #internal-cookie {
 	position: fixed;
-	left: calc(50vw - 300px);
-	top: calc(50vh - 175px);
-	width: 600px;
-	height: 350px;
 	z-index: 99;
+	left: 1%;
+	top: 200px;
 	background-color: $background-white;
 	color: $text-dark;
+	width: 90vw;
 	border-radius: 5px;
 	font-size: 1rem;
 	padding: 15px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	@include media-1 {
+		width: 600px;
+		height: 350px;
+		left: calc(50vw - 300px);
+		top: calc(50vh - 175px);
+	}
 	h2 {
 		color: $text-dark;
 		font-size: 1.625rem;
@@ -249,20 +254,30 @@ input:focus {
 	p,
 	hr {
 		grid-column-start: span 2;
+		max-width: 90vw;
 	}
 	hr {
 		width: 590px;
 		border-color: $text-white;
 	}
 	button {
+		grid-column-start: span 2;
+		margin: 10px 20px 10px 20px;
+		@include media-1 {
+			grid-column-start: span 1;
+		}
 		display: inline-block;
 		margin-bottom: 0px;
 	}
 	#cookie-settings {
-		margin-left: 0px;
+		@include media-1 {
+			margin-left: 0px;
+		}
 	}
 	#cookie-accept {
-		margin-right: 0px;
+		@include media-1 {
+			margin-right: 0px;
+		}
 	}
 	a {
 		text-decoration: none;

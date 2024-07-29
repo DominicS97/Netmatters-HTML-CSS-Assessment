@@ -2287,18 +2287,25 @@ input:focus {
 
 #internal-cookie {
   position: fixed;
-  left: calc(50vw - 300px);
-  top: calc(50vh - 175px);
-  width: 600px;
-  height: 350px;
   z-index: 99;
+  left: 1%;
+  top: 200px;
   background-color: #fff;
   color: #333645;
+  width: 90vw;
   border-radius: 5px;
   font-size: 1rem;
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  #internal-cookie {
+    width: 600px;
+    height: 350px;
+    left: calc(50vw - 300px);
+    top: calc(50vh - 175px);
+  }
 }
 #internal-cookie h2 {
   color: #333645;
@@ -2317,20 +2324,32 @@ input:focus {
 #internal-cookie p,
 #internal-cookie hr {
   grid-column-start: span 2;
+  max-width: 90vw;
 }
 #internal-cookie hr {
   width: 590px;
   border-color: #fff;
 }
 #internal-cookie button {
+  grid-column-start: span 2;
+  margin: 10px 20px 10px 20px;
   display: inline-block;
   margin-bottom: 0px;
 }
-#internal-cookie #cookie-settings {
-  margin-left: 0px;
+@media screen and (min-width: 768px) {
+  #internal-cookie button {
+    grid-column-start: span 1;
+  }
 }
-#internal-cookie #cookie-accept {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  #internal-cookie #cookie-settings {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #internal-cookie #cookie-accept {
+    margin-right: 0px;
+  }
 }
 #internal-cookie a {
   text-decoration: none;
