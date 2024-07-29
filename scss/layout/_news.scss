@@ -9,7 +9,7 @@
 	align-items: center;
 	a {
 		color: $text-dark;
-		font-size: 26px;
+		font-size: 1.625rem;
 		align-self: center;
 		text-decoration: none;
 		font-weight: 600;
@@ -21,7 +21,11 @@
 
 #news {
 	h2 {
+		padding-top: 15px;
+		padding-left: 15px;
 		color: $text-dark;
+		font-weight: 600;
+		font-size: 2.25rem;
 	}
 	background-color: $background-white;
 	width: 100%;
@@ -53,9 +57,13 @@
 				grid-column-start: 3;
 			}
 		}
-		h2 {
-			font-weight: bold;
+		.newsheader {
 			padding-left: 15px;
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+		.headshot {
+			font-size: 0.875rem;
 		}
 	}
 }
@@ -182,9 +190,9 @@
 		height: 21px;
 		padding-left: 5px;
 		padding-right: 5px;
-		margin-left: 0%;
+		margin-left: auto;
 		position: relative;
-		top: 0;
+		top: 10px;
 		z-index: 1;
 	}
 }

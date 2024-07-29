@@ -1815,7 +1815,7 @@ header aside #header-cont-2 {
 }
 .view a {
   color: #333645;
-  font-size: 26px;
+  font-size: 1.625rem;
   align-self: center;
   text-decoration: none;
   font-weight: 600;
@@ -1829,7 +1829,11 @@ header aside #header-cont-2 {
   width: 100%;
 }
 #news h2 {
+  padding-top: 15px;
+  padding-left: 15px;
   color: #333645;
+  font-weight: 600;
+  font-size: 2.25rem;
 }
 #news .container {
   display: grid;
@@ -1864,9 +1868,13 @@ header aside #header-cont-2 {
     grid-column-start: 3;
   }
 }
-#news .container h2 {
-  font-weight: bold;
+#news .container .newsheader {
   padding-left: 15px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#news .container .headshot {
+  font-size: 0.875rem;
 }
 
 .news-item {
@@ -1982,9 +1990,9 @@ header aside #header-cont-2 {
   height: 21px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-left: 0%;
+  margin-left: auto;
   position: relative;
-  top: 0;
+  top: 10px;
   z-index: 1;
 }
 
@@ -2000,6 +2008,9 @@ header aside #header-cont-2 {
   text-decoration: underline;
 }
 #bio h2 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 600;
   padding-left: 15px;
   padding-bottom: 25px;
   font-weight: bold;
@@ -2034,11 +2045,13 @@ header aside #header-cont-2 {
 
 #bio-two p:nth-of-type(1) {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 #bio-two p:nth-of-type(2) {
   color: #a3a8ac;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 #bio-two a {
   color: #fff;
