@@ -345,6 +345,10 @@ body {
   }
 }
 
+main {
+  width: 100vw;
+}
+
 h2 {
   font-size: 36px;
   color: #fff;
@@ -2154,6 +2158,11 @@ input:focus {
   padding: 20px;
   min-width: 280px;
   max-width: 280px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  left: -100%;
+  right: -100%;
 }
 
 .carousel-box-cont {
@@ -2164,7 +2173,6 @@ input:focus {
   margin-left: auto;
   left: -100%;
   right: -100%;
-  bottom: auto;
   width: 280px;
 }
 

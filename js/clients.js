@@ -120,6 +120,82 @@ setInterval(nextCarousel1, 3000);
 
 setInterval(nextCarousel2, 3000);
 
+// function nextCarousel1() {
+// 	let display = CAROUSEL_1[0].style.display;
+// 	if (display === "block") {
+// 		CAROUSEL_1[0].style.display = "none";
+// 		let counter = 0;
+// 		for (let i = 1; i < CAROUSEL_1.length; i++) {
+// 			counter++;
+// 			if (counter > visible) {
+// 				CAROUSEL_1[i].style.display = "none";
+// 			} else {
+// 				CAROUSEL_1[i].style.display = "block";
+// 			}
+// 		}
+// 	} else if (display === "none") {
+// 		for (let i = 1; i < CAROUSEL_1.length; i++) {
+// 			let display2 = CAROUSEL_1[i].style.display;
+// 			if (display2 === "block") {
+// 				CAROUSEL_1[i].style.display = "none";
+// 				let counter = 0;
+// 				for (let j = i + 1; j < CAROUSEL_1.length; j++) {
+// 					counter++;
+// 					if (counter > visible) {
+// 						CAROUSEL_1[j].style.display = "none";
+// 					} else {
+// 						CAROUSEL_1[j].style.display = "block";
+// 					}
+// 				}
+// 				if (counter < visible) {
+// 					let counter2 = visible - counter;
+// 					for (let j = 0; j < counter2; j++) {
+// 						CAROUSEL_1[j].style.display = "block";
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// function nextCarousel2() {
+// 	let display = CAROUSEL_2[0].style.display;
+// 	if (display === "block") {
+// 		CAROUSEL_2[0].style.display = "none";
+// 		let counter = 0;
+// 		for (let i = 1; i < CAROUSEL_2.length; i++) {
+// 			counter++;
+// 			if (counter > visible) {
+// 				CAROUSEL_2[i].style.display = "none";
+// 			} else {
+// 				CAROUSEL_2[i].style.display = "block";
+// 			}
+// 		}
+// 	} else if (display === "none") {
+// 		for (let i = 1; i < CAROUSEL_2.length; i++) {
+// 			let display2 = CAROUSEL_2[i].style.display;
+// 			if (display2 === "block") {
+// 				CAROUSEL_2[i].style.display = "none";
+// 				let counter = 0;
+// 				for (let j = i + 1; j < CAROUSEL_2.length; j++) {
+// 					counter++;
+// 					if (counter > visible) {
+// 						CAROUSEL_2[j].style.display = "none";
+// 					} else {
+// 						CAROUSEL_2[j].style.display = "block";
+// 					}
+// 				}
+// 				if (counter < visible) {
+// 					let counter2 = visible - counter;
+// 					for (let j = 0; j < counter2; j++) {
+// 						CAROUSEL_2[j].style.display = "block";
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
 function nextCarousel1() {
 	for (let i = 0; i < CAROUSEL_1.length; i++) {
 		let display = CAROUSEL_1[i].style.display;
