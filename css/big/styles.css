@@ -2277,6 +2277,15 @@ input:focus {
 }
 
 #cookie-popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+#internal-cookie {
   position: fixed;
   left: calc(50vw - 300px);
   top: calc(50vh - 175px);
@@ -2291,36 +2300,43 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#cookie-popup h2 {
+#internal-cookie h2 {
   color: #333645;
   font-size: 1.625rem;
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 1.43;
+  font-weight: 400;
 }
-#cookie-popup h2,
-#cookie-popup p,
-#cookie-popup hr {
+#internal-cookie p {
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  color: #666;
+}
+#internal-cookie h2,
+#internal-cookie p,
+#internal-cookie hr {
   grid-column-start: span 2;
 }
-#cookie-popup hr {
+#internal-cookie hr {
   width: 590px;
   border-color: #fff;
 }
-#cookie-popup button {
+#internal-cookie button {
   display: inline-block;
   margin-bottom: 0px;
 }
-#cookie-popup #cookie-settings {
+#internal-cookie #cookie-settings {
   margin-left: 0px;
 }
-#cookie-popup #cookie-accept {
+#internal-cookie #cookie-accept {
   margin-right: 0px;
 }
-#cookie-popup a {
+#internal-cookie a {
   text-decoration: none;
   color: #333645;
 }
-#cookie-popup a:hover {
+#internal-cookie a:hover {
   text-decoration: underline;
 }
 

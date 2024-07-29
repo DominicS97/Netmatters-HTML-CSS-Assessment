@@ -209,8 +209,16 @@ input:focus {
 }
 
 // Cookie popup
-
 #cookie-popup {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 99;
+	top: 0;
+}
+
+#internal-cookie {
 	position: fixed;
 	left: calc(50vw - 300px);
 	top: calc(50vh - 175px);
@@ -229,6 +237,13 @@ input:focus {
 		font-size: 1.625rem;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		line-height: 1.43;
+		font-weight: 400;
+	}
+	p {
+		font-size: 1rem;
+		letter-spacing: 0.4px;
+		color: #666;
 	}
 	h2,
 	p,
