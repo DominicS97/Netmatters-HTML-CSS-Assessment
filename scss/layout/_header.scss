@@ -9,6 +9,7 @@
 	width: 100vw;
 }
 header {
+	transition: all 0.5s;
 	background-color: $background-white;
 	margin-top: 15px;
 	min-height: 110px;

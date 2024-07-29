@@ -275,7 +275,7 @@ window.onscroll = function () {
 	if (lastsscrollPos > scrollPos || scrollPos < headerBtm) {
 		header.style.top = "0";
 	} else {
-		header.style.top = "-202px";
+		header.style.top = "-223.5px";
 	}
 
 	lastsscrollPos = scrollPos;
