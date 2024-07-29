@@ -18,8 +18,8 @@ body {
 	grid-template-columns: 1fr;
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	font-family: sans-serif;
 	color: #fff;
 	font-family: "Poppins", sans-serif;
@@ -27,7 +27,13 @@ body {
 	font-size: 0.8125rem;
 	line-height: 1.3rem;
 	letter-spacing: 0.4px;
-	margin-top: Min(18%, 202px);
+	margin-top: Min(41%, 223px);
+	@include media-1 {
+		margin-top: Min(17%, 223px);
+	}
+	@include media-2 {
+		margin-top: Min(41%, 223px);
+	}
 }
 
 h2 {

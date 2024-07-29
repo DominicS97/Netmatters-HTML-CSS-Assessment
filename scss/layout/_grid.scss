@@ -17,6 +17,10 @@
 				grid-row-start: 1;
 				grid-column-start: 2;
 				justify-self: right;
+				a {
+					white-space: nowrap;
+					font-size: 2.25rem;
+				}
 			}
 		}
 		@include media-2 {
@@ -63,14 +67,16 @@
 		}
 	}
 	h1 {
-		font-size: 43px;
+		font-size: 2.7rem;
+		font-weight: 400;
 		align-self: left;
 		padding-left: 15px;
 		color: $text-dark;
 	}
 	a {
 		color: $text-dark;
-		font-size: 26px;
+		font-size: 1.625rem;
+		font-weight: 600;
 		align-self: center;
 		text-decoration: none;
 		&:hover {
@@ -84,7 +90,7 @@
 	margin: 15px;
 	padding: 30px;
 	border-radius: 20px;
-	box-shadow: 0 0 5px 0 $text-midtone;
+	box-shadow: 0 3px 35px $text-midtone;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
