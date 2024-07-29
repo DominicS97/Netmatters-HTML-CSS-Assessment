@@ -19,13 +19,57 @@ function changeSlide(n) {
 	dots[n - 1].className += " active";
 }
 
+setInterval(nextSlide, 3000);
+
 function nextSlide() {
 	let m = currentSlide;
-	if ((m = 7)) {
+	if (m === 7) {
 		m = 1;
 	} else {
 		m++;
 	}
 	changeSlide(m);
 }
-setInterval(nextSlide(), 1000);
+
+const SLIDER = document.getElementById("slider");
+let pressed = false;
+let startX;
+let cursorX;
+
+SLIDER.addEventListener("mousedown", (e) => {
+	pressed = true;
+	startX = e.offsetX - SLIDER.offsetLeft;
+	cursorX = e.offsetX - SLIDER.offsetLeft;
+	SLIDER.style.cursor = "grabbing";
+});
+
+SLIDER.addEventListener("mouseenter", () => {
+	SLIDER.style.cursor = "grab";
+});
+
+SLIDER.addEventListener("mouseup", () => {
+	SLIDER.style.cursor = "grab";
+	pressed = false;
+});
+
+SLIDER.addEventListener("mousemove", (e) => {
+	if (!pressed) return;
+	e.preventDefault();
+
+	cursorX = e.offsetX - SLIDER.offsetLeft;
+	if (cursorX - startX < -100) {
+		SLIDER.style.cursor = "grab";
+		pressed = false;
+		nextSlide();
+	} else if (cursorX - startX > 100) {
+		SLIDER.style.cursor = "grab";
+		pressed = false;
+		let m = currentSlide;
+		if (m === 1) {
+			m = 7;
+		} else {
+			m--;
+		}
+		changeSlide(m);
+	}
+});

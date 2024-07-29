@@ -13,6 +13,11 @@
 	display: none;
 	height: 100%;
 	flex-direction: column;
+	h2,
+	p,
+	img {
+		pointer-events: none;
+	}
 	h2 {
 		padding-top: 60px;
 		text-align: center;
@@ -96,11 +101,11 @@
 
 .dot {
 	cursor: pointer;
-	height: 12px;
-	width: 12px;
-	margin: 0 15px;
+	height: 11px;
+	width: 11px;
+	margin: 0 10px;
 	background-color: #bbb;
-	border-radius: 50%;
+	border-radius: 30px;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
@@ -114,4 +119,6 @@
 
 .active {
 	background-color: $text-white;
+	outline: 1px solid #bbb;
+	outline-offset: 3px;
 }
